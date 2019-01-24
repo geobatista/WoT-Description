@@ -1,0 +1,24 @@
+#
+# @Cache-Control: 
+# @infer true
+# @view 
+#
+#
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX schema:<http://schema.org/>
+
+SELECT ?resource ?label  
+{ 
+    ?resource rdfs:label ?label .
+   
+    FILTER (regex(str(?resource), "dbpedia.org", "i") &&
+            (lang(?label) = '' || lang(?label) = 'pt' || lang(?label) = 'en') && 
+            regex(str(?label), "$keyword", "i")) .
+    
+    
+} 
+ORDER BY ?label

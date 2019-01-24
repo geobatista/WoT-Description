@@ -1,0 +1,178 @@
+@prefix : <http://localhost:8080/callimachus/1.5/scripts/index.ttl#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cidoccrm: <http://purl.org/NET/cidoc-crm/core#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix ctrl: <http://support.3roundstones.com/rdf/2013/control#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix georss: <http://www.georss.org/georss/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix ili: <http://ili.globalwordnet.org/ili/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix mrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix msg: <http://www.openrdf.org/rdf/2011/messaging#> .
+@prefix ns10: <http://purl.org/linguistics/gold/> .
+@prefix ns2: <http://live.dbpedia.org/property/> .
+@prefix ns3: <http://live.dbpedia.org/ontology/> .
+@prefix ns4: <http://dbpedia.org/ontology/Person/> .
+@prefix ns5: <http://dbpedia.org/ontology/PopulatedPlace/> .
+@prefix ns6: <http://rdvocab.info/RDARelationshipsWEMI/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pwnid: <http://wordnet-rdf.princeton.edu/rdf/id/> .
+@prefix pwnlemma: <http://wordnet-rdf.princeton.edu/rdf/lemma/> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix ns1: <http://qudt.org/1.1/schema/qudt#> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix ns7: <http://qudt.org/1.1/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix schema: <http://schema.org/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@prefix synsem: <http://www.w3.org/ns/lemon/synsem#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tute: <http://callimachusproject.org/2014/03/tutorial#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix wn: <http://wordnet-rdf.princeton.edu/ontology#> .
+@prefix wordnetlicense: <http://wordnet.princeton.edu/wordnet/license/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a <http://iot.linkeddata.es/def/wot#Thing> , <../Classes/Thing/Thing> ;
+    dcterms:created "2019-01-05T02:15:35.611Z"^^xsd:dateTime ;
+    dcterms:identifier "Atuador_Rua_A_Descrição" ;
+    dcterms:modified "2019-01-05T02:16:50.360Z"^^xsd:dateTime , "2019-01-05T03:03:44.934Z"^^xsd:dateTime , "2019-01-05T10:17:23.515Z"^^xsd:dateTime ;
+    dcterms:title "Atuador_Rua_A_descrição" ;
+    schema:identifier "Atuador_Rua_A_Descrição" ;
+    schema:name "Atuador_Rua_A_descrição" ;
+    rdfs:comment "Atuador Linear 24 V 1.65A Waterproof IP66 Led 40 W Led Driver AC110 / 220 V luz de rua" ;
+    rdfs:label "Atuador_Rua_A_descrição" ;
+    calli:administrator </auth/groups/admin> ;
+    calli:editor </auth/groups/power> , </auth/groups/staff> ;
+    calli:reader </auth/groups/public> , </auth/groups/system> ;
+    calli:subscriber </auth/groups/everyone> ;
+    <http://iot.linkeddata.es/def/wot#implementsSecurity> <1234> ;
+    owl:sameAs <../../sensors-actuators-master/Actuator/Atuador_RuaA> ;
+    <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+        <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+        <http://iot.linkeddata.es/def/wot#href> "coap:atuadorRuaA.example.com:5683/Link1" ;
+        <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#InteractionPattern> , <http://iot.linkeddata.es/def/wot#Property> ;
+        <http://iot.linkeddata.es/def/wot#interactionDescription> "status do atuador Linear 24 V 1.65A" ;
+        <http://iot.linkeddata.es/def/wot#interactionName> "Status" ;
+        <http://iot.linkeddata.es/def/wot#isMeasuredln> unit:SystemOfUnits_MKS , unit:Volt ;
+        <http://iot.linkeddata.es/def/wot#isRequired> <hhttp://iot.linkeddata.es/def/wot#isRequiredFalse> ;
+        <http://iot.linkeddata.es/def/wot#isWritable> <http://iot.linkeddata.es/def/wot#isWritableTrue> ;
+        <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema> ;
+            <http://iot.linkeddata.es/def/wot#defaultValue> "Status_OutputData" ;
+            <http://iot.linkeddata.es/def/wot#hasValueType> xsd:boolean
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap:atuadorRuaA.example.com:5683/StatusLink1" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap:atuadoRruaA.example.com:5683/statusLink1" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isReadableThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isWritableThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ]
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#Action> , <http://iot.linkeddata.es/def/wot#InteractionPattern> ;
+        <http://iot.linkeddata.es/def/wot#interactionDescription> "Ação de Acender o atuador Linear 24 V 1.65A" ;
+        <http://iot.linkeddata.es/def/wot#interactionName> "Fade in" ;
+        <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema> ;
+            <http://iot.linkeddata.es/def/wot#defaultValue> "Fade in Input Data" ;
+            <http://iot.linkeddata.es/def/wot#hasValueType> xsd:integer ;
+            <http://iot.linkeddata.es/def/wot#isMeasuredln> unit:MilliSecond
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap:atuadorRuaA.example.com:5683/FadeinLink1" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap:atuadoRruaA.example.com:5683/fadeinLink1" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isReadableThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isWritableThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ]
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#Event> , <http://iot.linkeddata.es/def/wot#InteractionPattern> ;
+        <http://iot.linkeddata.es/def/wot#interactionDescription> "notificação de condição crítica " ;
+        <http://iot.linkeddata.es/def/wot#interactionName> "Condição Crítica" ;
+        <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema> ;
+            <http://iot.linkeddata.es/def/wot#defaultValue> "condição crítica output data" ;
+            <http://iot.linkeddata.es/def/wot#hasValueType> xsd:string
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap:atuadorRuaA.example.com:5683/CondicaoCriticaLink1" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap:atuadoRruaA.example.com:5683/condicaocriticaLink1" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isReadableThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isWritableThrough> [ a <http://iot.linkeddata.es/def/wot#Link>
+        ]
+    ] .
