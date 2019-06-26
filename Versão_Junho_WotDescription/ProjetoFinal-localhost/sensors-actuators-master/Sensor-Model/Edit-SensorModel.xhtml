@@ -1,0 +1,701 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:gn="http://www.geonames.org/ontology#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:schema="http://schema.org/"
+    xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#"
+    xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/unit#"
+    xmlns:calli="http://callimachusproject.org/rdf/2009/framework#"
+    xmlns:sosa="http://www.w3.org/ns/sosa/"
+    xmlns:ssn="http://www.w3.org/ns/ssn/"
+    xmlns:ssn-system="http://www.w3.org/ns/ssn/systems/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    
+    xmlns:tute="http://callimachusproject.org/2014/03/tutorial#">
+<head>
+    <title resource="?this">{rdfs:label}</title>
+    
+  
+  
+    <script type="text/javascript" src="isDefinedBy.js"></script>
+    
+   
+      <script type="text/javascript">
+    
+        $(document).ready(function () {
+            $("type1").attr("id","id_new");
+        });
+        
+        function updateLabel(event){
+                calli.updateProperty(event, 'schema:name dcterms:title rdfs:label');
+                   
+        }
+    
+    </script>
+</head>
+<body resource="?this">
+    
+    <div class="container">
+        <!--
+        <div class="page-header">
+            <h1 property="rdfs:label"></h1>
+        </div>
+        -->
+        <form id="form" role="form" method="POST" action="" enctype="application/sparql-update" resource="?this" class="row"
+                onsubmit="calli.submitUpdate(comparison,event)">
+             <legend>Sensor Model</legend>
+            <div class="row"> 
+           
+                <fieldset class="col-sm-3">
+                    
+                   
+                     <div class="form-group">
+                        <label>Label:</label>
+                            <input type="text" class="form-control" id="label" value="{rdfs:label}"  autofocus="autofocus"
+                              onchange="updateLabel(event)"/>
+                            <input type="hidden" class="form-control" id="nome2" value="{dcterms:title}"/>	
+                            <input type="hidden" class="form-control" id="nome3" value="{schema:name}"/>
+                    </div>
+                    
+                    
+                  
+             
+                                
+                      <div class="form-group">
+                        <div id="ob1" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">      
+                                <div id="ob2" rel="owl:onProperty" resource="http://www.w3.org/ns/sosa/observes" ></div>
+                                        <label for="ObservableProperty1">Observes (Property):</label>
+                                                    <xi:include href="ObservableProperty.rq?select&amp;rel=owl:hasValue&amp;id=ObservableProperty1&amp;multiple=multiple" />
+                                                                              <div rel="owl:hasValue" resource="?ObservableProperty1" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="owl:hasValue"]').filter(calli.selectEachResourceIn('#ObservableProperty1')).remove();
+                                                                               
+                                                                              </script>
+                                                                
+                        </div>
+                    </div>
+                    </div>
+                    <!--
+                      <div class="form-group">
+                        <div id="p1" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">      
+                                <div id="p2" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/implements"></div>
+                                       
+                                        <label for="p4">Procedure <a href="javascript:void(0)" title="Another Procedure"
+                                                                onclick="calli.addResource(event,'#p4')" class="glyphicon glyphicon-plus" /></label>
+                                                                     <div id="p4" rel="owl:hasValue">
+                                                                        <div typeof="sosa:Procedure">
+                                                                         <label for="selectprocedure">Select Procedure:</label>
+                                                                           <xi:include href="Procedure.rq?select&amp;rel=owl:sameAs&amp;id=Procedure&amp;multiple=multiple" />
+                                                                              <div rel="owl:sameAs" resource="?Procedure" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="owl:sameAs"]').filter(calli.selectEachResourceIn('#Procedure')).remove();
+                                                                               
+                                                                              </script>
+                                                                               <label for="property">For Property:</label>
+                                                                               <xi:include href="ObservableProperty.rq?select&amp;rel=ssn:forProperty&amp;id=Property&amp;multiple=multiple" />
+                                                                              <div rel="ssn:forProperty" resource="?Property" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="ssn:forProperty"]').filter(calli.selectEachResourceIn('#Property')).remove();
+                                                                               
+                                                                              </script>
+                                                                </div>
+                                                                </div>
+                                                                
+                        </div>
+                    </div>
+                    </div>
+                    -->
+                    
+                    <div class="form-group">
+                        <div id="p1" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">      
+                               
+                                   <div id="p3" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/implements" ></div>
+                                        <label for="procedure">Procedure:</label>
+                                                    <xi:include href="Procedure.rq?select&amp;rel=owl:hasValue&amp;id=procedure1&amp;multiple=multiple" />
+                                                                              <div rel="owl:hasValue" resource="?procedure1" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="owl:hasValue"]').filter(calli.selectEachResourceIn('#procedure1')).remove();
+                                                                               
+                                                                              </script>
+                                                                
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+                   <div class="form-group">
+                        <div id="c1" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">      
+                               
+                                   <div id="c3" rel="owl:onProperty" resource="http://xmlns.com/foaf/0.1/maker" ></div>
+                                        <label for="creator1">Producer/creator:</label>
+                                                    <xi:include href="creator.rq?select&amp;rel=owl:hasValue&amp;id=creator2&amp;multiple=multiple" />
+                                                                              <div rel="owl:hasValue" resource="?creator2" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="owl:hasValue"]').filter(calli.selectEachResourceIn('#creator2')).remove();
+                                                                               
+                                                                              </script>
+                                                                
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+                    
+                
+            
+                     <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" class="form-control"
+                            onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Registered by:</label>
+                        <select id="isDefinedBy" class="form-control" multiple="multiple"
+                            onchange="calli.updateResource(event, 'rdfs:isDefinedBy')">
+                            <option selected="selected" rel="rdfs:isDefinedBy" resource="?isDefinedBy" value="{?isDefinedBy}">{foaf:name} </option>
+                        </select>  
+                    </div>
+            
+                </fieldset>
+                    
+                <fieldset class="col-sm-3">
+                    <div class="form-group">   
+                            <div id="rest1" rel="rdfs:subClassOf">
+                                <div typeof="owl:Restriction">
+                                    <div id="rest2" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/systems/hasSystemCapability" ></div>
+                                <div id="rest3" rel="owl:hasValue">
+                                    <div typeof="ssn-system:SystemCapability">
+                                        
+                                        <legend>System Capability</legend> 
+                                        
+                                        <div class="form-group">
+                                            <label for="ObservableProperty2">For property:</label>
+                                                           <xi:include href="ObservableProperty.rq?select&amp;rel=ssn:forProperty&amp;id=ObservableProperty2&amp;multiple=multiple" />
+                                                           <div rel="ssn:forProperty" resource="?ObservableProperty2" />
+                                                           <script type="text/javascript">
+                                                            $('div[rel="ssn:forProperty"]').filter(calli.selectEachResourceIn('#ObservableProperty2')).remove();
+                                                            </script>
+                                        </div>
+                                       
+                                        
+                                         <div class="form-group">
+                                                <label for="condition4">Condition <a href="javascript:void(0)" title="Another condition"
+                                                                onclick="calli.addResource(event,'#condition4')" class="glyphicon glyphicon-plus" /></label>
+                                                            <div id="condition4" rel="ssn-system:inCondition">
+                                                                <div typeof="ssn-system:Condition schema:PropertyValue">
+                                                                 
+                                                                        <label for="label1">Label:</label>
+                                                                        <input type="text" class="form-control" id="label1" value="{rdfs:label}" placeholder="Label" autofocus="autofocus"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:label')" />
+                                    
+                                                                    <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:value')" />
+                                                                    <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                                    <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                                               
+                                                                           <div class="div_class" id="Unit7">
+                                                                              <label for="Unit7">Unit of measurement:</label>    
+                                                                                <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit7;multiple" />
+                                                                                <div class="hidden" rel="schema:unitCode" resource="?Unit7" />
+                                                                                   <script type="text/javascript">
+                                                                                    document.getElementById("Unit7").id = 'id_new'
+                                                                                    $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit7').attr('id','id_new'))).remove();
+                                                                              </script>
+                                                                            </div>
+                                                                             <div class="form-group">
+                                                                                 <label>Comment</label>
+                                                                                <textarea id="comment1" class="form-control"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                                                                            </div>
+                                                                            
+                                                                
+                                                                     <div class="form-group">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                        
+                                         
+                                    
+                                        <legend>System Property</legend>                     
+                                        <label for="rest4">Select System Property <a href="javascript:void(0)" title="Another System Property"
+                                                onclick="calli.addResource(event,'#rest4')" class="glyphicon glyphicon-plus" /></label>
+                                            <div id="rest4" rel="ssn-system:hasSystemProperty">
+                                                <div typeof="ssn-system:SystemProperty schema:PropertyValue">
+                                                    
+                                                    <div class="div_class" id="type1">
+                                                            <xi:include href="SystemProperty.rq?select&amp;rel=rdf:type&amp;id=type1;multiple" />
+                                                            <div class="hidden" rel="rdf:type" resource="?type1" />    
+                                                                <script type="text/javascript">
+                                                                    document.getElementById("type1").id = 'id_new'
+                                                                    $('[rel="rdf:type"].hidden').filter(calli.selectEachResourceIn($('#type1').attr('id','id_new'))).remove();
+                                                                </script>
+                                                                
+                                                       
+                                                    </div>
+                                                   
+                                                    <div class="div_class">
+                                                       
+                                                        <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:value')" />
+                                                        <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                        <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                    </div>
+                                                    <div class="div_class" id="Unit1">
+                                                        <label for="Unit1">Unit of measurement:</label>    
+                                                         <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit1;multiple" />
+                                                            <div class="hidden" rel="schema:unitCode" resource="?Unit1" />
+                                                               <script type="text/javascript">
+                                                                document.getElementById("Unit1").id = 'id_new'
+                                                                $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit1').attr('id','id_new'))).remove();
+                                                               
+                                                            </script>
+                                                            
+                                                    </div>
+
+                                                    <div class="div_class" id="ObservableProperty3">
+                                                            <label for="ObservableProperty3">For Property:</label>
+                                                                  <xi:include href="ObservableProperty.rq?select&amp;rel=ssn:forProperty&amp;id=ObservableProperty3&amp;multiple=multiple" />
+                                                                  <div rel="ssn:forProperty" resource="?ObservableProperty3" />
+                                                                  <script type="text/javascript">
+                                                                    document.getElementById("ObservableProperty3").id = 'id_new'
+                                                                    $('div[rel="ssn:forProperty"]').filter(calli.selectEachResourceIn($('#ObservableProperty3').attr('id','id_new'))).remove();
+                                                                  </script>
+                                                    </div>
+                                                  
+                                                    
+                                                        <div class="form-group">
+                                                            <label for="condition">Condition <a href="javascript:void(0)" title="Another condition"
+                                                                onclick="calli.addResource(event,'#condition')" class="glyphicon glyphicon-plus" /></label>
+                                                            <div id="condition" rel="ssn-system:inCondition">
+                                                                <div typeof="ssn-system:Condition schema:PropertyValue">
+                                                                    
+                                                                    <label for="label2">Label:</label>
+                                                                        <input type="text" class="form-control" id="label2" value="{rdfs:label}" placeholder="Label" autofocus="autofocus"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:label')" />
+                                                                    <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:value')" />
+                                                                    <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                                    <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                                               
+                                                                           <div class="div_class" id="Unit4">
+                                                                              <label for="Unit4">Unit of measurement:</label>    
+                                                                                <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit4;multiple" />
+                                                                                <div class="hidden" rel="schema:unitCode" resource="?Unit4" />
+                                                                                   <script type="text/javascript">
+                                                                                    document.getElementById("Unit4").id = 'id_new'
+                                                                                    $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit4').attr('id','id_new'))).remove();
+                                                                              </script>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                 <label>Comment</label>
+                                                                                <textarea id="comment10" class="form-control"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                                                                            </div>
+                                                                            
+                                                                
+                                                                     <div class="form-group">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    
+                                                                
+                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>  
+                                                       
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                   
+                    
+                </fieldset>
+            
+        
+                <fieldset class="col-sm-3">
+            
+                    <div class="form-group">
+                        <div id="rest11" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">
+                                <div id="rest12" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/systems/hasOperatingRange" ></div>
+                            <div id="rest13" rel="owl:hasValue">
+                                <div typeof="ssn-system:OperatingRange">
+                                        <legend>Operating Range</legend> 
+                                         <div class="form-group">
+                                            <label for="ObservableProperty7">For property:</label>
+                                                           <xi:include href="ObservableProperty.rq?select&amp;rel=ssn:forProperty&amp;id=ObservableProperty7&amp;multiple=multiple" />
+                                                           <div rel="ssn:forProperty" resource="?ObservableProperty7" />
+                                                           <script type="text/javascript">
+                                                            </script>
+                                        </div>
+                                        
+                                        
+                                     
+                                        
+                                         <div class="form-group">
+                                            <label for="condition5">Condition <a href="javascript:void(0)" title="Another condition"
+                                                                onclick="calli.addResource(event,'#condition5')" class="glyphicon glyphicon-plus" /></label>
+                                                            <div id="condition5" rel="ssn-system:inCondition">
+                                                                <div typeof="ssn-system:Condition schema:PropertyValue">
+                                                                    
+                                                                        <label for="label3">Label:</label>
+                                                                        <input type="text" class="form-control" id="label3" value="{rdfs:label}" placeholder="Label" autofocus="autofocus"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:label')" />
+                                                                    <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:value')" />
+                                                                    <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                                    <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                                               
+                                                                           <div class="div_class" id="Unit8">
+                                                                              <label for="Unit8">Unit of measurement:</label>    
+                                                                                <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit8;multiple" />
+                                                                                <div class="hidden" rel="schema:unitCode" resource="?Unit8" />
+                                                                                   <script type="text/javascript">
+                                                                                    document.getElementById("Unit8").id = 'id_new'
+                                                                                    $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit8').attr('id','id_new'))).remove();
+                                                                              </script>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                 <label>Comment</label>
+                                                                                <textarea id="comment5" class="form-control"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                                                                            </div>
+                                                                            
+                                                                
+                                                                     <div class="form-group">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        <legend>Operating Property</legend>
+                                        <label for="rest14">Select Operating Property <a href="javascript:void(0)" title="Another Operating Property"
+                                                onclick="calli.addResource(event,'#rest14')" class="glyphicon glyphicon-plus" /></label>
+                                        <div id="rest14" rel="ssn-system:hasOperatingProperty">
+                                                <div typeof="ssn-system:OperatingProperty schema:PropertyValue">
+                                                
+                                               
+                                                <div class="div_class" id="type2">
+                                                            <xi:include href="OperatingProperty.rq?select&amp;rel=rdf:type&amp;id=type2;multiple" />
+                                                            <div class="hidden" rel="rdf:type" resource="?type2" />    
+                                                                <script type="text/javascript">
+                                                                    document.getElementById("type2").id = 'id_new'
+                                                                    $('[rel="rdf:type"].hidden').filter(calli.selectEachResourceIn($('#type2').attr('id','id_new'))).remove();
+                                                                </script>
+                                                    </div>
+                                                   
+                                             
+                                               
+                                                   
+                                                   
+                                                    <div class="div_class">
+                                                       
+                                                        <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:value')" />
+                                                        <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                        <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                    </div>
+                                                    <div class="div_class" id="Unit2">
+                                                        <label for="Unit2">Unit of measurement:</label>    
+                                                         <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit2;multiple" />
+                                                            <div class="hidden" rel="schema:unitCode" resource="?Unit2" />
+                                                               <script type="text/javascript">
+                                                                document.getElementById("Unit2").id = 'id_new'
+                                                                $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit2').attr('id','id_new'))).remove();
+                                                               
+                                                            </script>
+                                                            
+                                                    </div>
+                                                
+                                                    <div class="div_class" id="ObservableProperty4">
+                                                         <label for="ObservableProperty4">For property:</label>
+                                                              <xi:include href="ObservableProperty.rq?select&amp;rel=ssn:forProperty&amp;id=ObservableProperty4&amp;multiple=multiple" />
+                                                              <div rel="ssn:forProperty" resource="?ObservableProperty4" />
+                                                              <script type="text/javascript">
+                                                                document.getElementById("ObservableProperty4").id = 'id_new'
+                                                                $('div[rel="ssn:forProperty"]').filter(calli.selectEachResourceIn($('#ObservableProperty4').attr('id','id_new'))).remove();
+                                                                </script>
+                                                    </div>
+                                                  
+                                                    
+                                                     <div class="form-group">
+                                                            <label for="condition2">Condition <a href="javascript:void(0)" title="Another condition"
+                                                                onclick="calli.addResource(event,'#condition2')" class="glyphicon glyphicon-plus" /></label>
+                                                            <div id="condition2" rel="ssn-system:inCondition">
+                                                                <div typeof="ssn-system:Condition schema:PropertyValue">
+                                                                     <label for="label6">Label:</label>
+                                                                        <input type="text" class="form-control" id="label6" value="{rdfs:label}" placeholder="Label" autofocus="autofocus"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:label')" />
+                                                                    <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:value')" />
+                                                                    <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                                    <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                                               
+                                                                           <div class="div_class" id="Unit5">
+                                                                              <label for="Unit5">Unit of measurement:</label>    
+                                                                                <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit5;multiple" />
+                                                                                <div class="hidden" rel="schema:unitCode" resource="?Unit5" />
+                                                                                   <script type="text/javascript">
+                                                                                    document.getElementById("Unit5").id = 'id_new'
+                                                                                    $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit5').attr('id','id_new'))).remove();
+                                                                              </script>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                 <label>Comment</label>
+                                                                                <textarea id="comment2" class="form-control"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                                                                            </div>
+                                                                
+                                                                     <div class="form-group">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>  
+                                                       
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                            </div>
+                        
+                    </div>
+            
+            
+                </fieldset>
+            
+    
+                <fieldset class="col-sm-3">
+            
+                    <div class="form-group">
+                        <div id="rest111" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">
+                                <div id="rest122" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/systems/hasSurvivalRange" ></div>
+                            <div id="rest133" rel="owl:hasValue">
+                                <div typeof="ssn-system:SurvivalRange">
+                                    <legend>Survival Range</legend>  
+                                     <div class="form-group">
+                                            <label for="ObservableProperty8">For property:</label>
+                                                           <xi:include href="ObservableProperty.rq?select&amp;rel=ssn:forProperty&amp;id=ObservableProperty8&amp;multiple=multiple" />
+                                                           <div rel="ssn:forProperty" resource="?ObservableProperty8" />
+                                                           <script type="text/javascript">
+                                                            $('div[rel="ssn:forProperty"]').filter(calli.selectEachResourceIn('#ObservableProperty8')).remove();
+                                                            </script>
+                                        </div>
+                                  
+                                    
+                                     <div class="form-group">
+                                            <label for="condition6">Condition <a href="javascript:void(0)" title="Another condition"
+                                                                onclick="calli.addResource(event,'#condition6')" class="glyphicon glyphicon-plus" /></label>
+                                                            <div id="condition6" rel="ssn-system:inCondition">
+                                                                <div typeof="ssn-system:Condition schema:PropertyValue">
+                                                                    
+                                                                        <label for="label4">Label:</label>
+                                                                        <input type="text" class="form-control" id="label4" value="{rdfs:label}" placeholder="Label" autofocus="autofocus"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:label')" />
+                                                                    <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:value')" />
+                                                                    <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                                    <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                                               
+                                                                           <div class="div_class" id="Unit9">
+                                                                              <label for="Unit9">Unit of measurement:</label>    
+                                                                                <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit9;multiple" />
+                                                                                <div class="hidden" rel="schema:unitCode" resource="?Unit9" />
+                                                                                   <script type="text/javascript">
+                                                                                    document.getElementById("Unit9").id = 'id_new'
+                                                                                    $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit9').attr('id','id_new'))).remove();
+                                                                              </script>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                 <label>Comment</label>
+                                                                                <textarea id="comment6" class="form-control"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                                                                            </div>
+                                                                
+                                                                     <div class="form-group">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                    
+                                    
+                                        
+                                        
+                                    
+                                    
+                                    <legend>Survival Property</legend> 
+                                    
+                                        <label for="rest144">Select Survival Property <a href="javascript:void(0)" title="Another Survival Property"
+                                                onclick="calli.addResource(event,'#rest144')" class="glyphicon glyphicon-plus" /></label>
+                                        <div id="rest144" rel="ssn-system:hasSurvivalProperty">
+                                                <div typeof="ssn-system:SurvivalProperty schema:PropertyValue">
+                                                      <div class="div_class" id="type3">
+                                                            <xi:include href="SurvivalProperty.rq?select&amp;rel=rdf:type&amp;id=type3;multiple" />
+                                                            <div class="hidden" rel="rdf:type" resource="?type3" />    
+                                                                <script type="text/javascript">
+                                                                    document.getElementById("type3").id = 'id_new'
+                                                                    $('[rel="rdf:type"].hidden').filter(calli.selectEachResourceIn($('#type3').attr('id','id_new'))).remove();
+                                                                </script>
+                                                    
+                                                    </div>
+                                                   
+                                                    <div class="div_class">
+                                                       
+                                                        <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:value')" />
+                                                        <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                        <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                    </div>
+                                                    <div class="div_class" id="Unit3">
+                                                        <label for="Unit3">Unit of measurement:</label>    
+                                                         <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit3;multiple" />
+                                                            <div class="hidden" rel="schema:unitCode" resource="?Unit3" />
+                                                               <script type="text/javascript">
+                                                                document.getElementById("Unit3").id = 'id_new'
+                                                                $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit3').attr('id','id_new'))).remove();
+                                                               
+                                                            </script>
+                                                            
+                                                    </div>
+                                                    
+                                                        <div class="div_class" id="ObservableProperty5">
+                                                            <label for="ObservableProperty5">For Property:</label>
+                                                                  <xi:include href="ObservableProperty.rq?select&amp;rel=ssn:forProperty&amp;id=ObservableProperty5&amp;multiple=multiple" />
+                                                                  <div rel="ssn:forProperty" resource="?ObservableProperty5" />
+                                                                  <script type="text/javascript">
+                                                                    document.getElementById("ObservableProperty5").id = 'id_new'
+                                                                    $('div[rel="ssn:forProperty"]').filter(calli.selectEachResourceIn($('#ObservableProperty5').attr('id','id_new'))).remove();
+                                                                  </script>
+                                                        </div>
+                                                        <!--
+                                                        <div class="form-group">
+                                                           <label for="Condition004">Condition:</label>
+                                                               <xi:include href="condition.rq?select&amp;rel=ssn-system:inCondition&amp;id=Condition004&amp;multiple=multiple" />
+                                                               <div rel="ssn-system:inCondition" resource="?Condition004" />
+                                                               <script type="text/javascript">
+                                                                $('div[rel="ssn-system:inCondition]').filter(calli.selectEachResourceIn('#Condition004')).remove();
+                                                                </script>
+                                                        -->
+                                                        
+                                                        
+                                                         <div class="form-group">
+                                                            <label for="condition3">Condition <a href="javascript:void(0)" title="Another condition"
+                                                                onclick="calli.addResource(event,'#condition3')" class="glyphicon glyphicon-plus" /></label>
+                                                            <div id="condition3" rel="ssn-system:inCondition">
+                                                                <div typeof="ssn-system:Condition schema:PropertyValue">
+                                                                     <label for="label5">Label:</label>
+                                                                        <input type="text" class="form-control" id="label5" value="{rdfs:label}" placeholder="Label" autofocus="autofocus"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:label')" />
+                                                                    <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:value')" />
+                                                                    <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                                    <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                                        onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                                               
+                                                                           <div class="div_class" id="Unit6">
+                                                                              <label for="Unit6">Unit of measurement:</label>    
+                                                                                <xi:include href="Unit.rq?select&amp;rel=schema:unitCode&amp;id=Unit6;multiple" />
+                                                                                <div class="hidden" rel="schema:unitCode" resource="?Unit6" />
+                                                                                   <script type="text/javascript">
+                                                                                    document.getElementById("Unit6").id = 'id_new'
+                                                                                    $('[rel="schema:unitCode"].hidden').filter(calli.selectEachResourceIn($('#Unit6').attr('id','id_new'))).remove();
+                                                                              </script>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                 <label>Comment</label>
+                                                                                <textarea id="comment3" class="form-control"
+                                                                                    onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                                                                            </div>
+                                                                            
+                                                                
+                                                                     <div class="form-group">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                                
+                                                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>  
+                                                       
+                                                    </div>
+                                
+                                                       
+                                                </div>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </fieldset>
+            
+            </div>
+            
+                    <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" onclick="window.location.replace('?view')" class="btn btn-default">Cancel</button>
+                                <button type="button" onclick="calli.deleteResource(event)" class="btn btn-danger">Delete</button>
+                            </div>
+                    </div>
+            
+        </form>
+            <script type="text/javascript">
+                comparison = calli.copyResourceData('#form');
+            </script>
+        
+    </div>
+</body>
+</html>
+
+
+

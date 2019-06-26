@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:ns9="http://purl.org/linguistics/gold/" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/DASH7">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Schneider_Electric_Egypt">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Optical_sensor">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/AFR_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HyMap">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensing_element">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Censure">
+    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/SeaWiFS">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Fiber_optic_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Potentiometric_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Ams_AG">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Lockheed_Martin">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Advanced_Spaceborne_Thermal_Emission_and_Reflection_Radiometer">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Back-illuminated_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Search_coil">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Oversampled_binary_image_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Thermotime_switch">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensorica">
+    <dbo:industry rdf:resource="http://dbpedia.org/resource/Sensor" />
+    <dbo:service rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Flame_detector">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IEEE_Sensors_Journal">
+    <dbo:academicDiscipline rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Pultronics">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IRCF360">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Visible_Infrared_Imaging_Radiometer_Suite">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Proximity_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Hydrogen_sulfide_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Light-addressable_potentiometric_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Throttle_position_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Tricorder">
+    <dbp:type rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Catadioptric_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sony_Xperia_Z1">
+    <dbp:input rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Electrolyte–insulator–semiconductor_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Glass_break_detector">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Linear_encoder">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Primary_radar">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detector">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/NODE_(wireless_sensor)">
+    <dbo:type rdf:resource="http://dbpedia.org/resource/Sensor" />
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Position_sensitive_device">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensor_resolution">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Trigger_pad">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Advanced_very-high-resolution_radiometer">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Laser_surface_velocimeter">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Senser">
+    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Censer">
+    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/LBCAST">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sentroller">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Active_pixel_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Fiber_optic_current_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Target_Acquisition_and_Designation_Sights,_Pilot_Night_Vision_System">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Distance_sensor">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Inertial_reference_unit">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Photonics_mast">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Voltage_sensor">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensor_(technology)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/SMART_Retainer">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Time_delay_and_integration">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Photoswitch">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Quartz_thermometer">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensor">
+    <rdfs:label xml:lang="fr">Capteur</rdfs:label>
+    <rdfs:label xml:lang="ru">Датчик</rdfs:label>
+    <rdfs:label xml:lang="pl">Czujnik</rdfs:label>
+    <rdfs:label xml:lang="it">Sensore</rdfs:label>
+    <rdfs:label xml:lang="zh">传感器</rdfs:label>
+    <rdfs:label xml:lang="nl">Sensor</rdfs:label>
+    <rdfs:label xml:lang="es">Sensor</rdfs:label>
+    <rdfs:label xml:lang="en">Sensor</rdfs:label>
+    <rdfs:label xml:lang="ar">مستشعر</rdfs:label>
+    <rdfs:label xml:lang="de">Sensor</rdfs:label>
+    <rdfs:label xml:lang="ja">センサ</rdfs:label>
+    <rdfs:label xml:lang="pt">Sensor</rdfs:label>
+    <rdfs:comment xml:lang="pt">Um sensor é um dispositivo que responde a um estímulo físico/químico de maneira específica e mensurável analogicamente. O desenho inteligente do sensor, com bordas arredondadas e uma ampla zona activa de imagem maximiza tanto o conforto do paciente como a qualidade de impacto.Alguns sensores respondem com sinal elétrico a um estímulo positivo, isto é, convertem a energia recebida em um sinal elétrico. Nesse caso, podem ser chamados de transdutores. O transdutor converte um tipo de energia em outro. É geralmente composto por um elemento sensor, normalmente piézoeletrico, e uma parte que converte a energia proveniente dele em sinal elétrico. O conjunto formado por um transdutor tensómetro, um condicionador de sinal (amplificador) e um indicador é chamado de sistema de medição em malha fechad</rdfs:comment>
+    <rdfs:comment xml:lang="it">Il sensore è un dispositivo che si trova in diretta interazione con il sistema misurato. ed è, in ambito strettamente metrologico, riferito solamente al componente che fisicamente effettua la trasformazione della grandezza d&#39;ingresso in un segnale di altra natura. I dispositivi in commercio spesso integrano al loro interno anche alimentatori stabilizzati, amplificatori di segnale, dispositivi di comunicazione remota, ecc. In quest&#39;ultimo caso si preferisce definirli trasduttori. Esempio: in commercio esistono dei trasduttori di pressione in cui l&#39;elemento sensore è costituito da una membrana su cui è stato applicato un ponte estensimetrico; all&#39;interno dello stesso dispositivo, un amplificatore porta il debole segnale del ponte ai valori di 5-10 V del segnale d&#39;uscita finale del trasduttor</rdfs:comment>
+    <rdfs:comment xml:lang="ja">センサまたはセンサー（英: sensor）は、自然現象や人工物の機械的・電磁気的・熱的・音響的・化学的性質あるいはそれらで示される空間情報・時間情報を、何らかの科学的原理を応用して、人間や機械が扱い易い別媒体の信号に置き換える装置のことをいい、センサを利用した計測・判別を行うことを「センシング」という。検知器（英: detector）とも呼ばれる。</rdfs:comment>
+    <rdfs:comment xml:lang="nl">Een sensor is een kunstmatige uitvoering van wat in de biologie een zintuig wordt genoemd. De meeste sensoren zijn elektrisch of mechanisch uitgevoerd, softwarematige en &#39;virtuele&#39; sensoren zijn ook mogelijk. Met een sensor neemt een machine de omgeving waar of kan informatie verzameld worden waarmee in industrie en informatica processen bestuurd kunnen worden. Sensoren kunnen worden gemaakt op basis van dezelfde technologie als microprocessoren en geheugens in PC&#39;s (chiptechnologie), maar ook met andere technologieën.</rdfs:comment>
+    <rdfs:comment xml:lang="pl">Czujnik, sensor – fizyczne bądź biologiczne narzędzie będące najczęściej elementem składowym większego układu, którego zadaniem jest wychwytywanie sygnałów z otaczającego środowiska, rozpoznawanie i rejestrowanie ich. W naukach technicznych czujnik to urządzenie dostarczające informacji o pojawieniu się określonego bodźca, przekroczeniu pewnej wartości progowej lub o wartości rejestrowanej wielkości fizycznej. W tym ujęciu układ czujnika składa się z: 
+*  czujnika, 
+*  przetwornika, 
+*  układu kondycjonowania sygnału, 
+*  układu telemetrycznego.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Un capteur est un dispositif transformant l&#39;état d&#39;une grandeur physique observée en une grandeur utilisable, telle qu&#39;une tension électrique, une hauteur de mercure, une intensité ou la déviation d&#39;une aiguille. On fait souvent (à tort) la confusion entre capteur et transducteur : le capteur est au minimum constitué d&#39;un transducteur. Les capteurs sont les éléments de base des systèmes d&#39;acquisition de données. Leur mise en œuvre est du domaine de l&#39;instrumentation.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Датчик — средство измерений, предназначенное для выработки сигнала измерительной информации в форме, удобной для передачи, дальнейшего преобразования, обработки и (или) хранения, но не поддающейся непосредственному восприятию наблюдателем. Датчики, выполненные на основе электронной техники, называются электронными датчиками. Отдельно взятый датчик может быть предназначен для измерения (контроля) и преобразования одной физической величины или одновременно нескольких физических величин.</rdfs:comment>
+    <rdfs:comment xml:lang="de">Ein Sensor (von lateinisch sentire, dt. „fühlen“ oder „empfinden“), auch als Detektor, (Messgrößen- oder Mess-)Aufnehmer oder (Mess-)Fühler bezeichnet, ist ein technisches Bauteil, das bestimmte physikalische oder chemische Eigenschaften (physikalisch z. B. Wärmemenge, Temperatur, Feuchtigkeit, Druck, Schallfeldgrößen, Helligkeit, Beschleunigung oder chemisch z. B. pH-Wert, Ionenstärke, elektrochemisches Potential) und/oder die stoffliche Beschaffenheit seiner Umgebung qualitativ oder als Messgröße quantitativ erfassen kann. Diese Größen werden mittels physikalischer oder chemischer Effekte erfasst und in ein weiterverarbeitbares elektrisches Signal umgeformt.</rdfs:comment>
+    <rdfs:comment xml:lang="ar">المِكشاف  أو الحساس أو المجس أو المستشعر هو أداة استشعار يعمل لكشف الحالة المحيطية الفيزيائية ، فمنه ما يقيس درجة الحرارة ، ومنه ما يقيس الضغط ومنه ما يقيس الإشعاع ومنه ما يقيس الإلكترونات  أو البروتونات. حيث يقوم بتحويل الإشارات الساقطة عليه إلى نبضات كهربائية يمكن عدها بواسطة جهاز . بهذا يمكن لنا معرفة شدة المؤثر . كا توجد أنواع منه يمكن ربطه بأجهزة حاسوب وعن طريق برمجة  يمكن تكوين صورة عن توزيع القياسات ، مثلما في تصوير بالرنين المغناطيسي الذي يكشف في الإنسان عن أورام. من المجسات أنواع كثيرة بحسب الاستخدام منها:-</rdfs:comment>
+    <rdfs:comment xml:lang="zh">传感器(Sensor)是能感受规定的被测量并按照一定规律转换成可用输出信号的器件或装置，通常由敏感元件和转换元件组成。</rdfs:comment>
+    <rdfs:comment xml:lang="es">Un sensor es un objeto capaz de detectar magnitudes físicas o químicas, llamadas variables de instrumentación, y transformarlas en variables eléctricas. Las variables de instrumentación pueden ser por ejemplo: intensidad lumínica, temperatura, distancia, aceleración, inclinación, presión,desplazamiento, fuerza, torsión, humedad, movimiento, pH, etc. Una magnitud eléctrica puede ser una resistencia eléctrica (como en una , una capacidad eléctrica (como en un sensor de humedad), una tensión eléctrica (como en un termopar), una corriente eléctrica (como en un fototransistor), etc.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In the broadest definition, a sensor is an object whose purpose is to detect events or changes in its environment, and then provide a corresponding output. A sensor is a type of transducer; sensors may provide various types of output, but typically use electrical or optical signals. For example, a thermocouple generates a known voltage (the output) in response to its temperature (the environment). A mercury-in-glass thermometer, similarly, converts measured temperature into expansion and contraction of a liquid, which can be read on a calibrated glass tube.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Sensor" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.01j7cq" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/Czujnik" />
+    <owl:sameAs rdf:resource="http://eu.dbpedia.org/resource/Sentsore" />
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Sensor" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q167676" />
+    <owl:sameAs rdf:resource="http://el.dbpedia.org/resource/Αισθητήρας" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/Sensor" />
+    <owl:sameAs rdf:resource="http://cs.dbpedia.org/resource/Senzor" />
+    <owl:sameAs rdf:resource="http://nl.dbpedia.org/resource/Sensor" />
+    <owl:sameAs rdf:resource="http://ko.dbpedia.org/resource/센서" />
+    <owl:sameAs rdf:resource="http://d-nb.info/gnd/4038824-4" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Capteur" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/センサ" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/Sensor" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q167676" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/Sensore" />
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Sensor" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Measuring_instruments" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Sensors" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Transducers" />
+    <dbo:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">235757</dbo:wikiPageID>
+    <dbo:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">742828975</dbo:wikiPageRevisionID>
+    <dbo:wikiPageExternalLink rdf:resource="http://dx.doi.org/10.1016/j.jbi.2016.08.001" />
+    <dbo:wikiPageExternalLink rdf:resource="http://robotic-material.com/Sensor-Manufacturers-Association.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.cbm-sweden.se/images/Seminarie/Class_Descriptions_IDA_MEMS.pdf" />
+    <foaf:depiction rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Infrared_Transceiver_Circuit.jpg" />
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Sensor" />
+    <dbo:thumbnail rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Infrared_Transceiver_Circuit.jpg?width=300" />
+    <skos:closeMatch rdf:resource="http://www.springernature.com/scigraph/things/subjects/sensors-and-probes" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/Sensor?oldid=742828975" />
+    <dbo:abstract xml:lang="nl">Een sensor is een kunstmatige uitvoering van wat in de biologie een zintuig wordt genoemd. De meeste sensoren zijn elektrisch of mechanisch uitgevoerd, softwarematige en &#39;virtuele&#39; sensoren zijn ook mogelijk. Met een sensor neemt een machine de omgeving waar of kan informatie verzameld worden waarmee in industrie en informatica processen bestuurd kunnen worden. Een sensor meet een natuurkundige grootheid. De grootheden liggen onder andere in de volgende domeinen: straling, druk, temperatuur, magnetisme, chemie. Sensoren zetten de gemeten grootheid om in een gestandaardiseerd 0/4-20 mA of 0/4-10 V stuursignaal voor verdere bewerking, bijvoorbeeld via een analoog-digitaalomzetter naar een programmable logic controller (PLC) of distributed control system (DCS). Sensoren kunnen worden gemaakt op basis van dezelfde technologie als microprocessoren en geheugens in PC&#39;s (chiptechnologie), maar ook met andere technologieën.</dbo:abstract>
+    <dbo:abstract xml:lang="pt">Um sensor é um dispositivo que responde a um estímulo físico/químico de maneira específica e mensurável analogicamente. O desenho inteligente do sensor, com bordas arredondadas e uma ampla zona activa de imagem maximiza tanto o conforto do paciente como a qualidade de impacto.Alguns sensores respondem com sinal elétrico a um estímulo positivo, isto é, convertem a energia recebida em um sinal elétrico. Nesse caso, podem ser chamados de transdutores. O transdutor converte um tipo de energia em outro. É geralmente composto por um elemento sensor, normalmente piézoeletrico, e uma parte que converte a energia proveniente dele em sinal elétrico. O conjunto formado por um transdutor tensómetro, um condicionador de sinal (amplificador) e um indicador é chamado de sistema de medição em malha fechada. Quando o sinal é disponibilizado não por um indicador, mas na forma de corrente ou tensão já condicionado - (4 a 20) mA, (0 a 10) V ou (0 a 5) V, geralmente - o dispositivo é chamado de transmissor ou transdutor. Entre outras aplicações, os sensores são largamente usados na medicina, indústria e robótica. Como o sinal é uma forma de energia, os sensores podem ser classificados de acordo com o tipo de energia que detectam. Por exemplo: 
+*  sensores de luz: células solares, fotodiodos, fototransistores, tubos foto-elétricos, CCDs, radiômetro de Nichols, sensor de imagem 
+*  sensores de som: microfones, hidrofone, sensores sísmicos. 
+*  sensores de temperatura: termômetros, termopares, resistores sensíveis a temperatura (termístores), termômetros [[Bimetal|bimetálicos}] e termostatos 
+*  sensores de calor: bolometro, calorímetro 
+*  sensores de radiação: contador Geiger, dosímetro 
+*  sensores de partículas subatômicas: cintilômetro, câmara de nuvens, câmara de bolhas 
+*  sensores de resistência elétrica: ohmímetro 
+*  sensores de corrente elétrica: galvanômetro, amperímetro 
+*  sensores de tensão elétrica: electrômetro, voltímetro 
+*  sensores de potência elétrica: wattímetro 
+*  sensores magnéticos: compasso magnético, compasso de fluxo de porta, magnetômetro, dispositivo de efeito Hall 
+*  sensores de pressão: barômetro, barógrafo, pressure gauge, indicados da velocidade do ar, variômetro, por Ressonância 
+*  sensores de fluxo de gás e líquido: sensor de fluxo, anemômetro, medidor de fluxo, gasômetro, aquômetro, sensor de fluxo de massa 
+*  sensores de nível de líquido e sólido: sensor de nível, medidor de líquido, sensor de nível de grão 
+*  sensores químicos: eletrodo ion-selectivo, eletrodo de vidro para medição de pH, eletrôdo redox, sonda lambda 
+*  sensores de movimento: arma radar, velocímetro, tacômetro, hodômetro, coordenador de giro 
+*  sensores de orientação: giroscópio, horizonte artificial, giroscópio de anel de laser 
+*  sensores mecânicos: sensor de posição, selsyn, chave, strain gauge 
+*  sensores de proximidade: Um tipo de sensor de distância, porém menos sofisticado, apenas detecta uma proximidade específica. Uma combinação de uma fotocélula e um LED ou laser. Suas aplicações são nos telefones celulares, detecção de papel nas fotocopiadoras entre outras. 
+*  sensores de distância (sem contato): Uma série de tecnologias podem ser aplicadas para captar as distâncias: 
+*  Captação auto enviável e livre 
+*  varredura por laser - Um raio de laser é enviado ao alvo por um espelho. Um sensor de luz responde quando o raio é refletido de um objeto ao sensor; então a distância é calculada por triangulação.  
+*  acústicos: usam o retorno do eco de Ultra-som que se propagam na velocidade do som. Usada nas câmeras polaroid do meio do século 20 e também aplicado na robótica. Sistemas mais antigos como Fathometros (e localizadores de peixes) e outros sistemas Sonar (Sound Navigation And Ranging) em aplicações navais utilizavam em sua maiorias frequências de sons audíveis.  
+*  foco. Lentes de grande abertura são focalizadas por um sistema motorizado. A distância de um elemento &quot;em foco&quot; pode ser determinada pela posição das lentes. 
+*  binocular. Duas imagens são obtidas em uma base conhecida e colocadas em coincidência por um sistema de espelhos e prismas. O ajuste é utilizado para determinar a distância. Usado em algumas câmeras (chamadas câmera detectores de distância) e em escala maior em detectores de distância em navios de guerra 
+*  tempo-de-voo eletromagnético. Gera um impulso eletromagnético, o envia, depois mede o tempo que o pulso leva para retornar. Comumente conhecido como - RADAR (Radio Detection And Ranging) são agora acompanhados pelo análogo LIDAR (Light Detection And Ranging. Veja o item a seguir), todos sendo ondas eletromagnéticas. Os sensores acústicos são um caso especial em que um transdutor é usado para gerar uma onda a partir da compressão de um fluido médio (ar ou água). 
+*  tempo-de-voo por luz. Usado em equipamentos de pesquisa mordernos, um curto pulso de luz é emitido e retornado por um retroreflector. O tempo de retorno do pulso é proporcional à distância e é relacionado à densidade atmosférica em um modo previsível. 
+*  Roda ou faixas por código Gray- uma certa quantia de fotodetectores pode sentir uma imagem, criando um número binário. O código Gray é uma imagem modificada que garante que apenas um bit de informação mude a cada passo medido, desse modo evitando ambiguidades. 
+*  Sistemas inicializados. Estes requerem um começo de uma distância conhecida e acumulam mudanças na medida. 
+*  laser coerente - a interferência entre uma onda de luz transmitida e refletida é contada e a distância é calculada. Possui uma alta precisão. 
+*  Roda Quadrature- Uma máscara em formato de disco é movida por um conjunto de engrenagens. Duas fotocélulas detectando a passagem de luz através da máscara podem determinar o giro da máscara e a direção desta rotação.</dbo:abstract>
+    <dbo:abstract xml:lang="it">Il sensore è un dispositivo che si trova in diretta interazione con il sistema misurato. ed è, in ambito strettamente metrologico, riferito solamente al componente che fisicamente effettua la trasformazione della grandezza d&#39;ingresso in un segnale di altra natura. I dispositivi in commercio spesso integrano al loro interno anche alimentatori stabilizzati, amplificatori di segnale, dispositivi di comunicazione remota, ecc. In quest&#39;ultimo caso si preferisce definirli trasduttori. Esempio: in commercio esistono dei trasduttori di pressione in cui l&#39;elemento sensore è costituito da una membrana su cui è stato applicato un ponte estensimetrico; all&#39;interno dello stesso dispositivo, un amplificatore porta il debole segnale del ponte ai valori di 5-10 V del segnale d&#39;uscita finale del trasduttore.</dbo:abstract>
+    <dbo:abstract xml:lang="fr">Un capteur est un dispositif transformant l&#39;état d&#39;une grandeur physique observée en une grandeur utilisable, telle qu&#39;une tension électrique, une hauteur de mercure, une intensité ou la déviation d&#39;une aiguille. On fait souvent (à tort) la confusion entre capteur et transducteur : le capteur est au minimum constitué d&#39;un transducteur. Le capteur se distingue de l&#39;instrument de mesure par le fait qu&#39;il ne s&#39;agit que d&#39;une simple interface entre un processus physique et une information manipulable. Par opposition, l&#39;instrument de mesure est un appareil autonome se suffisant à lui-même, disposant d&#39;un affichage ou d&#39;un système de stockage des données. Le capteur, lui, en est dépourvu. Les capteurs sont les éléments de base des systèmes d&#39;acquisition de données. Leur mise en œuvre est du domaine de l&#39;instrumentation.</dbo:abstract>
+    <dbo:abstract xml:lang="es">Un sensor es un objeto capaz de detectar magnitudes físicas o químicas, llamadas variables de instrumentación, y transformarlas en variables eléctricas. Las variables de instrumentación pueden ser por ejemplo: intensidad lumínica, temperatura, distancia, aceleración, inclinación, presión,desplazamiento, fuerza, torsión, humedad, movimiento, pH, etc. Una magnitud eléctrica puede ser una resistencia eléctrica (como en una , una capacidad eléctrica (como en un sensor de humedad), una tensión eléctrica (como en un termopar), una corriente eléctrica (como en un fototransistor), etc. Un sensor se diferencia de un transductor en que el sensor está siempre en contacto con la variable de instrumentación con lo que puede decirse también que es un dispositivo que aprovecha una de sus propiedades con el fin de adaptar la señal que mide para que la pueda interpretar otro dispositivo. Como por ejemplo el termómetro de mercurio que aprovecha la propiedad que posee el mercurio de dilatarse o contraerse por la acción de la temperatura.Un sensor también puede decirse que es un dispositivo que convierte una forma de energía en otra. Los sensores pueden estar conectados a un computador para obtener ventajas como son el acceso a la toma de valores desde el sensor,una base de datos, etc.</dbo:abstract>
+    <dbo:abstract xml:lang="ja">センサまたはセンサー（英: sensor）は、自然現象や人工物の機械的・電磁気的・熱的・音響的・化学的性質あるいはそれらで示される空間情報・時間情報を、何らかの科学的原理を応用して、人間や機械が扱い易い別媒体の信号に置き換える装置のことをいい、センサを利用した計測・判別を行うことを「センシング」という。検知器（英: detector）とも呼ばれる。</dbo:abstract>
+    <dbo:abstract xml:lang="pl">Czujnik, sensor – fizyczne bądź biologiczne narzędzie będące najczęściej elementem składowym większego układu, którego zadaniem jest wychwytywanie sygnałów z otaczającego środowiska, rozpoznawanie i rejestrowanie ich. W naukach technicznych czujnik to urządzenie dostarczające informacji o pojawieniu się określonego bodźca, przekroczeniu pewnej wartości progowej lub o wartości rejestrowanej wielkości fizycznej. W tym ujęciu układ czujnika składa się z: 
+*  czujnika, 
+*  przetwornika, 
+*  układu kondycjonowania sygnału, 
+*  układu telemetrycznego. Najczęściej spotykanymi czujnikami są czujniki dostarczające informację w jednej z wielkości elektrycznych, takich jak: napięcie, natężenie prądu, opór elektryczny. Jest to spowodowane tym, iż prąd elektryczny to sygnał, który łatwo wzmocnić, przesłać na duże odległości, poddać dalszemu przetwarzaniu przy użyciu technik cyfrowych i komputerów, a także zachować go. Powyższa definicja, uprzednio zmodyfikowana, mogłaby odnieść się równie dobrze do narządów w sensie biologicznym, szczególnie narządów zmysłów. Dzięki rozwojowi teorii systemów, termin ten wszedł również szeroko do nauk społecznych, szczególnie psychologii (kognitywizm).</dbo:abstract>
+    <dbo:abstract xml:lang="ar">المِكشاف  أو الحساس أو المجس أو المستشعر هو أداة استشعار يعمل لكشف الحالة المحيطية الفيزيائية ، فمنه ما يقيس درجة الحرارة ، ومنه ما يقيس الضغط ومنه ما يقيس الإشعاع ومنه ما يقيس الإلكترونات  أو البروتونات. حيث يقوم بتحويل الإشارات الساقطة عليه إلى نبضات كهربائية يمكن عدها بواسطة جهاز . بهذا يمكن لنا معرفة شدة المؤثر . كا توجد أنواع منه يمكن ربطه بأجهزة حاسوب وعن طريق برمجة  يمكن تكوين صورة عن توزيع القياسات ، مثلما في تصوير بالرنين المغناطيسي الذي يكشف في الإنسان عن أورام. من المجسات أنواع كثيرة بحسب الاستخدام منها:-</dbo:abstract>
+    <dbo:abstract xml:lang="zh">传感器(Sensor)是能感受规定的被测量并按照一定规律转换成可用输出信号的器件或装置，通常由敏感元件和转换元件组成。</dbo:abstract>
+    <dbo:abstract xml:lang="ru">Датчик — средство измерений, предназначенное для выработки сигнала измерительной информации в форме, удобной для передачи, дальнейшего преобразования, обработки и (или) хранения, но не поддающейся непосредственному восприятию наблюдателем. Датчики, выполненные на основе электронной техники, называются электронными датчиками. Отдельно взятый датчик может быть предназначен для измерения (контроля) и преобразования одной физической величины или одновременно нескольких физических величин. В состав датчика входят чувствительные и преобразовательные элементы. Основными характеристиками электронных датчиков являются чувствительность и погрешность. Датчики широко используются в научных исследованиях, испытаниях, контроле качества, телеметрии, системах автоматизированного управления и в других областях деятельности и системах, где требуется получение измерительной информации.</dbo:abstract>
+    <dbo:abstract xml:lang="de">Ein Sensor (von lateinisch sentire, dt. „fühlen“ oder „empfinden“), auch als Detektor, (Messgrößen- oder Mess-)Aufnehmer oder (Mess-)Fühler bezeichnet, ist ein technisches Bauteil, das bestimmte physikalische oder chemische Eigenschaften (physikalisch z. B. Wärmemenge, Temperatur, Feuchtigkeit, Druck, Schallfeldgrößen, Helligkeit, Beschleunigung oder chemisch z. B. pH-Wert, Ionenstärke, elektrochemisches Potential) und/oder die stoffliche Beschaffenheit seiner Umgebung qualitativ oder als Messgröße quantitativ erfassen kann. Diese Größen werden mittels physikalischer oder chemischer Effekte erfasst und in ein weiterverarbeitbares elektrisches Signal umgeformt. Für die Messtechnik wird in DIN 1319-1 der Begriff Aufnehmer (Messgrößen-Aufnehmer) verwendet und definiert als der Teil einer Messeinrichtung, der auf eine Messgröße unmittelbar anspricht. Damit ist der Aufnehmer das erste Element einer Messkette. Gemäß DIN 1319-2 gehört der Aufnehmer zu den Messumformern, bei gleicher physikalischer Größe an Eingang und Ausgang auch zu den Messwandlern. Die Abgrenzung der Begriffe Sensor und Messgrößenaufnehmer, Messfühler, Messgerät, Messeinrichtung etc. ist fließend, da dem Sensor zusätzlich zum eigentlichen Aufnehmer teilweise weitere Elemente der Messkette zugeordnet werden. Auch verwandte Begriffe sind in der Literatur nicht eindeutig definiert.</dbo:abstract>
+    <dbo:abstract xml:lang="en">In the broadest definition, a sensor is an object whose purpose is to detect events or changes in its environment, and then provide a corresponding output. A sensor is a type of transducer; sensors may provide various types of output, but typically use electrical or optical signals. For example, a thermocouple generates a known voltage (the output) in response to its temperature (the environment). A mercury-in-glass thermometer, similarly, converts measured temperature into expansion and contraction of a liquid, which can be read on a calibrated glass tube. Sensors are used in everyday objects such as touch-sensitive elevator buttons (tactile sensor) and lamps which dim or brighten by touching the base, besides innumerable applications of which most people are never aware. With advances in micromachinery and easy-to-use micro controller platforms, the uses of sensors have expanded beyond the most traditional fields of temperature, pressure or flow measurement, for example into MARG sensors. Moreover, analog sensors such as potentiometers and force-sensing resistors are still widely used. Applications include manufacturing and machinery, airplanes and aerospace, cars, medicine, and robotics.it is also included in our day-to-day life. A sensor&#39;s sensitivity indicates how much the sensor&#39;s output changes when the input quantity being measured changes. For instance, if the mercury in a thermometer moves 1  cm when the temperature changes by 1 °C, the sensitivity is 1 cm/°C (it is basically the slope Dy/Dx assuming a linear characteristic). Some sensors can also affect what they measure; for instance, a room temperature thermometer inserted into a hot cup of liquid cools the liquid while the liquid heats the thermometer. Sensors need to be designed to have a small effect on what is measured; making the sensor smaller often improves this and may introduce other advantages. Technological progress allows more and more sensors to be manufactured on a microscopic scale as microsensors using MEMS technology. In most cases, a microsensor reaches a significantly higher speed and sensitivity compared with macroscopic approaches.</dbo:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/KAF-10500">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Image_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensor_(disambiguation)">
+    <dbo:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensors">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Passive_infrared_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Active_sensory_systems">
+    <owl:differentFrom rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detectors">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Inductive_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Multi-layer_CCD">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/KMC_Controls">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Jenoptik">
+    <dbo:service rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/TIRTL">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/INMOTION_SCV">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Schneider_Electric_DMS">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Foveon_X3_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Nondispersive_infrared_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Chemical_sensors">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Velocity_receiver">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Dose_verification_system">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Car_sensor">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Reversing_sensor">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Chemical_sensor">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Bioactive_paper">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Microsensor">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Angle–sensitive_pixel">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Camera_module">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Dualex">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Gardon_gauge">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/ShapeAccelArray">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Catalytic_bead_sensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Digital_sensors">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detect">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detected">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detectedly">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detecting">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detectingly">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detectional">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detectionally">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detections">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Detects">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sensoring">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Cyclic_GMP-AMP_synthase">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Multiplex_(sensor)">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/ThermoSensor">
+    <ns9:hypernym rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Sensor">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Sensor" />
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:ns8="http://purl.org/linguistics/gold/" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IPv9">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/N3_(NHS)">
+    <dbp:protocols rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Sprint_Corporation">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_call">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_card">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Internet_Protocol">
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Communication100033020" />
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Software" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatInternetProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Abstraction100002137" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Measure100033615" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatInternetLayerProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatOpenStandards" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/SystemOfMeasurement113577171" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Standard107260623" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatNetworkLayerProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Message106598915" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Protocol106665108" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Rule106652242" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Direction106786629" />
+    <rdfs:label xml:lang="de">Internet Protocol</rdfs:label>
+    <rdfs:label xml:lang="ru">IP</rdfs:label>
+    <rdfs:label xml:lang="nl">Internetprotocol</rdfs:label>
+    <rdfs:label xml:lang="fr">Internet Protocol</rdfs:label>
+    <rdfs:label xml:lang="it">Internet Protocol</rdfs:label>
+    <rdfs:label xml:lang="ar">بروتوكول إنترنت</rdfs:label>
+    <rdfs:label xml:lang="en">Internet Protocol</rdfs:label>
+    <rdfs:label xml:lang="ja">Internet Protocol</rdfs:label>
+    <rdfs:label xml:lang="pl">Protokół internetowy</rdfs:label>
+    <rdfs:label xml:lang="zh">网际协议</rdfs:label>
+    <rdfs:label xml:lang="pt">Protocolo de Internet</rdfs:label>
+    <rdfs:label xml:lang="es">Internet Protocol</rdfs:label>
+    <rdfs:comment xml:lang="pl">Protokół internetowy (ang. Internet Protocol, skrót IP) – protokół komunikacyjny warstwy sieciowej modelu OSI (warstwy internetu w modelu TCP/IP). Protokół internetowy to zbiór ścisłych reguł i kroków postępowania, które są automatycznie wykonywane przez urządzenia w celu nawiązania łączności i wymiany danych. Używany powszechnie w Internecie i sieciach lokalnych.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In telecomunicazioni e informatica, l&#39;Internet Protocol (IP) è un protocollo di rete appartenente alla suite di protocolli Internet TCP/IP su cui è basato il funzionamento della rete Internet.IP è un protocollo di interconnessione di reti (Inter-Networking Protocol), classificato al livello di rete (3) del modello ISO/OSI, nato per interconnettere reti eterogenee per tecnologia, prestazioni, gestione, pertanto implementato sopra altri protocolli di livello collegamento, come Ethernet o ATM.È un protocollo a pacchetti senza connessione e di tipo best effort, che non garantisce cioè alcuna forma di affidabilità della comunicazione in termini di controllo di errore, controllo di flusso e controllo di congestione, che può essere invece realizzata dai protocolli di trasporto di livello superior</rdfs:comment>
+    <rdfs:comment xml:lang="nl">Het internetprotocol, meestal afgekort tot IP, is een netwerkprotocol waarmee computers op een computernetwerk met elkaar kunnen communiceren, zoals op het internet. Sinds 20 juli 2004 worden binnen het internet twee versies van het internetprotocol ondersteund, de versies IPv4 en IPv6. De eerste domeinen die van IPv6 gebruikmaken zijn Japan en Korea. IPv4 wordt in tegenstelling tot veel andere protocollen door alle computers op het internet ondersteund.</rdfs:comment>
+    <rdfs:comment xml:lang="fr"> Pour les articles homonymes, voir IP. Internet protocol(en) (protocole internet, abrégé en IP) est une famille de protocoles de communication de réseaux informatiques conçus pour être utilisés sur Internet. Les protocoles IP sont au niveau 3 dans le modèle OSI. Les protocoles IP s&#39;intègrent dans la suite des protocoles Internet et permettent un service d&#39;adressage unique pour l&#39;ensemble des terminaux connectés.</rdfs:comment>
+    <rdfs:comment xml:lang="es">Internet Protocol (en español &#39;Protocolo de Internet&#39;) o IP es un protocolo de comunicación de datos digitales clasificado funcionalmente en la capa de red según el modelo internacional OSI. Su función principal es el uso bidireccional en origen o destino de comunicación para transmitir datos mediante un protocolo no orientado a conexión que transfiere paquetes conmutados a través de distintas redes físicas previamente enlazadas según la  norma OSI de enlace de datos.</rdfs:comment>
+    <rdfs:comment xml:lang="pt">Protocolo de Internet (em inglês: Internet Protocol, ou o acrónimo IP) é um protocolo de comunicação usado entre todas as máquinas em rede para encaminhamento dos dados. Tanto no Modelo TCP/IP, quanto no Modelo OSI, o importante protocolo da internet IP está na camada intitulada camada de rede.</rdfs:comment>
+    <rdfs:comment xml:lang="de">Das Internet Protocol (IP) ist ein in Computernetzen weit verbreitetes Netzwerkprotokoll und stellt die Grundlage des Internets dar. Es ist die Implementierung der Internetschicht des TCP/IP-Modells bzw. der Vermittlungsschicht (engl. Network Layer) des OSI-Modells. IP ist ein verbindungsloses Protokoll, d. h. bei den Kommunikationspartnern wird kein Zustand etabliert.</rdfs:comment>
+    <rdfs:comment xml:lang="zh">網際協議（英语：Internet Protocol，縮寫為 IP），或称網際網路協議，是用于报文交换网络的一种面向数据的协议。 IP是在TCP/IP协议中网络层的主要协议，任务是仅仅根据源主机和目的主机的地址传送数据。为此目的，IP定义了寻址方法和数据报的封装结构。第一个架构的主要版本，现在称为IPv4，仍然是最主要的互联网协议，尽管世界各地正在积极部署IPv6。</rdfs:comment>
+    <rdfs:comment xml:lang="ja">Internet Protocol （インターネット・プロトコル、IP） とは、インターネット・プロトコル・スイートを使ったインターネットワークにおいてデータグラム（またはパケット）を中継するのに使われる主要な通信プロトコルである。ネットワーク間のパケットの中継を担っており、インターネットの基礎部分となる重要な役割を持っている。 インターネット・プロトコル・スイートにおけるインターネット層の主たるプロトコルであり、送信元ホストから宛先ホストへIPアドレスに基づいてデータグラムを送付する役割を担っている。そのため、送付すべきデータをカプセル化したデータグラム構造が定義されている。また、送信元と宛先を示すのに使われるアドレッシング方法も定義されている。 OSI参照モデルのネットワーク層にほぼ対応する機能を持つ。歴史的には、ヴィントン・サーフとロバート・カーンが1974年に発表した Transmission Control Program のコネクションレスのデータグラムサービス部分がIPとなった。一方のコネクション指向の部分は Transmission Control Protocol (TCP) となった。そのため、インターネット・プロトコル・スイートをTCP/IPと呼ぶことが多い。</rdfs:comment>
+    <rdfs:comment xml:lang="en">The Internet Protocol (IP) is the principal communications protocol in the Internet protocol suite for relaying datagrams across network boundaries. Its routing function enables internetworking, and essentially establishes the Internet. IP has the task of delivering packets from the source host to the destination host solely based on the IP addresses in the packet headers. For this purpose, IP defines packet structures that encapsulate the data to be delivered. It also defines addressing methods that are used to label the datagram with source and destination information.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">Internet Protocol (IP, досл. «межсетевой протокол») — маршрутизируемый протокол сетевого уровня стека TCP/IP. Именно IP стал тем протоколом, который объединил отдельные компьютерные сети во всемирную сеть Интернет. Неотъемлемой частью протокола является адресация сети (см. IP-адрес).</rdfs:comment>
+    <rdfs:comment xml:lang="ar">25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (فبراير 2016) بروتوكول الإنترنت (IP، ميثاق الإنترنت أو ميفاق الإنترنت)، هو بروتوكول يعمل على الطبقة الثالثة (طبقة الشبكة (Network Layer) من نموذج OSI، يحدد كيفية تقسيم المعلومة الواحدة إلى أجزاء أصغر تسمى رزما (packet)، ثم يقوم الطرف المرسل بإرسال الرزمة إلى جهاز آخر (مسير) على الشبكة يستخدم نفس الميثاق (البروتوكول). ثم يقوم هذا الجهاز الثاني بدوره بإرسال الرزم إلى جهاز آخر بنفس الطريقة، وتكرر هذه العملية إلى أن تصل الرزم إلى الطرف المرسل إليه.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q8795" />
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Protocolo_de_Internet" />
+    <owl:sameAs rdf:resource="http://nl.dbpedia.org/resource/Internetprotocol" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q8795" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Protokol_Internet" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/Protokół_internetowy" />
+    <owl:sameAs rdf:resource="http://yago-knowledge.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.03yqv" />
+    <owl:sameAs rdf:resource="http://el.dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://ko.dbpedia.org/resource/인터넷_프로토콜" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://cs.dbpedia.org/resource/Internet_Protocol" />
+    <owl:sameAs rdf:resource="http://d-nb.info/gnd/4482590-0" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Internet_layer_protocols" />
+    <dbo:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15323</dbo:wikiPageID>
+    <dbo:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">745139455</dbo:wikiPageRevisionID>
+    <dbo:wikiPageExternalLink rdf:resource="https://www.ict.tuwien.ac.at/lva/384.081/datacom/09-IP_Technology_v6-1_handout.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.rfc-editor.org/ien/ien44.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.rfc-editor.org/ien/ien54.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.rfc-editor.org/ien/ien28.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.rfc-editor.org/ien/ien41.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.rfc-editor.org/ien/ien2.txt" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.rfc-editor.org/ien/ien26.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="https://www.ict.tuwien.ac.at/lva/384.081/datacom/10-IP_Routing_v6-1_handout.pdf" />
+    <foaf:depiction rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/UDP_encapsulation.svg" />
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Internet_Protocol" />
+    <dbo:thumbnail rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/UDP_encapsulation.svg?width=300" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/Internet_Protocol?oldid=745139455" />
+    <dbo:abstract xml:lang="en">The Internet Protocol (IP) is the principal communications protocol in the Internet protocol suite for relaying datagrams across network boundaries. Its routing function enables internetworking, and essentially establishes the Internet. IP has the task of delivering packets from the source host to the destination host solely based on the IP addresses in the packet headers. For this purpose, IP defines packet structures that encapsulate the data to be delivered. It also defines addressing methods that are used to label the datagram with source and destination information. Historically, IP was the connectionless datagram service in the original Transmission Control Program introduced by Vint Cerf and Bob Kahn in 1974; the other being the connection-oriented Transmission Control Protocol (TCP). The Internet protocol suite is therefore often referred to as TCP/IP. The first major version of IP, Internet Protocol Version 4 (IPv4), is the dominant protocol of the Internet. Its successor is Internet Protocol Version 6 (IPv6).</dbo:abstract>
+    <dbo:abstract xml:lang="ja">Internet Protocol （インターネット・プロトコル、IP） とは、インターネット・プロトコル・スイートを使ったインターネットワークにおいてデータグラム（またはパケット）を中継するのに使われる主要な通信プロトコルである。ネットワーク間のパケットの中継を担っており、インターネットの基礎部分となる重要な役割を持っている。 インターネット・プロトコル・スイートにおけるインターネット層の主たるプロトコルであり、送信元ホストから宛先ホストへIPアドレスに基づいてデータグラムを送付する役割を担っている。そのため、送付すべきデータをカプセル化したデータグラム構造が定義されている。また、送信元と宛先を示すのに使われるアドレッシング方法も定義されている。 OSI参照モデルのネットワーク層にほぼ対応する機能を持つ。歴史的には、ヴィントン・サーフとロバート・カーンが1974年に発表した Transmission Control Program のコネクションレスのデータグラムサービス部分がIPとなった。一方のコネクション指向の部分は Transmission Control Protocol (TCP) となった。そのため、インターネット・プロトコル・スイートをTCP/IPと呼ぶことが多い。 俗にIPアドレスを指して、略称のつもりで「IP」と呼ぶことがあるが、異なるものを指しており厳密には誤記・誤称である。 最初の主要バージョンが Internet Protocol Version 4 (IPv4) で、インターネットでも支配的に使われている。後継の Internet Protocol Version 6 (IPv6) も利用が拡大しつつある。</dbo:abstract>
+    <dbo:abstract xml:lang="it">In telecomunicazioni e informatica, l&#39;Internet Protocol (IP) è un protocollo di rete appartenente alla suite di protocolli Internet TCP/IP su cui è basato il funzionamento della rete Internet.IP è un protocollo di interconnessione di reti (Inter-Networking Protocol), classificato al livello di rete (3) del modello ISO/OSI, nato per interconnettere reti eterogenee per tecnologia, prestazioni, gestione, pertanto implementato sopra altri protocolli di livello collegamento, come Ethernet o ATM.È un protocollo a pacchetti senza connessione e di tipo best effort, che non garantisce cioè alcuna forma di affidabilità della comunicazione in termini di controllo di errore, controllo di flusso e controllo di congestione, che può essere invece realizzata dai protocolli di trasporto di livello superiore (livello 4), come TCP. Correntemente sono usate due versioni del protocollo IP, l&#39;originaria versione 4 e la più recente versione 6, nata dall&#39;esigenza di gestire meglio il crescente numero di computer (host) connessi ad Internet.</dbo:abstract>
+    <dbo:abstract xml:lang="es">Internet Protocol (en español &#39;Protocolo de Internet&#39;) o IP es un protocolo de comunicación de datos digitales clasificado funcionalmente en la capa de red según el modelo internacional OSI. Su función principal es el uso bidireccional en origen o destino de comunicación para transmitir datos mediante un protocolo no orientado a conexión que transfiere paquetes conmutados a través de distintas redes físicas previamente enlazadas según la  norma OSI de enlace de datos.</dbo:abstract>
+    <dbo:abstract xml:lang="nl">Het internetprotocol, meestal afgekort tot IP, is een netwerkprotocol waarmee computers op een computernetwerk met elkaar kunnen communiceren, zoals op het internet. Sinds 20 juli 2004 worden binnen het internet twee versies van het internetprotocol ondersteund, de versies IPv4 en IPv6. De eerste domeinen die van IPv6 gebruikmaken zijn Japan en Korea. IPv4 wordt in tegenstelling tot veel andere protocollen door alle computers op het internet ondersteund. Het internetprotocol is een onderdeel van een stack die nodig is voor communicatie. In combinatie met het Transmission Control Protocol (TCP) wordt wel over TCP/IP gesproken. Een ander veelgebruikt protocol dat samen met IP gebruikt kan worden is het User Datagram Protocol. Iedere afzonderlijke computer die via IP met andere computers communiceert moet een uniek adres hebben. Aanvankelijk had iedere netwerkkaart een vast adres. Wegens het gebrek aan adressen wordt nu door gebruikmaking van NAT en DHCP meestal een tijdelijk of een intern IP-adres (IP-nummer) toegewezen.</dbo:abstract>
+    <dbo:abstract xml:lang="fr"> Pour les articles homonymes, voir IP. Internet protocol(en) (protocole internet, abrégé en IP) est une famille de protocoles de communication de réseaux informatiques conçus pour être utilisés sur Internet. Les protocoles IP sont au niveau 3 dans le modèle OSI. Les protocoles IP s&#39;intègrent dans la suite des protocoles Internet et permettent un service d&#39;adressage unique pour l&#39;ensemble des terminaux connectés.</dbo:abstract>
+    <dbo:abstract xml:lang="ru">Internet Protocol (IP, досл. «межсетевой протокол») — маршрутизируемый протокол сетевого уровня стека TCP/IP. Именно IP стал тем протоколом, который объединил отдельные компьютерные сети во всемирную сеть Интернет. Неотъемлемой частью протокола является адресация сети (см. IP-адрес).</dbo:abstract>
+    <dbo:abstract xml:lang="ar">25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (فبراير 2016) بروتوكول الإنترنت (IP، ميثاق الإنترنت أو ميفاق الإنترنت)، هو بروتوكول يعمل على الطبقة الثالثة (طبقة الشبكة (Network Layer) من نموذج OSI، يحدد كيفية تقسيم المعلومة الواحدة إلى أجزاء أصغر تسمى رزما (packet)، ثم يقوم الطرف المرسل بإرسال الرزمة إلى جهاز آخر (مسير) على الشبكة يستخدم نفس الميثاق (البروتوكول). ثم يقوم هذا الجهاز الثاني بدوره بإرسال الرزم إلى جهاز آخر بنفس الطريقة، وتكرر هذه العملية إلى أن تصل الرزم إلى الطرف المرسل إليه. هو بروتوكول طبقة الإنترنت المسئول عن حمل البيانات المولدة من قبل تقريبًا كل بروتوكولات الTCP/IP الأخرى من النظام المصدر حتى وجهتها النهائية.هو connectionless بروتوكول يقدم اثنان من أهم وظائف مكدس بروتوكول الــ TCP/IP وهما العنونة والتوجيه ويقدم وظائف أخرى مثل اكتشاف الأخطاء. يحتل الإصدار الرابع (IPv4) من هذا البروتكول غالبية الشبكات في إنترنت،و يتميز عنوان الإصدار الرابع بكونه يشغل 32 بت (أي 4 بايت) هذا ما يسمح نظريا بالحصول على 4,294,967,296إلا أنَّه بسبب الاقتراب من استهلاك العناوين التي يدعمها هذا الميثاق (البروتوكول) ,أُصدر النسخة 6 (IPv6) منه،و يستخدم 128 بت للعنوان الواحد (مثلا : 2001:1234:5678:9:1:2:3:4) والتي تدعم عددًا أكبر بكثير من العناوين الَّتي تدعمها سابقتها النسخة 4. ومع أنَّ الإصدار السادس يُقدم الكثير من المزايا غير الموجودة في الإصدار الرابع، إلا أنَّ الانتقال للعمل به ليس بهذه السهولة؛ حيث أنه غير متوافق تمامًا مع سلفه الإصدار الرابع، ويجب تغيير جميع الأجهزة التي تعمل على IPv4 وتحويلها لتعمل على IPv6، وهذا من الصعوبة بمكان في ظل شبكة مترابطة كالإنترنت.</dbo:abstract>
+    <dbo:abstract xml:lang="de">Das Internet Protocol (IP) ist ein in Computernetzen weit verbreitetes Netzwerkprotokoll und stellt die Grundlage des Internets dar. Es ist die Implementierung der Internetschicht des TCP/IP-Modells bzw. der Vermittlungsschicht (engl. Network Layer) des OSI-Modells. IP ist ein verbindungsloses Protokoll, d. h. bei den Kommunikationspartnern wird kein Zustand etabliert.</dbo:abstract>
+    <dbo:abstract xml:lang="pt">Protocolo de Internet (em inglês: Internet Protocol, ou o acrónimo IP) é um protocolo de comunicação usado entre todas as máquinas em rede para encaminhamento dos dados. Tanto no Modelo TCP/IP, quanto no Modelo OSI, o importante protocolo da internet IP está na camada intitulada camada de rede.</dbo:abstract>
+    <dbo:abstract xml:lang="pl">Protokół internetowy (ang. Internet Protocol, skrót IP) – protokół komunikacyjny warstwy sieciowej modelu OSI (warstwy internetu w modelu TCP/IP). Protokół internetowy to zbiór ścisłych reguł i kroków postępowania, które są automatycznie wykonywane przez urządzenia w celu nawiązania łączności i wymiany danych. Używany powszechnie w Internecie i sieciach lokalnych. Dane w sieciach IP są wysyłane w formie bloków określanych mianem pakietów. W przypadku protokołu IP, przed rozpoczęciem transmisji nie jest zestawiana wirtualna sesja komunikacyjna pomiędzy dwoma hostami, które nie komunikowały się ze sobą wcześniej. Protokół IP jest protokołem zawodnym – nie gwarantuje, że pakiety dotrą do adresata, nie zostaną pofragmentowane, czy też zdublowane, a ponadto mogą dotrzeć do odbiorcy w innej kolejności niż zostały nadane. Niezawodność transmisji danych jest zapewniana przez protokoły warstw wyższych (np. TCP), znajdujących się w hierarchii powyżej warstwy sieciowej.</dbo:abstract>
+    <dbo:abstract xml:lang="zh">網際協議（英语：Internet Protocol，縮寫為 IP），或称網際網路協議，是用于报文交换网络的一种面向数据的协议。 IP是在TCP/IP协议中网络层的主要协议，任务是仅仅根据源主机和目的主机的地址传送数据。为此目的，IP定义了寻址方法和数据报的封装结构。第一个架构的主要版本，现在称为IPv4，仍然是最主要的互联网协议，尽管世界各地正在积极部署IPv6。</dbo:abstract>
+    <ns8:hypernym rdf:resource="http://dbpedia.org/resource/Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/EXFO">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IQinVision">
+    <dbp:type rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_communications">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mobile_Telecommunication_Company_of_Iran">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Verizon_Communications">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP">
+    <dbo:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Wilcon">
+    <dbo:service rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/RighTel_Communications">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Internetwork_layer">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/MTN_Irancell">
+    <dbo:product rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Card_reader">
+    <dbp:type rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Internet_protocol_(disambiguation)">
+    <dbo:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Polycom_VSX_7000">
+    <dbp:connectivity rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Internet_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IPoFC">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_access_controller">
+    <dbp:type rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_reader">
+    <dbp:type rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IP_packet">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IPv0">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IPv1">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IPv2">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/IPv3">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Internet_Protocol">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Internet_Protocol" />
+  </rdf:Description>
+</rdf:RDF>

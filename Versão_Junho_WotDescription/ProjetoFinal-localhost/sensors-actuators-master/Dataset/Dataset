@@ -1,0 +1,22 @@
+@prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a </callimachus/1.5/types/Class> , owl:Class ;
+    dcterms:created "2017-10-29T01:33:28.772Z"^^xsd:dateTime ;
+    dcterms:modified "2017-10-31T04:11:24.054Z"^^xsd:dateTime , "2017-10-31T04:13:01.983Z"^^xsd:dateTime ;
+    rdfs:comment "A set of RDF triples that are published, maintained or aggregated by a single provider." ;
+    rdfs:label "Dataset" ;
+    calli:administrator </auth/groups/admin> ;
+    calli:author </auth/groups/admin> , </auth/groups/staff> , </auth/groups/users> ;
+    calli:create <Create_Dataset.xhtml> ;
+    calli:edit <Edit_Dataset.xhtml> ;
+    calli:editor </auth/groups/power> , </auth/groups/staff> ;
+    calli:reader </auth/groups/public> , </auth/groups/system> ;
+    calli:view <View_Dataset.xhtml> ;
+    rdfs:subClassOf </callimachus/1.5/types/Editable> , </callimachus/1.5/types/Serviceable> , </callimachus/1.5/types/Viewable> ;
+    owl:equivalentClass dcat:Dataset .

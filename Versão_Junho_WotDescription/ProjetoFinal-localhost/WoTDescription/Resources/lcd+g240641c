@@ -1,0 +1,211 @@
+@prefix : <http://localhost:8080/callimachus/1.5/scripts/index.ttl#> .
+@prefix abt: <http://usepa.3roundstones.net/id/us/fed/agency/epa/abt/schema/> .
+@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix agenda: <http://callimachusproject.org/rdf/2010/agenda#> .
+@prefix audit: <http://www.openrdf.org/rdf/2009/auditing#> .
+@prefix calilmachus_styles: <http://localhost:8080/callimachus/styles/> .
+@prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix callimachus: <http://demo.3roundstones.net/callimachus/> .
+@prefix callimachusproject: <http://callimachusproject.org/rdf/2009/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cidoccrm: <http://purl.org/NET/cidoc-crm/core#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix ctrl: <http://support.3roundstones.com/rdf/2013/control#> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dbc: <http://dbpedia.org/resource/Category:> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dbpedia-cs: <http://cs.dbpedia.org/resource/> .
+@prefix dbpedia-de: <http://de.dbpedia.org/resource/> .
+@prefix dbpedia-es: <http://es.dbpedia.org/resource/> .
+@prefix dbpedia-eu: <http://eu.dbpedia.org/resource/> .
+@prefix dbpedia-fr: <http://fr.dbpedia.org/resource/> .
+@prefix dbpedia-id: <http://id.dbpedia.org/resource/> .
+@prefix dbpedia-it: <http://it.dbpedia.org/resource/> .
+@prefix dbpedia-nl: <http://nl.dbpedia.org/resource/> .
+@prefix dbpedia-pl: <http://pl.dbpedia.org/resource/> .
+@prefix dbpedia-pt: <http://pt.dbpedia.org/resource/> .
+@prefix dbpedia-wikidata: <http://wikidata.dbpedia.org/resource/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix directory: <http://dir.w3.org/rdf/2012/directory/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix eg: <http://example.com#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frs: <http://usepa.3roundstones.net/id/us/fed/agency/epa/frs/schema#> .
+@prefix georss: <http://www.georss.org/georss/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix ili: <http://ili.globalwordnet.org/ili/> .
+@prefix ns1: <http://statistics.gov.data.uk/def/education-geography/> .
+@prefix ns2: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+@prefix ns3: <http://education.data.gov.uk/def/meta/> .
+@prefix ns4: <http://statistics.data.gov.uk/def/education-geography/> .
+@prefix ns5: <http://statistics.data.gov.uk/def/census-geography/> .
+@prefix keyword: <http://www.openrdf.org/rdf/2011/keyword#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix meeting: <http://localhost:8080/schema/> .
+@prefix mrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix msg: <http://www.openrdf.org/rdf/2011/messaging#> .
+@prefix ns10: <http://purl.org/linguistics/gold/> .
+@prefix ns21: <http://live.dbpedia.org/property/> .
+@prefix ns23: <http://www.springernature.com/scigraph/things/subjects/> .
+@prefix ns31: <http://live.dbpedia.org/ontology/> .
+@prefix ns41: <http://dbpedia.org/ontology/Person/> .
+@prefix ns51: <http://dbpedia.org/ontology/PopulatedPlace/> .
+@prefix ns6: <http://rdvocab.info/RDARelationshipsWEMI/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pimo: <http://www.semanticdesktop.org/ontologies/2007/11/01/pimo#> .
+@prefix place: <http://purl.org/ontology/places#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pwnid: <http://wordnet-rdf.princeton.edu/rdf/id/> .
+@prefix pwnlemma: <http://wordnet-rdf.princeton.edu/rdf/lemma/> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
+@prefix ns7: <http://qudt.org/1.1/schema/qudt#> .
+@prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix ns8: <http://qudt.org/1.1/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ri: <http://id.loc.gov/ontologies/RecordInfo#> .
+@prefix schema: <http://schema.org/> .
+@prefix school: <http://education.data.gov.uk/def/school/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix srs: <http://usepa.3roundstones.net/id/us/fed/agency/epa/srs/schema#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@prefix synsem: <http://www.w3.org/ns/lemon/synsem#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tri: <http://usepa.3roundstones.net/id/us/fed/agency/epa/tri/schema/> .
+@prefix tute: <http://callimachusproject.org/2014/03/tutorial#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix wikipedia-en: <http://en.wikipedia.org/wiki/> .
+@prefix wn: <http://wordnet-rdf.princeton.edu/ontology#> .
+@prefix wordnetlicense: <http://wordnet.princeton.edu/wordnet/license/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a <http://iot.linkeddata.es/def/wot#Thing> , <../Classes/ProjetoFinal-sensors-actuators-master-Actuator-localhost/Actuator> , sosa:Actuator , ssn:System ;
+    dcterms:created "2019-02-14T15:55:16.878Z"^^xsd:dateTime ;
+    dcterms:identifier "LCD G240641C" ;
+    dcterms:title "LCD G240641C" , "LCD G240641C_Interface" ;
+    schema:identifier "LCD G240641C" ;
+    schema:name "LCD G240641C" , "LCD G240641C_Interface" ;
+    rdfs:comment "Display access interface Lcd Display 240x64" , "Lcd Graphic Display 240x64" ;
+    rdfs:label "LCD G240641C" , "LCD G240641C_Interface" ;
+    calli:administrator </auth/groups/admin> ;
+    calli:editor </auth/groups/power> , </auth/groups/staff> ;
+    calli:reader </auth/groups/public> , </auth/groups/system> ;
+    calli:subscriber </auth/groups/everyone> ;
+    <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+        <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+        <http://iot.linkeddata.es/def/wot#href> "coap://mylcd.example.com" ;
+        <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1> ;
+        <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+        ]
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#InteractionPattern> , <http://iot.linkeddata.es/def/wot#Property> ;
+        <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isReadableThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isWritableThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ]
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#Action> , <http://iot.linkeddata.es/def/wot#InteractionPattern> ;
+        <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isReadableThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isWritableThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ]
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#Event> , <http://iot.linkeddata.es/def/wot#InteractionPattern> ;
+        <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isReadableThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isWritableThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ] ;
+            <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema>
+            ]
+        ]
+    ] .
+
+<> schema:location [ a schema:GeoCoordinates
+    ] .

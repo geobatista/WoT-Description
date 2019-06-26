@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:ns8="http://purl.org/linguistics/gold/" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Communication_protocols">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Communications_protocols">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_set">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_testing">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_(computer_science)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Communications_protocol">
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Whole100003553" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Instrumentality103575240" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Artifact100021939" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/PhysicalEntity100001930" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Object100002684" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/System104377057" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Network103820728" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatComputerNetworks" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Telecommunication106271778" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/ComputerNetwork103085333" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Medium106254669" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatTelecommunications" />
+    <rdfs:label xml:lang="zh">网络传输协议</rdfs:label>
+    <rdfs:label xml:lang="de">Kommunikationsprotokoll</rdfs:label>
+    <rdfs:label xml:lang="pl">Protokół komunikacyjny</rdfs:label>
+    <rdfs:label xml:lang="ru">Протокол передачи данных</rdfs:label>
+    <rdfs:label xml:lang="it">Protocollo di comunicazione</rdfs:label>
+    <rdfs:label xml:lang="ja">通信プロトコル</rdfs:label>
+    <rdfs:label xml:lang="fr">Protocole de communication</rdfs:label>
+    <rdfs:label xml:lang="es">Protocolo de comunicaciones</rdfs:label>
+    <rdfs:label xml:lang="en">Communications protocol</rdfs:label>
+    <rdfs:label xml:lang="nl">Netwerkprotocol</rdfs:label>
+    <rdfs:label xml:lang="ar">بروتوكول (اتصالات)</rdfs:label>
+    <rdfs:label xml:lang="pt">Protocolo (ciência da computação)</rdfs:label>
+    <rdfs:comment xml:lang="ru">Протокол передачи данных — набор соглашений интерфейса логического уровня, которые определяют обмен данными между различными программами. Эти соглашения задают единообразный способ передачи сообщений и обработки ошибок при взаимодействии программного обеспечения разнесённой в пространстве аппаратуры, соединённой тем или иным интерфейсом. Стандартизированный протокол передачи данных также позволяет разрабатывать интерфейсы (уже на физическом уровне), не привязанные к конкретной аппаратной платформе и производителю (например, USB, Bluetooth).</rdfs:comment>
+    <rdfs:comment xml:lang="nl">Een netwerkprotocol is een protocol, een afgesproken communicatiewijze, voor netwerkcomponenten. Door het toepassen van een standaard protocol, kunnen componenten van verschillende leveranciers met elkaar gegevens uitwisselen.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">Dans les réseaux informatiques et les télécommunications, un protocole de communication est une spécification de plusieurs règles pour un type de communication particulier. Initialement, on nommait protocole ce qui est utilisé pour communiquer sur une même couche d&#39;abstraction entre deux machines différentes. Par extension de langage, on utilise parfois ce mot aussi aujourd&#39;hui pour désigner les règles de communication entre deux couches sur une même machine. Les protocoles de communication les plus utilisés sont les protocoles réseau.</rdfs:comment>
+    <rdfs:comment xml:lang="es">En informática y telecomunicación, un protocolo de comunicaciones es un sistema de reglas que permiten que dos o más entidades de un sistema de comunicación se comuniquen entre ellas para transmitir información por medio de cualquier tipo de variación de una magnitud física. Se trata de las reglas o el estándar que define la sintaxis, semántica y sincronización de la comunicación, así como también los posibles métodos de recuperación de errores. Los protocolos pueden ser implementados por hardware, por software, o por una combinación de ambos.</rdfs:comment>
+    <rdfs:comment xml:lang="pl">W telekomunikacji, protokół komunikacyjny jest niczym innym jak systemem regulacji, które umożliwiają dwóm lub więcej jednostkom systemu komunikacji do przesyłania informacji różnego typu fizycznej jakości. Regulacje te (standardy) definiują syntaks, semantykę, synchronizację komunikacji oraz możliwe metody naprawiania błędów. Protokoły te mogą zostać wdrożone za pomocą hardware, software lub obu naraz.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">通信プロトコル（つうしんプロトコル、Communications protocol）、あるいはネットワーク・プロトコルは、ネットワーク上での通信に関する規約を定めたものである。「通信規約」や「通信手順」と訳す場合もある。</rdfs:comment>
+    <rdfs:comment xml:lang="en">In telecommunications, a communication protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity. These are the rules or standard that defines the syntax, semantics and synchronization of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both.</rdfs:comment>
+    <rdfs:comment xml:lang="pt">Na ciência da computação, um protocolo é uma convenção que controla e possibilita uma conexão, comunicação, transferência de dados entre dois sistemas computacionais. De maneira simples, um protocolo pode ser definido como &quot;as regras que governam&quot; a sintaxe, semântica e sincronização da comunicação. Os protocolos podem ser implementados pelo hardware, software ou por uma combinação dos dois.</rdfs:comment>
+    <rdfs:comment xml:lang="de">In der Informatik und in der Telekommunikation ist ein Kommunikationsprotokoll eine Vereinbarung, nach der die Datenübertragung zwischen zwei oder mehreren Parteien abläuft. In seiner einfachsten Form kann ein Protokoll definiert werden als eine Menge von Regeln, die Syntax, Semantik und Synchronisation der Kommunikation bestimmen. Protokolle können durch Hardware, Software oder eine Kombination von beiden implementiert werden. Auf der untersten Ebene definiert ein Protokoll das Verhalten der Verbindungs-Hardware.</rdfs:comment>
+    <rdfs:comment xml:lang="zh">网络传输协议或简称为传送协议（Communications Protocol），是指计算机通信或網路設備的共同语言。 现在最普及的计算机通信为网络通信，所以“传送协议”一般都指计算机通信的传送协议，如：TCP/IP、NetBEUI、DHCP、FTP等。然而，传送协议也存在于计算机的其他形式通信，例如：面向对象编程里面对象之间的通信；操作系统内不同程序之间的消息，都需要有一个传送协议，以确保传信双方能够沟通无间。</rdfs:comment>
+    <rdfs:comment xml:lang="it">In informatica un protocollo di comunicazione è un insieme di regole formalmente descritte, definite al fine di favorire la comunicazione tra una o più entità. Tutte queste regole sono definite mediante specifici protocolli, dalle tipologie più varie e ciascuno con precisi compiti/finalità, a seconda delle entità interessate e il mezzo di comunicazione. Se le due entità sono remote, si parla di protocollo di rete.</rdfs:comment>
+    <rdfs:comment xml:lang="ar">بروتوكول الاتصالات في الاتصالات السلكية واللاسلكية ، بروتوكول الاتصالات هو نظام من القواعد لتبادل البيانات داخل أو بين أجهزة الكمبيوتر. في المعلوماتية، يشكل (البروتوكول)الميثاق او معيار أو الاتفاق ت الذي ينظم ويمكن من إجراء عملية ربط (connection)، الاتصال communication، ونقل البيانات بين جهازين. بالشكل الأبسط، يمكن أن نعرف الميثاق على أنه &quot;قواعد التحكم&quot; (the rules governing) الصياغة النحوية (syntax)، والدلالية (semantics) والتزامن (synchronization) في عملية الاتصال. يمكن أن تطبق المواثيق من قبل عتاد صلب، أو برمجيات أو مزيج من هذا وذاك. يحدد الميثاق في أدنى مستوياته سلوك الاتصال في العتاد الصلب. للوصول إلى اتفاق، يمكن تطوير بروتوكول في معيار تقني . لغة البرمجة يصف نفسه بالنسبة الحسابية ، لذلك هناك تشابه وثيق بين البروتوكولات و خوارزميات البرمجة .</rdfs:comment>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q132364" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/Protocollo_di_comunicazione" />
+    <owl:sameAs rdf:resource="http://nl.dbpedia.org/resource/Netwerkprotocol" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Protocole_de_communication" />
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Protokol_(komputer)" />
+    <owl:sameAs rdf:resource="http://el.dbpedia.org/resource/Πρωτόκολλο_επικοινωνίας" />
+    <owl:sameAs rdf:resource="http://ko.dbpedia.org/resource/통신_프로토콜" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/Protocolo_de_comunicaciones" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/通信プロトコル" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/Kommunikationsprotokoll" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+    <owl:sameAs rdf:resource="http://eu.dbpedia.org/resource/Sare_protokolo" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/Protokół_komunikacyjny" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.0lb94" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q132364" />
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Protocolo_(ciência_da_computação)" />
+    <owl:sameAs rdf:resource="http://yago-knowledge.org/resource/Communication_protocol" />
+    <owl:sameAs rdf:resource="http://cs.dbpedia.org/resource/Protokol_(informatika)" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Communications_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Network_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Data_transmission" />
+    <dbo:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28030850</dbo:wikiPageID>
+    <dbo:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">745188453</dbo:wikiPageRevisionID>
+    <dbo:wikiPageExternalLink rdf:resource="http://www.usingcsp.com" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.zframez.com/protocolsuite.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.ipcomm.de/protocols_en.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://tools.ietf.org/html/rfc1122." />
+    <dbo:wikiPageExternalLink rdf:resource="http://tools.ietf.org/html/rfc2026" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.javvin.com/protocolsuite.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://spinroot.com/spin/Doc/Book91.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://blog.protocolbench.org" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.informit.com/articles/article.aspx?p=20482" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.draware.dk/fileadmin/WildPackets/Basic/WP_encapsulation_chart.pdf" />
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Communications_protocol" />
+    <skos:relatedMatch rdf:resource="http://www.springernature.com/scigraph/things/subjects/communication-and-replication" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/Communications_protocol?oldid=745188453" />
+    <dbo:abstract xml:lang="de">In der Informatik und in der Telekommunikation ist ein Kommunikationsprotokoll eine Vereinbarung, nach der die Datenübertragung zwischen zwei oder mehreren Parteien abläuft. In seiner einfachsten Form kann ein Protokoll definiert werden als eine Menge von Regeln, die Syntax, Semantik und Synchronisation der Kommunikation bestimmen. Protokolle können durch Hardware, Software oder eine Kombination von beiden implementiert werden. Auf der untersten Ebene definiert ein Protokoll das Verhalten der Verbindungs-Hardware. Handelt es sich um die Kommunikation in einem Rechnernetz, so spricht man von einem Netzwerkprotokoll.</dbo:abstract>
+    <dbo:abstract xml:lang="fr">Dans les réseaux informatiques et les télécommunications, un protocole de communication est une spécification de plusieurs règles pour un type de communication particulier. Initialement, on nommait protocole ce qui est utilisé pour communiquer sur une même couche d&#39;abstraction entre deux machines différentes. Par extension de langage, on utilise parfois ce mot aussi aujourd&#39;hui pour désigner les règles de communication entre deux couches sur une même machine. Les protocoles de communication les plus utilisés sont les protocoles réseau.</dbo:abstract>
+    <dbo:abstract xml:lang="zh">网络传输协议或简称为传送协议（Communications Protocol），是指计算机通信或網路設備的共同语言。 现在最普及的计算机通信为网络通信，所以“传送协议”一般都指计算机通信的传送协议，如：TCP/IP、NetBEUI、DHCP、FTP等。然而，传送协议也存在于计算机的其他形式通信，例如：面向对象编程里面对象之间的通信；操作系统内不同程序之间的消息，都需要有一个传送协议，以确保传信双方能够沟通无间。</dbo:abstract>
+    <dbo:abstract xml:lang="en">In telecommunications, a communication protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity. These are the rules or standard that defines the syntax, semantics and synchronization of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both. Communicating systems use well-defined formats (protocol) for exchanging various messages. Each message has an exact meaning intended to elicit a response from a range of possible responses pre-determined for that particular situation. The specified behavior is typically independent of how it is to be implemented. Communications protocols have to be agreed upon by the parties involved. To reach agreement, a protocol may be developed into a technical standard. A programming language describes the same for computations, so there is a close analogy between protocols and programming languages: protocols are to communications what programming languages are to computations. Multiple protocols often describe different aspects of a single communication. A group of protocols designed to work together are known as a protocol suite; when implemented in software they are a protocol stack. Most recent protocols are assigned by the IETF for Internet communications, and the IEEE, or the ISO organizations for other types. The ITU-T handles telecommunications protocols and formats for the PSTN. As the PSTN and Internet converge, the two sets of standards are also being driven towards convergence.</dbo:abstract>
+    <dbo:abstract xml:lang="ru">Протокол передачи данных — набор соглашений интерфейса логического уровня, которые определяют обмен данными между различными программами. Эти соглашения задают единообразный способ передачи сообщений и обработки ошибок при взаимодействии программного обеспечения разнесённой в пространстве аппаратуры, соединённой тем или иным интерфейсом. Стандартизированный протокол передачи данных также позволяет разрабатывать интерфейсы (уже на физическом уровне), не привязанные к конкретной аппаратной платформе и производителю (например, USB, Bluetooth). Сигнальный протокол используется для управления соединением — например, установки, переадресации, разрыва связи. Примеры протоколов: RTSP, SIP. Для передачи данных используются такие протоколы как RTP. Сетево́й протоко́л — набор правил и действий (очерёдности действий), позволяющий осуществлять соединение и обмен данными между двумя и более включёнными в сеть устройствами. Разные протоколы зачастую описывают лишь разные стороны одного типа связи. Названия «протокол» и «стек протоколов» также указывают на программное обеспечение, которым реализуется протокол. Новые протоколы для Интернета определяются IETF, а прочие протоколы — IEEE или ISO. ITU-T занимается телекоммуникационными протоколами и форматами. Наиболее распространённой системой классификации сетевых протоколов является так называемая модель OSI, в соответствии с которой протоколы делятся на 7 уровней по своему назначению — от физического (формирование и распознавание электрических или других сигналов) до прикладного (интерфейс программирования приложений для передачи информации приложениями). Сетевые протоколы предписывают правила работы компьютерам, которые подключены к сети. Они строятся по многоуровневому принципу. Протокол некоторого уровня определяет одно из технических правил связи. В настоящее время для сетевых протоколов используется модель OSI (Open System Interconnection — взаимодействие открытых систем, ВОС). Модель OSI — это 7-уровневая логическая модель работы сети. Модель OSI реализуется группой протоколов и правил связи, организованных в несколько уровней: 
+*  на физическом уровне определяются физические (механические, электрические, оптические) характеристики линий связи; 
+*  на канальном уровне определяются правила использования физического уровня узлами сети; 
+*  сетевой уровень отвечает за адресацию и доставку сообщений; 
+*  транспортный уровень контролирует очередность прохождения компонентов сообщения; 
+*  задача сеансового уровня — координация связи между двумя прикладными программами, работающими на разных рабочих станциях; 
+*  уровень представления служит для преобразования данных из внутреннего формата компьютера в формат передачи; 
+*  прикладной уровень является пограничным между прикладной программой и другими уровнями — обеспечивает удобный интерфейс связи сетевых программ пользователя. Другая модель — стек протоколов TCP/IP — содержит 4 уровня: 
+*  канальный уровень (link layer), 
+*  сетевой уровень (Internet layer), 
+*  транспортный уровень (transport layer), 
+*  прикладной уровень (application layer).</dbo:abstract>
+    <dbo:abstract xml:lang="pt">Na ciência da computação, um protocolo é uma convenção que controla e possibilita uma conexão, comunicação, transferência de dados entre dois sistemas computacionais. De maneira simples, um protocolo pode ser definido como &quot;as regras que governam&quot; a sintaxe, semântica e sincronização da comunicação. Os protocolos podem ser implementados pelo hardware, software ou por uma combinação dos dois.</dbo:abstract>
+    <dbo:abstract xml:lang="es">En informática y telecomunicación, un protocolo de comunicaciones es un sistema de reglas que permiten que dos o más entidades de un sistema de comunicación se comuniquen entre ellas para transmitir información por medio de cualquier tipo de variación de una magnitud física. Se trata de las reglas o el estándar que define la sintaxis, semántica y sincronización de la comunicación, así como también los posibles métodos de recuperación de errores. Los protocolos pueden ser implementados por hardware, por software, o por una combinación de ambos. También se define como un conjunto de normas que permite la comunicación entre ordenadores, estableciendo la forma de identificación de estos en la red, la forma de transmisión de los datos y la forma en que la información debe procesarse. Los protocolos pueden estar implementados mediante hardware, software o una combinación de ambos. Los sistemas de comunicación utilizan formatos bien definidos (protocolo) para intercambiar mensajes. Cada mensaje tiene un significado exacto destinado a obtener una respuesta de un rango de posibles respuestas predeterminadas para esa situación en particular. Normalmente, el comportamiento especificado es independiente de cómo se va a implementar. Los protocolos de comunicación tienen que estar acordados por las partes involucradas. Para llegar a dicho acuerdo, un protocolo puede ser desarrollado dentro de estándar técnico. Un lenguaje de programación describe el mismo para los cálculos, por lo que existe una estrecha analogía entre los protocolos y los lenguajes de programación: «los protocolos son a las comunicaciones como los lenguajes de programación son a los cómputos». Un protocolo de comunicación, también llamado en este caso protocolo de red, define la forma en la que los distintos mensajes o tramas de bit circulan en una red de computadoras. Por ejemplo, el protocolo sobre palomas mensajeras permite definir la forma en la que una paloma mensajera transmite información de una ubicación a otra, definiendo todos los aspectos que intervienen en la comunicación: tipo de paloma, cifrado del mensaje, tiempo de espera antes de dar a la paloma por &#39;perdida&#39;... y cualquier regla que ordene y mejore la comunicación.</dbo:abstract>
+    <dbo:abstract xml:lang="ja">通信プロトコル（つうしんプロトコル、Communications protocol）、あるいはネットワーク・プロトコルは、ネットワーク上での通信に関する規約を定めたものである。「通信規約」や「通信手順」と訳す場合もある。</dbo:abstract>
+    <dbo:abstract xml:lang="pl">W telekomunikacji, protokół komunikacyjny jest niczym innym jak systemem regulacji, które umożliwiają dwóm lub więcej jednostkom systemu komunikacji do przesyłania informacji różnego typu fizycznej jakości. Regulacje te (standardy) definiują syntaks, semantykę, synchronizację komunikacji oraz możliwe metody naprawiania błędów. Protokoły te mogą zostać wdrożone za pomocą hardware, software lub obu naraz.</dbo:abstract>
+    <dbo:abstract xml:lang="it">In informatica un protocollo di comunicazione è un insieme di regole formalmente descritte, definite al fine di favorire la comunicazione tra una o più entità. Tutte queste regole sono definite mediante specifici protocolli, dalle tipologie più varie e ciascuno con precisi compiti/finalità, a seconda delle entità interessate e il mezzo di comunicazione. Se le due entità sono remote, si parla di protocollo di rete.</dbo:abstract>
+    <dbo:abstract xml:lang="nl">Een netwerkprotocol is een protocol, een afgesproken communicatiewijze, voor netwerkcomponenten. Door het toepassen van een standaard protocol, kunnen componenten van verschillende leveranciers met elkaar gegevens uitwisselen.</dbo:abstract>
+    <dbo:abstract xml:lang="ar">بروتوكول الاتصالات في الاتصالات السلكية واللاسلكية ، بروتوكول الاتصالات هو نظام من القواعد لتبادل البيانات داخل أو بين أجهزة الكمبيوتر. في المعلوماتية، يشكل (البروتوكول)الميثاق او معيار أو الاتفاق ت الذي ينظم ويمكن من إجراء عملية ربط (connection)، الاتصال communication، ونقل البيانات بين جهازين. بالشكل الأبسط، يمكن أن نعرف الميثاق على أنه &quot;قواعد التحكم&quot; (the rules governing) الصياغة النحوية (syntax)، والدلالية (semantics) والتزامن (synchronization) في عملية الاتصال. يمكن أن تطبق المواثيق من قبل عتاد صلب، أو برمجيات أو مزيج من هذا وذاك. يحدد الميثاق في أدنى مستوياته سلوك الاتصال في العتاد الصلب. للوصول إلى اتفاق، يمكن تطوير بروتوكول في معيار تقني . لغة البرمجة يصف نفسه بالنسبة الحسابية ، لذلك هناك تشابه وثيق بين البروتوكولات و خوارزميات البرمجة .</dbo:abstract>
+    <ns8:hypernym rdf:resource="http://dbpedia.org/resource/System" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol">
+    <dbo:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Network_protocol_design_principles">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_(computing)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Data_communication_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/MacTerminal">
+    <dbo:genre rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Network_protocols">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_(communication)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_(communications)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Networking_protocols">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_(network)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_(networks)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocols_(computing)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Cubesat_Space_Protocol">
+    <dbo:genre rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Communication_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Data_transmission_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Networking_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_(computer)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Network_Protocols">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Computer_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Network_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Protocol_design">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Internetworking_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Web_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Communications_protocol">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Communications_protocol" />
+  </rdf:Description>
+</rdf:RDF>

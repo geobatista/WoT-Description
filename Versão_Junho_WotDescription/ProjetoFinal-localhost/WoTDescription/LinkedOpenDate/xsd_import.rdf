@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wot="http://iot.linkeddata.es/def/wot#"
+     xml:base="http://www.w3.org/2001/XMLSchema">
+    
+     
+    <wot:DataType rdf:ID="duration">
+        <rdfs:label>duration</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="dateTime">
+        <rdfs:label>dateTime</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="time">
+        <rdfs:label>time</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="date">
+        <rdfs:label>date</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="gYearMonth">
+        <rdfs:label>gYearMonth</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="gYear">
+        <rdfs:label>gYear</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="gMonthDay">
+        <rdfs:label>gMonthDay</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="gDay">
+        <rdfs:label>gDay</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="gMonth">
+        <rdfs:label>gMonth</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="boolean">
+        <rdfs:label>boolean</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="base64Binary">
+        <rdfs:label>base64Binary</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="hexBinary">
+        <rdfs:label>hexBinary</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="float">
+        <rdfs:label>float</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="double">
+        <rdfs:label>double</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="anyURI">
+        <rdfs:label>anyURI</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="QName">
+        <rdfs:label>QName</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="NOTATION">
+        <rdfs:label>NOTATION</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="string">
+        <rdfs:label>string</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="decimal">
+        <rdfs:label>decimal</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="normalizedString">
+        <rdfs:label>normalizedString</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="integer">
+        <rdfs:label>integer</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="token">
+        <rdfs:label>token</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="nonPositiveInteger">
+        <rdfs:label>nonPositiveInteger</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="long">
+        <rdfs:label>long</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="nonNegativeInteger">
+        <rdfs:label>nonNegativeInteger</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="language">
+        <rdfs:label>language</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="Name">
+        <rdfs:label>Name</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="NMTOKEN">
+        <rdfs:label>NMTOKEN</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="negativeInteger">
+        <rdfs:label>negativeInteger</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="int">
+        <rdfs:label>int</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="unsignedLong">
+        <rdfs:label>unsignedLong</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="positiveInteger">
+        <rdfs:label>positiveInteger</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="NCName">
+        <rdfs:label>NCName</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="NMTOKENS">
+        <rdfs:label>NMTOKENS</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="short">
+        <rdfs:label>short</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="unsignedInt">
+        <rdfs:label>unsignedInt</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="ID">
+        <rdfs:label>ID</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="IDREF">
+        <rdfs:label>IDREF</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="ENTITY">
+        <rdfs:label>ENTITY</rdfs:label>
+    </wot:DataType>
+
+
+    <wot:DataType rdf:ID="byte">
+        <rdfs:label>byte</rdfs:label>
+    </wot:DataType>
+
+    <wot:DataType rdf:ID="unsignedShort">
+        <rdfs:label>unsignedShort</rdfs:label>
+    </wot:DataType>
+
+    <wot:DataType rdf:ID="IDREFS">
+        <rdfs:label>IDREFS</rdfs:label>
+    </wot:DataType>
+
+    <wot:DataType rdf:ID="ENTITES">
+        <rdfs:label>ENTITES</rdfs:label>
+    </wot:DataType>
+
+    <wot:DataType rdf:ID="unsignedByte">
+        <rdfs:label>unsignedByte</rdfs:label>
+    </wot:DataType>
+
+</rdf:RDF>
+
+
+
+

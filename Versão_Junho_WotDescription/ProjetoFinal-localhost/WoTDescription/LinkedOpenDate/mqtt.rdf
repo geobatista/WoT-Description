@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:prov="http://www.w3.org/ns/prov#" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/MQTT">
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Abstraction100002137" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatApplicationLayerProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Message106598915" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Rule106652242" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatNetworkProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Direction106786629" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Protocol106665108" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Communication100033020" />
+    <rdfs:label xml:lang="pl">MQTT</rdfs:label>
+    <rdfs:label xml:lang="pt">MQTT</rdfs:label>
+    <rdfs:label xml:lang="de">MQ Telemetry Transport</rdfs:label>
+    <rdfs:label xml:lang="en">MQTT</rdfs:label>
+    <rdfs:label xml:lang="ru">MQTT</rdfs:label>
+    <rdfs:label xml:lang="it">MQTT</rdfs:label>
+    <rdfs:label xml:lang="ja">MQ Telemetry Transport</rdfs:label>
+    <rdfs:label xml:lang="fr">MQTT</rdfs:label>
+    <rdfs:comment xml:lang="fr">MQTT (MQ Telemetry Transport) est un protocole de messagerie publish-subscribe basé sur le protocole TCP/IP. Il a été initialement développé par Andy Stanford-Clark (IBM) et Arlen Nipper (EuroTech), puis offert à la communauté Open Source. MQTT v3.1.1 est maintenant un standard OASIS, la spécification du protocole est disponible en HTML et PDF.</rdfs:comment>
+    <rdfs:comment xml:lang="it">MQ Telemetry Transport (MQTT) è un protocollo di messaggistica leggero posizionato in cima a TCP/IP. È stato disegnato per le situazioni in cui è richiesto un basso impatto e dove la banda è limitata. Il pattern publish-subscribe richiede un message broker. Il broker è responsabile della distribuzione dei messaggi ai client destinatari. Il protocollo è stato inventato da Andy Stanford-Clark di IBM, e Arlen Nipper di Cirrus Link Solutions.</rdfs:comment>
+    <rdfs:comment xml:lang="pl">MQ Telemetry Transport (MQTT) – oparty o wzorzec publikacja/subskrypcja, ekstremalnie prosty, lekki protokół transmisji danych. Przeznaczony jest do transmisji dla urządzeń niewymagających dużej przepustowości. Poprzez ograniczenie prędkości transmisji, protokół zapewnia większą niezawodność. Protokół ten idealnie sprawdza się przy połączeniach maszyna-maszyna, w internecie rzeczy (IoT), w urządzeniach mobilnych, oraz tam, gdzie wymagana jest oszczędność przepustowości, oraz energii.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">MQ Telemetry Transport(Message Queue Telemetry Transport、略称 MQTT)は、メッセージ指向ミドルウェアのアプリケーション層で使用される、TCP/IPによるPub/Sub型データ配信モデルの軽量なメッセージキュープロトコルである。 非力なデバイスやネットワークが不安定な場所でも動作しやすい様にメッセージ通信電文が軽量に設計されている事が特徴。 Pub/Sub型メッセージング·パターンには、メッセージブローカーが必要である。 ブローカーは、メッセージのTopicに基づいて、それを必要としているクライアントにメッセージ配信をしている。 アンディー·スタンフォード·クラークとシーラスリンクソリューションのアーレンニッパーは1999年に、プロトコルの最初のバージョンを執筆している。</rdfs:comment>
+    <rdfs:comment xml:lang="pt">MQTT, acrônimo de Message Queuing Telemetry Transport  (anteriormente conhecido como MQ Telemetry Transport), é um protocolo de mensagens leve para sensores e pequenos dispositivos móveis otimizado para redes TCP/IP não confiáveis ou de alta latência. . O esquema de troca de mensagens é fundamentado no modelo Publicador-Subscritor. MQTT-SN é uma variação do protocolo destinada a redes que não sejam baseadas em TCP/IP, como ZigBee.</rdfs:comment>
+    <rdfs:comment xml:lang="de">Message Queue Telemetry Transport (MQTT) ist ein offenes Nachrichten-Protokoll für Machine-to-Machine-Kommunikation (M2M), das die Übertragung von Telemetrie-Daten in Form von Nachrichten zwischen Geräten ermöglicht, trotz hoher Verzögerungen oder beschränkten Netzwerken. Entsprechende Geräte reichen von Sensoren und Aktoren, Mobiltelefonen, Eingebetteten Systemen in Fahrzeugen oder Laptops bis zu voll entwickelten Rechnern. Das Protokoll wurde von Andy Stanford-Clark von IBM und Arlen Nipper von Cirrus Link Solutions entwickelt.</rdfs:comment>
+    <rdfs:comment xml:lang="en">MQTT (formerly MQ Telemetry Transport) is an ISO standard (ISO/IEC PRF 20922) publish-subscribe-based &quot;lightweight&quot; messaging protocol for use on top of the TCP/IP protocol. It is designed for connections with remote locations where a &quot;small code footprint&quot; is required or the network bandwidth is limited. The publish-subscribe messaging pattern requires a message broker. The broker is responsible for distributing messages to interested clients based on the topic of a message. Andy Stanford-Clark and Arlen Nipper of Cirrus Link Solutions authored the first version of the protocol in 1999.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">MQTT (Message Queue Telemetry Transport)  — упрощённый сетевой протокол, работающий поверх TCP/IP. Используется для обмена сообщениями между устройствами по принципу издатель-подписчик.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/MQTT" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.0h5619c" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/MQTT" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/MQTT" />
+    <owl:sameAs rdf:resource="http://yago-knowledge.org/resource/MQ_Telemetry_Transport" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/MQ_Telemetry_Transport" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/MQTT" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/MQ_Telemetry_Transport" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/MQTT" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q10322548" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q10322548" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Network_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Message-oriented_middleware" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Application_layer_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:IBM_WebSphere" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Data_transmission" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Telemetry" />
+    <dbo:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32695816</dbo:wikiPageID>
+    <dbo:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">742422589</dbo:wikiPageRevisionID>
+    <dbo:wikiPageExternalLink rdf:resource="http://www.eejournal.com/blog/is-exactly-once-delivery-possible-with-mqtt/" />
+    <dbo:wikiPageExternalLink rdf:resource="http://mqtt.org/" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.irse.org/knowledge/publicdocuments/3.09%20Wood%20-%20Message%20broker%20technology%20for%20flexible%20signalling%20control.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="https://media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20presentations/DEFCON-24-Lucas-Lundgren-Light-Weight%20Protocol-Critical-Implications.pdf" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.cirrus-link.com" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.hivemq.com/blog/mqtt-essentials/" />
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/MQTT" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/MQTT?oldid=742422589" />
+    <dbo:abstract xml:lang="fr">MQTT (MQ Telemetry Transport) est un protocole de messagerie publish-subscribe basé sur le protocole TCP/IP. Il a été initialement développé par Andy Stanford-Clark (IBM) et Arlen Nipper (EuroTech), puis offert à la communauté Open Source. MQTT v3.1.1 est maintenant un standard OASIS, la spécification du protocole est disponible en HTML et PDF.</dbo:abstract>
+    <dbo:abstract xml:lang="de">Message Queue Telemetry Transport (MQTT) ist ein offenes Nachrichten-Protokoll für Machine-to-Machine-Kommunikation (M2M), das die Übertragung von Telemetrie-Daten in Form von Nachrichten zwischen Geräten ermöglicht, trotz hoher Verzögerungen oder beschränkten Netzwerken. Entsprechende Geräte reichen von Sensoren und Aktoren, Mobiltelefonen, Eingebetteten Systemen in Fahrzeugen oder Laptops bis zu voll entwickelten Rechnern. Das Protokoll wurde von Andy Stanford-Clark von IBM und Arlen Nipper von Cirrus Link Solutions entwickelt. Seit 2013 wird MQTT standardisiert über die Organization for the Advancement of Structured Information Standards (OASIS) als Protokoll des Internets der Dinge. Das MQTT-Protokoll ist auch bekannt unter älteren Namen wie „WebSphere MQTT“ (WMQTT), „SCADA-Protokoll“ oder „MQ Integrator SCADA Device Protocol“ (MQIsdp). Die Internet Assigned Numbers Authority (IANA) reserviert für MQTT die Ports 1883 und 8883. MQTT-Nachrichten können mit dem TLS-Protokoll verschlüsselt werden.</dbo:abstract>
+    <dbo:abstract xml:lang="ru">MQTT (Message Queue Telemetry Transport)  — упрощённый сетевой протокол, работающий поверх TCP/IP. Используется для обмена сообщениями между устройствами по принципу издатель-подписчик.</dbo:abstract>
+    <dbo:abstract xml:lang="it">MQ Telemetry Transport (MQTT) è un protocollo di messaggistica leggero posizionato in cima a TCP/IP. È stato disegnato per le situazioni in cui è richiesto un basso impatto e dove la banda è limitata. Il pattern publish-subscribe richiede un message broker. Il broker è responsabile della distribuzione dei messaggi ai client destinatari. Il protocollo è stato inventato da Andy Stanford-Clark di IBM, e Arlen Nipper di Cirrus Link Solutions.</dbo:abstract>
+    <dbo:abstract xml:lang="en">MQTT (formerly MQ Telemetry Transport) is an ISO standard (ISO/IEC PRF 20922) publish-subscribe-based &quot;lightweight&quot; messaging protocol for use on top of the TCP/IP protocol. It is designed for connections with remote locations where a &quot;small code footprint&quot; is required or the network bandwidth is limited. The publish-subscribe messaging pattern requires a message broker. The broker is responsible for distributing messages to interested clients based on the topic of a message. Andy Stanford-Clark and Arlen Nipper of Cirrus Link Solutions authored the first version of the protocol in 1999. The specification does not specify the meaning of &quot;small code footprint&quot; or the meaning of &quot;limited network bandwidth&quot;. Thus, the protocol&#39;s availability for use depends on the context. In 2013, IBM submitted MQTT v3.1 to the OASIS specification body with a charter that ensured only minor changes to the specification could be accepted. MQTT-SN  is a variation of the main protocol aimed at embedded devices on non-TCP/IP networks, such as ZigBee. Historically, the &quot;MQ&quot; in &quot;MQTT&quot; came from IBM&#39;s MQ Series message queuing product line. However, queuing itself is not required to be supported as a standard feature in all situations. Alternative protocols include the Advanced Message Queuing Protocol, the IETF Constrained Application Protocol, XMPP and Web Application Messaging Protocol (WAMP).</dbo:abstract>
+    <dbo:abstract xml:lang="pl">MQ Telemetry Transport (MQTT) – oparty o wzorzec publikacja/subskrypcja, ekstremalnie prosty, lekki protokół transmisji danych. Przeznaczony jest do transmisji dla urządzeń niewymagających dużej przepustowości. Poprzez ograniczenie prędkości transmisji, protokół zapewnia większą niezawodność. Protokół ten idealnie sprawdza się przy połączeniach maszyna-maszyna, w internecie rzeczy (IoT), w urządzeniach mobilnych, oraz tam, gdzie wymagana jest oszczędność przepustowości, oraz energii. Protokół MQTT został stworzony przez Andy&#39;ego Stanforda-Clarka z firmy IBM, oraz przez Arlena Nippera z firmy Arcom (obecnie Eurotech) w 1999r. MQ w nazwie MQTT pochodzi od nazwy linii produktów firmy IBM (message queuing). Najnowsza wersja protokołu to MQTTv3.1.1.</dbo:abstract>
+    <dbo:abstract xml:lang="ja">MQ Telemetry Transport(Message Queue Telemetry Transport、略称 MQTT)は、メッセージ指向ミドルウェアのアプリケーション層で使用される、TCP/IPによるPub/Sub型データ配信モデルの軽量なメッセージキュープロトコルである。 非力なデバイスやネットワークが不安定な場所でも動作しやすい様にメッセージ通信電文が軽量に設計されている事が特徴。 Pub/Sub型メッセージング·パターンには、メッセージブローカーが必要である。 ブローカーは、メッセージのTopicに基づいて、それを必要としているクライアントにメッセージ配信をしている。 アンディー·スタンフォード·クラークとシーラスリンクソリューションのアーレンニッパーは1999年に、プロトコルの最初のバージョンを執筆している。</dbo:abstract>
+    <dbo:abstract xml:lang="pt">MQTT, acrônimo de Message Queuing Telemetry Transport  (anteriormente conhecido como MQ Telemetry Transport), é um protocolo de mensagens leve para sensores e pequenos dispositivos móveis otimizado para redes TCP/IP não confiáveis ou de alta latência. . O esquema de troca de mensagens é fundamentado no modelo Publicador-Subscritor. MQTT-SN é uma variação do protocolo destinada a redes que não sejam baseadas em TCP/IP, como ZigBee.</dbo:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/MQTT-SN">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/MQTT" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Mqtt">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/MQTT" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Message_Queuing_Telemetry_Transport">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/MQTT" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/MQ_Telemetry_Transport">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/MQTT" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/ISO_20922">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/MQTT" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/MQTT">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/MQTT" />
+  </rdf:Description>
+</rdf:RDF>

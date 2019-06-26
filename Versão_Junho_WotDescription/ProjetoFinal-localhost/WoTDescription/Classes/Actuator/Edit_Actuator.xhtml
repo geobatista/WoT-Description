@@ -1,0 +1,1705 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:gn="http://www.geonames.org/ontology#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:schema="http://schema.org/"
+    xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#"
+    xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/unit#"
+    xmlns:calli="http://callimachusproject.org/rdf/2009/framework#"
+    xmlns:sosa="http://www.w3.org/ns/sosa/"
+    xmlns:wot="http://iot.linkeddata.es/def/wot#"
+    xmlns:ssn="http://www.w3.org/ns/ssn/"
+    xmlns:ssn-system="https://www.w3.org/ns/ssn/systems/"
+    xmlns:owl="https://www.w3.org/2002/07/owl#"
+    xmlns:time="http://www.w3.org/2006/time#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:tute="http://callimachusproject.org/2014/03/tutorial#">
+<head>
+    <title resource="?this">{rdfs:label}</title>
+    
+     <script type="text/javascript" src="seeAlso.js"></script>
+
+    <script type="text/javascript" src="ActuatorModel.js"></script>
+    
+    <script type="text/javascript" src="ActuatableProperty.js"></script>
+    
+    <script type="text/javascript" src="isDefinedBy.js"></script>
+    
+    <script type="text/javascript" src="City.js"></script>
+    
+    <script type="text/javascript" src="Country.js"></script>
+    
+    <script type="text/javascript" src="http://localhost:8080/ProjetoFinal/WoTDescription/Scripts/implementsSecurity.js"></script>
+    
+     <script type="text/javascript">
+	
+    
+             function updateLabel(event){
+                calli.updateProperty(event, 'schema:name dcterms:title rdfs:label wot:thingName');
+                   
+        }
+
+    </script>
+   
+</head>
+<body resource="?this">
+    <div class="container">
+        <div class="page-header">
+            <h1 property="rdfs:label"></h1>
+        </div>
+        <form id="form" role="form" method="POST" action="" enctype="application/sparql-update" resource="?this" class="row"
+                onsubmit="calli.submitUpdate(comparison,event)">
+            <div class="col-md-12">
+              <fieldset class="col-sm-5">
+                
+                
+               <div class="form-group">
+                        <label>Label:</label>
+                            <input type="text" class="form-control" id="label" value="{rdfs:label}"  autofocus="autofocus"
+                              onchange="updateLabel(event)"/>
+                            <input type="hidden" class="form-control" id="nome2" value="{dcterms:title}"/>	
+                            <input type="hidden" class="form-control" id="nome3" value="{schema:name}"/>
+                            <input type="hidden" class="form-control" id="nome4" value="{wot:thingName}"/>
+                    </div>
+                    
+                 <div class="form-group">
+                    <label for="ActuatableProperty">Acts on Property:</label>
+                    <select id="ActuatableProperty" multiple="multiple" class="form-control"
+                        onchange="calli.updateResource(event, 'sosa:actsonProperty')">
+                        <option selected="selected" rel="sosa:actsonProperty" resource="?ActuatableProperty" value="{?ActuatableProperty}"> {rdfs:label} </option>   
+                            
+                    </select> 
+                </div>    
+
+                  <div class="form-group">
+                        <label for="ActuatorModel">Model:</label>
+                        <xi:include href="ActuatorModel.rq?select&amp;rel=rdf:type&amp;id=ActuatorModel;multiple" />
+                        <div rel="rdf:type" resource="?ActuatorModel" />
+                            <script type="text/javascript">
+                                $('div[rel="rdf:type"]').filter(calli.selectEachResourceIn('#ActuatorModel')).remove();
+                            </script>
+                    </div>
+           
+  
+                <div class="form-group">
+                    <label>See Also:</label>
+                    <select id="seeAlso" class="form-control" multiple="multiple"
+                        onchange="calli.updateResource(event, 'rdfs:seeAlso' )">
+                        <option selected="selected" rel="rdfs:seeAlso" resource="?seeAlso" value="{?seeAlso}"> {rdfs:label} </option>
+                    </select>  
+                </div>
+              
+            
+            </fieldset>
+            
+            <fieldset class="col-sm-5">
+
+                <div class="form-group">
+                    
+                    <div rel="schema:location">
+                        <div id="location" typeof="schema:GeoCoordinates">
+                        
+                            <label for="b">Postal code:</label>
+                            <input type="text" class="form-control" value="{schema:postalCode}" placeholder="Codigo Postal"
+                                onchange="calli.updateProperty(event, 'schema:postalCode')"/>
+                            <label for="c"> Latitude:</label>
+                            <input type="text" class="form-control" value="{schema:latitude}" placeholder="Latitude"
+                                onchange="calli.updateProperty(event, 'schema:latitude')"/>
+                            <label for="d"> Longitude:</label>
+                            <input type="text" class="form-control" value="{schema:longitude}" placeholder="Longitude"
+                                onchange="calli.updateProperty(event, 'schema:longitude')"/>
+                            <label for="aa"> City:</label>   
+                            <select id="City" class="form-control" multiple="multiple" placeholder="Cidade"
+                                onchange="calli.updateResource(event, 'schema:addressLocality')">
+                                <option selected="selected" rel="schema:addressLocality" resource="?City" value="{?City}">{rdfs:label}</option> 
+                            </select>
+                            <label for="a"> Country:</label>
+                             <select id="Country" class="form-control" multiple="multiple" placeholder="País"
+                                onchange="calli.updateResource(event, 'schema:addressCountry')">
+                                <option selected="selected" rel="schema:addressCountry" resource="?Country" value="{?Country}">{rdfs:label}</option> 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" class="form-control"
+                        onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                </div>
+                
+                 <div class="form-group">
+                    <label>Registered by:</label>
+                    <select id="isDefinedBy" class="form-control" multiple="multiple"
+                        onchange="calli.updateResource(event, 'rdfs:isDefinedBy')">
+                        <option selected="selected" rel="rdfs:isDefinedBy" resource="?isDefinedBy" value="{?isDefinedBy}">{foaf:name} </option>
+                    </select>  
+                </div>
+                
+                <div class="form-group">
+                    <div id="thumbnail" dropzone="link string:text/uri-list" ondrop="return calli.insertResource(event)">
+                             <label for="thumbnail">Select an image of the system<a href="../images/?view" title="Select an image of the system" onclick="return calli.selectResource(event)" class="glyphicon glyphicon-picture" /></label>
+                             <div rel="foaf:depiction">
+                                 <span resource="?thumbnail" typeof="foaf:Image">
+                                     <img src="{?thumbnail}" style="max-width:100%" />
+                                     <a href="{?thumbnail}" title="Remove" onclick="return calli.removeResource(event)" class="glyphicon glyphicon-remove" />
+                                 </span>
+                             </div>
+                    </div>
+                </div>
+        </fieldset>
+         <br />
+            <br />
+   </div>
+   
+   <!-- Início do código da Descrição da Coisa -->        
+        
+            <br />
+            <br />
+            <br />
+            
+            
+        
+            <hr /><h1><small><strong> DESCRIPTION OF ACCESS INTERFACE OF ACTUATORS </strong></small></h1>
+        
+    
+         <br />   
+        <fieldset class="col-md-3">
+           
+                    <legend><strong>Exemplar Data</strong></legend>
+                    
+                <br />
+                
+                <div class="form-group">
+                    <label> ImplementsSecurity:</label>
+                        <select id="implementsSecurity" class="form-control" multiple="multiple"
+                            onchange="calli.updateResource(event, 'wot:implementsSecurity')">
+                            <option selected="selected" rel="wot:implementsSecurity" resource="?implementsSecurity" value="{?implementsSecurity}">{rdfs:label} </option>
+                        </select>  
+                </div> 
+       
+                <div class="form-group">
+                     <label>URI_Base</label>
+                            <input type="text" placeholder="Base URI" value="{wot:baseURI}" class="form-control"
+                                onchange="calli.updateProperty(event, 'wot:baseURI')" />
+                 </div>
+                 
+                 
+                 
+                
+                <div class="form-group well">
+                    <legend><small><strong>The Think is Accessible Through Link </strong></small></legend>                     
+                    <label for="isAccessibleThrough1"> Define Link <a id="addLink1" href="javascript:void(0)" title="Another Link"
+                                onclick="calli.addResource(event,'#isAccessibleThrough1')" class="glyphicon glyphicon-plus " /></label>
+                       <div id="isAccessibleThrough1" rel="wot:isAccessibleThrough">
+                            <div typeof="wot:Link">
+                                
+                                    <br />
+                                    <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                        onchange="calli.updateProperty(event, 'wot:href')" />
+                                    <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                        onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                    <br />
+
+                                    <div class="div_class" id="isProvidedOverProtocol1" >
+                                        <label for="isProvidedOverProtocol1">Is Provided Over Protocol:</label>
+                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                           press CTRL + option selected.</small></p>
+                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol1&amp;multiple" />
+                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol1" />
+                                            <script type="text/javascript">
+                                               document.getElementById("isProvidedOverProtocol1").id = 'id_new'
+                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol1').attr('id','id_new'))).remove();
+                                            </script> 
+                                    </div>    
+                                
+                                    <br />
+                                   <div class="well">
+                                                <label for="hasInputDataLink1"> Input Data <a href="javascript:void(0)" title="Another Link's Input Data"
+                                                    onclick="calli.addResource(event,'#hasInputDataLink1')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="hasInputDataLink1" class="clear" rel="wot:hasInputData">
+                                                        <div typeof="wot:DataSchema">
+                                                            <br />
+                                                            <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                
+                                                            <br />
+                                                            <div class="div_class" id="isMeasuredln1" >
+                                                                <label for="isMeasuredln1">Unit of measurement:</label> 
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln1;multiple" />
+                                                                <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln1" />
+                                                                 
+                                                                    <script type="text/javascript">
+                                                                        document.getElementById("isMeasuredln1").id = 'id_new'
+                                                                        $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln1').attr('id','id_new'))).remove();
+                                                                   </script>
+                                                            </div>
+                                                            
+                                                            <br />
+                                                            <div class="div_class" id="DataTypeImportLink1" >
+                                                                <label for="DataTypeImportLink1">DataType:</label>
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink1;multiple" />
+                                                                <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink1" />
+                                                                    <script type="text/javascript">
+                                                                         document.getElementById("DataTypeImportLink1").id = 'id_new'
+                                                                         $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink1').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                            </div>
+                                                            <br />
+                                                                
+                                                            <div class="div-class">
+                                                                    <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                    <br />
+                                                            </div>     
+                                                                
+                                                            
+                                                        </div>
+                                                    </div>
+                                        </div>        
+                                    
+                            
+                            
+                                <div class="div_class well">
+                                        <label for="hasOutputDataLink1"> Output Data <a href="javascript:void(0)" title="Another Link's Output Data"
+                                        onclick="calli.addResource(event,'#hasOutputDataLink1')" class="glyphicon glyphicon-plus" /></label>
+                                        <div id="hasOutputDataLink1" class="clear" rel="wot:hasOutputData">
+                                                <div typeof="wot:DataSchema">
+                                                    <br />
+                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                <br />
+                                                <div class="div_class" id="isMeasuredln2" >
+                                                <label for="isMeasuredln2">Unit of measurement:</label>
+                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                 press CTRL + option selected.</small></p>
+                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln2;multiple" />
+                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln2" />
+                                                        <script type="text/javascript">
+                                                            document.getElementById("isMeasuredln2").id = 'id_new'
+                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln2').attr('id','id_new'))).remove();
+                                                       </script>
+                                                </div>
+                                                    <br />
+                                                <div class="div_class" id="DataTypeImportLink2" >
+                                                    <label for="DataTypeImportLink2">DataType:</label> 
+                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                     press CTRL + option selected.</small></p>
+                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink2;multiple" />
+                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink2" />
+                                                        <script type="text/javascript">
+                                                             document.getElementById("DataTypeImportLink2").id = 'id_new'
+                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink2').attr('id','id_new'))).remove();
+                                                        </script>
+                                                </div>    
+                                                    <br />    
+                                                    <div class="div-class">
+                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                            <br />
+                                                    </div>   
+                                                        
+                                                        
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>    
+                            </div>    
+                         </div>    
+                    </div>
+        </fieldset>
+        
+        <!-- Creating Interaction Patterns -->
+        
+                    <fieldset class="col-md-3">
+                        <div class="form-group">
+                                <legend><strong>Interaction Pattern</strong></legend>
+                                <p align="Justify"><small> An interaction in the context of the Web
+                                of Things is an exchange of data between a Web client and a Thing. 
+                                This data can be either given as input by the client, returned as output
+                                by the Thing or both. Three interaction patterns have been defined so far:
+                                Property, Action and Event.</small></p>
+                                       
+                                       
+                            <div class="form-group well">
+                                <legend><small><strong>Information about the Property Interaction Pattern </strong></small></legend>
+                                <p align="Justify"> <small> Property provides readable and/or writeable data that can
+                                be static (e.g., supported mode, rated output voltage, etc.) or dynamic 
+                                (e.g., current fill level of water, minimum recorded temperature, etc.). </small></p>
+                                
+                                
+                                <label for="interactionPattern1"> Property <a id="addProperty" href="javascript:void(0)" title="Another Interaction Pattern Property"
+                                onclick="calli.addResource(event,'#interactionPattern1')" class="glyphicon glyphicon-plus" /></label>
+                                    <div id="interactionPattern1" rel="wot:providesInteractionPattern">
+                                        <div typeof="wot:InteractionPattern wot:Property">
+                                            
+                                            <br />
+                                            <label>Interaction Name:</label> 
+                                            <input type="text" placeholder="Interaction Name" value="{wot:interactionName}" class="form-control"
+                                                onchange="calli.updateProperty(event, 'wot:interactionName')" /><br/>
+                                            <label>Interaction Description:</label> 
+                                            <input type="text" placeholder="Interaction Description" value="{wot:interactionDescription}" class="form-control"
+                                                onchange="calli.updateProperty(event, 'wot:interactionDescription')" />  <br/>
+                                           
+                                           <label>Is Writable:</label>
+                                           
+                                           <select id="isWritableSelect" class="form-control">
+                                               <option value="true">True</option>
+                                               <option value="false">False</option>
+                                           </select>
+                                           <input id="isWritable" type="hidden" datatype="xsd:boolean" value="{wot:isWritable}" onchange="calli.updateProperty(event, 'wot:isWritable')" />  
+                                           <script type="text/javascript">
+                                               $(document).ready(function(){
+                                                   $("#isWritableSelect").val($("#isWritable").val());
+                                               });
+                                                $("#isWritableSelect").click(function(){
+                                                    $("#isWritable").val($(this).val());
+                                               });
+                                           </script>
+                                                <br />
+                                                
+                                            <label>Is Required:</label>
+                                           
+                                           <select id="isRequiredSelect" class="form-control">
+                                               <option value="true">True</option>
+                                               <option value="false">False</option>
+                                           </select>
+                                           <input id="isRequired" type="hidden" datatype="xsd:boolean" value="{wot:isRequired}" onchange="calli.updateProperty(event, 'wot:isRequired')" />  
+                                           <script type="text/javascript">
+                                               $(document).ready(function(){
+                                                   $("#isRequiredSelect").val($("#isRequired").val());
+                                               });
+                                                $("#isRequiredSelect").click(function(){
+                                                    $("#isRequired").val($(this).val());
+                                               });
+                                           </script>
+                                                <br />    
+                                                
+                                               <!-- Is Measuredln Unit of Measure -->
+                                                <div class="div_class" id="isMeasuredln3" >
+                                                        <label for="isMeasuredln3">Unit of measurement:</label>
+                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                         press CTRL + option selected.</small></p>
+                                                        <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln3;multiple" />
+                                                        <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln3" />
+                                                            <script type="text/javascript">
+                                                                document.getElementById("isMeasuredln3").id = 'id_new'
+                                                                $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln3').attr('id','id_new'))).remove();
+                                                           </script>
+                                                </div>
+                                                
+                                                
+                                               <br /> 
+                                               <!-- Output Data Property --> 
+                                                <div class="div_class well">
+                                                    <label for="hasOutputDataProperty"> Property's Output Data <a href="javascript:void(1)" title="Another Property's Output Data"
+                                                            onclick="calli.addResource(event,'#hasOutputDataProperty')" class="glyphicon glyphicon-plus " /></label>
+                                                        <div id="hasOutputDataProperty" rel="wot:hasOutputData">
+                                                            <div typeof="wot:DataSchema">
+                                                                <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                    onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                <br />
+                                                                <div class="div_class" id="isMeasuredln4" >
+                                                                <label for="isMeasuredln4">Unit of measurement:</label> 
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln4;multiple" />
+                                                                <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln4" />
+                                                                    <script type="text/javascript">
+                                                                        document.getElementById("isMeasuredln4").id = 'id_new'
+                                                                        $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln4').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                                <div class="div_class" id="DataTypeImportProperty" >
+                                                                <label for="DataTypeImportProperty">DataType:</label> 
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportProperty;multiple" />
+                                                                <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportProperty" />
+                                                                    <script type="text/javascript">
+                                                                         document.getElementById("DataTypeImportProperty").id = 'id_new'
+                                                                         $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportProperty').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                       
+                                                                <div class="div-class">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                </div>   
+                                                            </div>
+                                                       </div>
+                                                </div>
+                                                
+                                                <!-- The Property Interaction Pattern is Accessible Through Link -->
+                                                <br />
+                                                <div class="form-group well">
+                                                    <legend><small>The Property Interaction Pattern is Accessible Through Link </small></legend>                     
+                                                    <label for="isAccessibleThrough2"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isAccessibleThrough2')" class="glyphicon glyphicon-plus " /></label>
+                                                    <div id="isAccessibleThrough2" rel="wot:isAccessibleThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                                
+                                                                
+                                                                <div class="div_class" id="isProvidedOverProtocol2" >
+                                                                        <label for="isProvidedOverProtocol2">Is Provided Over Protocol:</label>  
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                      press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol2;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol2" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol2").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol2').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>   
+                                                                
+                                                                <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink2"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink2')" class="glyphicon glyphicon-plus " /></label>
+                                                                        <div id="hasInputDataLink2" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln5" >
+                                                                                    <label for="isMeasuredln5">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln5;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln5" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln5").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln5').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink3" >
+                                                                                    <label for="DataTypeImportLink3">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink3;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink3" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink3").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink3').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />        
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            
+                                                            <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink2"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink2')" class="glyphicon glyphicon-plus " /></label>
+                                                                        <div id="hasOutputDataLink2" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <br />
+                                                                                    <div class="div_class" id="isMeasuredln6" >
+                                                                                    <label for="isMeasuredln6">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln6;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln6" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln6").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln6').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>    
+                                                                                    <br />
+                                                                                    <div class="div_class" id="DataTypeImportLink4" >
+                                                                                    <label for="DataTypeImportLink4">DataType:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink4;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink4" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink4").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink4').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>   
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                </div>        
+                                                                                        
+                                                                        </div>
+                                                               </div> 
+                                                               <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+   
+                                                </div>                
+                                                <!-- The Property Interaction Pattern is Readable Through Link -->
+                                                
+                                                <div class="form-group well">
+                                                    <legend><small>The Property Interaction Pattern is Readable Through Link </small></legend>                     
+                                                    <label for="isReadableThrough1"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isReadableThrough1')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isReadableThrough1" rel="wot:isReadableThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                                <br /> 
+                                                                
+                                                                <div class="div_class" id="isProvidedOverProtocol3" >
+                                                                        <label for="isProvidedOverProtocol3">Is Provided Over Protocol:</label>
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                         press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol3;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol3" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol3").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol3').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>    
+                                                                <br />
+                                                                
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink3"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink3')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink3" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <div class="div_class" id="isMeasuredln7" >
+                                                                                    <label for="isMeasuredln7">Unit of measurement:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln7;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln7" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln7").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln7').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink5" >
+                                                                                    <label for="DataTypeImportLink5">DataType:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                      press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink5;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink5" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink5").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink5').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            <br />
+                                                            
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink3"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink3')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink3" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <br />    
+                                                                                    <div class="div_class" id="isMeasuredln8" >
+                                                                                    <label for="isMeasuredln8">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln8;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln8" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln8").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln8').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                    <br />
+                                                                                    <div class="div_class" id="DataTypeImportLink6" >
+                                                                                    <label for="DataTypeImportLink6">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink6;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink6" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink6").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink6').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>    
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                        
+                                                                                        
+                                                                                </div>
+                                                                       </div>
+                                                                </div>
+                                                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                     
+                                                </div> 
+                                                <!-- The Property Interaction Pattern is Writable Through Link -->
+                                                
+                                                <div class="form-group well">
+                                                    <legend><small>The Property Interaction Pattern is Writable Through Link </small></legend>                     
+                                                    <label for="isWritableThrough1"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isWritableThrough1')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isWritableThrough1" rel="wot:isWritableThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                               <br /> 
+                                                                
+                                                                <div class="div_class" id="isProvidedOverProtocol4" >
+                                                                        <label for="isProvidedOverProtocol4">Is Provided Over Protocol:</label> 
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                         press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol4;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol4" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol4").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol4').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>   
+                                                                <br />
+                                                                
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink4"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink4')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink4" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <div class="div_class" id="isMeasuredln9" >
+                                                                                    <label for="isMeasuredln9">Unit of measurement:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln9;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln9" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln9").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln9').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink7" >
+                                                                                    <label for="DataTypeImportLink7">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink7;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink7" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink7").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink7').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                <br />        
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            
+                                                            <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink4"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink4')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink4" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                        
+                                                                                    <div class="div_class" id="isMeasuredln10" >
+                                                                                    <label for="isMeasuredln10">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln10;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln10" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln10").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln10').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink8" >
+                                                                                    <label for="DataTypeImportLink8">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                      press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink8;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink8" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink8").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink8').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>        
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                        
+                                                                                        
+                                                                                </div>
+                                                                       </div>
+                                                                </div>
+                                                                <br />
+                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                    </div> 
+                                                <br />
+                                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Property</button>
+                                        </div>       
+                                   </div>
+                                   
+                                   
+                            </div>
+                        </div>
+                    </fieldset>
+                                   
+                    <!-- Creating Action Interaction Patterns  -->
+        
+                    <fieldset class="col-md-3">
+                        <div class="form-group well">
+                                <legend><small><strong> Information about the Action Interaction Pattern </strong></small></legend>
+                                <p align="Justify"> <small> The Action interaction pattern targets changes or processes
+                                on a Thing that take a certain time to complete (i.e., actions cannot be applied 
+                                instantaneously like property writes). Examples include an LED fade in, moving a robot,
+                                brewing a cup of coffee, etc. Usually, ongoing Actions are modelled as Task resources, 
+                                which are created when an Action invocation is received by the Thing. </small></p>
+                                
+                                <label for="interactionPattern2"> Action <a href="javascript:void(0)" title="Another Interaction Pattern Action"
+                                onclick="calli.addResource(event,'#interactionPattern2')" class="glyphicon glyphicon-plus" /></label>
+                                    <div id="interactionPattern2" rel="wot:providesInteractionPattern">
+                                        <div typeof="wot:InteractionPattern wot:Action">
+                                            
+                                            <label>Interaction Name:</label> 
+                                            <input type="text" placeholder="Interaction Name" value="{wot:interactionName}" class="form-control"
+                                                onchange="calli.updateProperty(event, 'wot:interactionName')" /><br/>
+                                                
+                                            <label>Interaction Description:</label> 
+                                            <input type="text" placeholder="Interaction Description" value="{wot:interactionDescription}" class="form-control"
+                                                onchange="calli.updateProperty(event, 'wot:interactionDescription')" />  <br/> 
+                                                
+                                                
+                                                
+                                            <label>Is Queueable:</label>
+                                           
+                                           <select id="isQueueableSelect" class="form-control">
+                                               <option value="true">True</option>
+                                               <option value="false">False</option>
+                                           </select>
+                                           <input id="isQueueable" type="hidden" datatype="xsd:boolean" value="{wot:isQueueable}" onchange="calli.updateProperty(event, 'wot:isQueueable')" />  
+                                           <script type="text/javascript">
+                                               $(document).ready(function(){
+                                                   $("#isQueueableSelect").val($("#isQueueable").val());
+                                               });
+                                                $("#isQueueableSelect").click(function(){
+                                                    $("#isQueueable").val($(this).val());
+                                               });
+                                           </script>
+                                             
+                                                <br />
+                                               <!-- Output Data Action --> 
+                                                <div class="div_class well">
+                                                    <label for="hasOutputDataAction"> Action's Output Data  <a href="javascript:void(1)" title="Another Action's Output Data"
+                                                            onclick="calli.addResource(event,'#hasOutputDataAction')" class="glyphicon glyphicon-plus" /></label>
+                                                        <div id="hasOutputDataAction" rel="wot:hasOutputData">
+                                                            <div typeof="wot:DataSchema">
+                                                                <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                    onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                <br />
+                                                                <div class="div_class" id="isMeasuredln11" >
+                                                                <label for="isMeasuredln11">Unit of measurement:</label> 
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln11;multiple" />
+                                                                <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln11" />
+                                                                    <script type="text/javascript">
+                                                                        document.getElementById("isMeasuredln11").id = 'id_new'
+                                                                        $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln11').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                                <div class="div_class" id="DataTypeImportAction1" >
+                                                                <label for="DataTypeImportAction1">DataType:</label> 
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportAction1;multiple" />
+                                                                <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportAction1" />
+                                                                    <script type="text/javascript">
+                                                                         document.getElementById("DataTypeImportAction1").id = 'id_new'
+                                                                         $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportAction1').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                                <div class="div-class">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                </div>   
+                                                            </div>
+                                                       </div>
+                                                </div>
+                                                
+                                                <br />
+                                                <!-- Input Data Action --> 
+                                                <div class="div_class well">
+                                                    <label for="hasInputDataAction"> Action's Input Data <a href="javascript:void(0)" title="Another Action's Input Data "
+                                                            onclick="calli.addResource(event,'#hasInputDataAction')" class="glyphicon glyphicon-plus" /></label>
+                                                        <div id="hasInputDataAction" rel="wot:hasInputData">
+                                                            <div typeof="wot:DataSchema">
+                                                                <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                    onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                <br />
+                                                                <div class="div_class" id="isMeasuredln12" >
+                                                                <label for="isMeasuredln12">Unit of measurement:</label>
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln12;multiple" />
+                                                                <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln12" />
+                                                                    <script type="text/javascript">
+                                                                        document.getElementById("isMeasuredln12").id = 'id_new'
+                                                                        $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln12').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                                <div class="div_class" id="DataTypeImportAction2" >
+                                                                <label for="DataTypeImportAction2">DataType:</label> 
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportAction2;multiple" />
+                                                                <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportAction2" />
+                                                                    <script type="text/javascript">
+                                                                         document.getElementById("DataTypeImportAction2").id = 'id_new'
+                                                                         $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportAction2').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                                <div class="div-class">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                </div>   
+                                                            </div>
+                                                       </div>
+                                                </div>
+                                                
+                                                
+                                                <br />
+                                                
+                                                <!-- The Action Interaction Pattern is Accessible Through Link -->
+                                                
+                                                <div class="form-group well">
+                                                    <legend><small>The Action Interaction Pattern is Accessible Through Link </small></legend>                     
+                                                    <label for="isAccessibleThrough3"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isAccessibleThrough3')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isAccessibleThrough3" rel="wot:isAccessibleThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                                <br />
+                                                                <div class="div_class" id="isProvidedOverProtocol5" >
+                                                                        <label for="isProvidedOverProtocol5">Is Provided Over Protocol:</label>
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                         press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol5;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol5" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol5").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol5').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>    
+                                                                <br />
+                                                                
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink5"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink5')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink5" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln13" >
+                                                                                    <label for="isMeasuredln13">Unit of measurement:</label>  
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                      press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln13;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln13" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln13").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln13').attr('id','id_new'))).remove();
+                                                                                       </script>
+                                                                                </div>
+                                                                                
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink9" >
+                                                                                    <label for="DataTypeImportLink9">DataType:</label>  
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink9;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink9" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink9").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink9').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                     <br />   
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                </div>       
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            
+                                                            
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink5"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink5')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink5" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <br />
+                                                                                    <div class="div_class" id="isMeasuredln14" >
+                                                                                    <label for="isMeasuredln14">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln14;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln14" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln14").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln14').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                      <br />  
+                                                                                     <div class="div_class" id="DataTypeImportLink10" >   
+                                                                                    <label for="DataTypeImportLink10">DataType:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink10;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink10" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink10").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink10').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>    
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                </div>        
+                                                                                        
+                                                                        </div>
+                                                               </div> 
+                                                               <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                </div>                
+                                                <!-- The Action Interaction Pattern is Readable Through Link -->
+                                                
+                                                <div class="form-group well">
+                                                    <legend><small>The Action Interaction Pattern is Readable Through Link </small></legend>                     
+                                                    <label for="isReadableThrough2"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isReadableThrough2')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isReadableThrough2" rel="wot:isReadableThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                                
+                                                                <br />
+                                                                <div class="div_class" id="isProvidedOverProtocol6" >
+                                                                        <label for="isProvidedOverProtocol6">Is Provided Over Protocol:</label>
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                         press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol6;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol6" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol6").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol6').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>    
+                                                                
+                                                                
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink6"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink6')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink6" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln15" >
+                                                                                    <label for="isMeasuredln15">Unit of measurement:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln15;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln15" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln15").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln15').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink11" >
+                                                                                    <label for="DataTypeImportLink11">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink11;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink11" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink11").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink11').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            
+                                                            
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink6"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink6')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink6" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <br />
+                                                                                    <div class="div_class" id="isMeasuredln16" >
+                                                                                    <label for="isMeasuredln16">Unit of measurement:</label>  
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln16;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln16" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln16").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln16').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                    <br />
+                                                                                    <div class="div_class" id="DataTypeImportLink12" >
+                                                                                    <label for="DataTypeImportLink12">DataType:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink12;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink12" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink12").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink12').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                      <br />  
+                                                                                        
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                        
+                                                                                        
+                                                                                </div>
+                                                                       </div>
+                                                                </div>
+                                                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <!-- The Action Interaction Pattern is Writable Through Link -->
+                                                
+                                                <div class="form-group well">
+                                                    <legend><small>The Action Interaction Pattern is Writable Through Link </small></legend>                     
+                                                    <label for="isWritableThrough2"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isWritableThrough2')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isWritableThrough2" rel="wot:isWritableThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                                <div class="div_class" id="isProvidedOverProtocol7" >
+                                                                        <label for="isProvidedOverProtocol7">Is Provided Over Protocol:</label>
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                         press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol7;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol7" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol7").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol7').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>    
+                                                                
+                                                                <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink7"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink7')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink7" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln17" >
+                                                                                    <label for="isMeasuredln17">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln17;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln17" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln17").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln17').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink13" >
+                                                                                    <label for="DataTypeImportLink13">DataType:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink13;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink13" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink13").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink13').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            <br />
+                                                            
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink7"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink7')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink7" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln18" >
+                                                                                    <label for="isMeasuredln18">Unit of measurement:</label>  
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln18;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln18" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln18").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln18').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink14" >
+                                                                                    <label for="DataTypeImportLink14">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink14;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink14" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink14").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink14').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>    
+                                                                                     <br />   
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                        
+                                                                                        
+                                                                                </div>
+                                                                       </div>
+                                                                </div>
+                                                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Action</button>    
+                                
+                                        </div>
+                                    </div>                            
+                            
+                        </div>    
+                    </fieldset>           
+
+                    <fieldset class="col-md-3">
+                        <div class="form-group well">
+                                <legend><small><strong> Information about the Event Interaction Pattern </strong></small></legend>
+                                <p align="Justify"> <small> The Event interaction pattern enables a mechanism to
+                                be notified by a Thing on a certain condition. </small></p>
+                                
+                                <label for="interactionPattern3"> Event <a href="javascript:void(0)" title="Another Interaction Pattern event"
+                                onclick="calli.addResource(event,'#interactionPattern3')" class="glyphicon glyphicon-plus" /></label>
+                                    <div id="interactionPattern3" rel="wot:providesInteractionPattern">
+                                        <div typeof="wot:InteractionPattern wot:Event">
+                                            
+                                            <label>Interaction Name:</label>
+                                            <input type="text" placeholder="Interaction Name" value="{wot:interactionName}" class="form-control"
+                                                onchange="calli.updateProperty(event, 'wot:interactionName')" /><br/>
+                                                
+                                            <label>Interaction Description:</label>
+                                            <input type="text" placeholder="Interaction Description" value="{wot:interactionDescription}" class="form-control"
+                                                onchange="calli.updateProperty(event, 'wot:interactionDescription')" />   <br/>
+                                                <br />
+                                               <!-- Output Data Event --> 
+                                                <div class="div_class well">
+                                                    <label for="hasOutputDataEvent"> Event's Output Data <a href="javascript:void(1)" title="Another Event's Output Data"
+                                                            onclick="calli.addResource(event,'#hasOutputDataEvent')" class="glyphicon glyphicon-plus" /></label>
+                                                        <div id="hasOutputDataEvent" rel="wot:hasOutputData">
+                                                            <div typeof="wot:DataSchema">
+                                                                <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                    onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                <br />
+                                                                <div class="div_class" id="isMeasuredln19" >
+                                                                <label for="isMeasuredln19">Unit of measurement:</label> 
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln19;multiple" />
+                                                                <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln19" />
+                                                                    <script type="text/javascript">
+                                                                        document.getElementById("isMeasuredln19").id = 'id_new'
+                                                                        $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln19').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                                <div class="div_class" id="DataTypeImportEvent" >
+                                                                <label for="DataTypeImportEvent">DataType:</label>
+                                                                <p align="Justify"> <small>To uncheck the selected option, please
+                                                                 press CTRL + option selected.</small></p>
+                                                                <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportEvent;multiple" />
+                                                                <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportEvent" />
+                                                                    <script type="text/javascript">
+                                                                         document.getElementById("DataTypeImportEvent").id = 'id_new'
+                                                                         $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportEvent').attr('id','id_new'))).remove();
+                                                                    </script>
+                                                                </div>
+                                                                <br />
+                                                                <div class="div-class">
+                                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                </div>   
+                                                            </div>
+                                                       </div>
+                                                </div>
+                                                
+                                            <!-- The Event Interaction Pattern is Accessible Through Link -->
+                                                <br />
+                                                <div class="form-group well">
+                                                    <legend><small>The Event Interaction Pattern is Accessible Through Link </small></legend>                     
+                                                    <label for="isAccessibleThrough4"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isAccessibleThrough4')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isAccessibleThrough4" rel="wot:isAccessibleThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                                
+                                                                <div class="div_class" id="isProvidedOverProtocol8" >
+                                                                        <label for="isProvidedOverProtocol8">Is Provided Over Protocol:</label>
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                         press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol8;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol8" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol8").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol8').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>    
+                                                                
+                                                                <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink8"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink'8)" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink8" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln20" >
+                                                                                    <label for="isMeasuredln20">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                      press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln20;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln20" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln20").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln20').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink15" >
+                                                                                    <label for="DataTypeImportLink15">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink15;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink15" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink15").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink15').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            
+                                                            <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink8"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink8')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink8" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <br />
+                                                                                    <div class="div_class" id="isMeasuredln21" >
+                                                                                    <label for="isMeasuredln21">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln21;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln21" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln21").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln21').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                      <br />  
+                                                                                    <div class="div_class" id="DataTypeImportLink16" >    
+                                                                                    <label for="DataTypeImportLink16">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink16;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink16" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink16").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink16').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                    <br />    
+                                                                                        
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                </div>        
+                                                                                        
+                                                                        </div>
+                                                               </div> 
+                                                               <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                </div>                
+                                                <!-- The Event Interaction Pattern is Readable Through Link -->
+                                                <br />
+                                                <div class="form-group well">
+                                                    <legend><small>The Event Interaction Pattern is Readable Through Link </small></legend>                     
+                                                    <label for="isReadableThrough3"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isReadableThrough3')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isReadableThrough3" rel="wot:isReadableThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                <br />
+                                                                <div class="div_class" id="isProvidedOverProtocol9" >
+                                                                        <label for="isProvidedOverProtocol9">Is Provided Over Protocol:</label>
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                            press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol9;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol9" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol9").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol9').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>    
+                                                                
+                                                                <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink9"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink9')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink9" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln22" >
+                                                                                    <label for="isMeasuredln22">Unit of measurement:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln22;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln22" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln22").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln22').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink17" >
+                                                                                    <label for="DataTypeImportLink17">DataType:</label>  
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink17;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink17" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink17").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink17').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                    <br />    
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            
+                                                            <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink9"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink9')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink9" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                    <br />
+                                                                                    <div class="div_class" id="isMeasuredln23" >
+                                                                                    <label for="isMeasuredln23">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln23;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln23" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln23").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln23').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                    <br />
+                                                                                    <div class="div_class" id="DataTypeImportLink18" >
+                                                                                    <label for="DataTypeImportLink18">DataType:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink18;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink18" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink18").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink18').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                    </div>
+                                                                                     <br />   
+                                                                                        
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                        
+                                                                                        
+                                                                                </div>
+                                                                       </div>
+                                                                </div>
+                                                                 <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <br />
+                                                <!-- The Event Interaction Pattern is Writable Through Link -->
+                                                <br />
+                                                <div class="form-group well">
+                                                    <legend><small>The Event Interaction Pattern is Writable Through Link </small></legend>                     
+                                                    <label for="isWritableThrough3"> Define Link <a href="javascript:void(0)" title="Another Link"
+                                                                onclick="calli.addResource(event,'#isWritableThrough3')" class="glyphicon glyphicon-plus" /></label>
+                                                    <div id="isWritableThrough3" rel="wot:isWritableThrough">
+                                                        <div typeof="wot:Link">
+                                                            <input type="text" placeholder="Href" value="{wot:href}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:href')" />
+                                                            <input type="text" placeholder="Media Type" value="{wot:hasMediaType}" class="form-control"
+                                                                onchange="calli.updateProperty(event, 'wot:hasMediaType')" />
+                                                                
+                                                                <br />
+                                                                
+                                                                <div class="div_class" id="isProvidedOverProtocol10" >
+                                                                        <label for="isProvidedOverProtocol10">Is Provided Over Protocol:</label> 
+                                                                        <p align="Justify"> <small>To uncheck the selected option, please
+                                                                         press CTRL + option selected.</small></p>
+                                                                            <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isProvidedOverProtocol.rq?select&amp;rel=wot:isProvidedOverProtocol&amp;id=isProvidedOverProtocol10;multiple" />
+                                                                            <div class="hidden" rel="wot:isProvidedOverProtocol" resource="?isProvidedOverProtocol10" />
+                                                                            <script type="text/javascript">
+                                                                               document.getElementById("isProvidedOverProtocol10").id = 'id_new'
+                                                                                    $('[rel="wot:isProvidedOverProtocol"].hidden').filter(calli.selectEachResourceIn($('#isProvidedOverProtocol10').attr('id','id_new'))).remove();
+                                                                            </script>  
+                                                                </div>    
+                                                                
+                                                                <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasInputDataLink10"> Input Data <a href="javascript:void(0)" title="Another Input Data Link"
+                                                                        onclick="calli.addResource(event,'#hasInputDataLink10')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasInputDataLink10" rel="wot:hasInputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln24" >
+                                                                                    <label for="isMeasuredln24">Unit of measurement:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln24;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln24" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln24").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln24').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink19" >
+                                                                                    <label for="DataTypeImportLink19">DataType:</label>
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink19;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink19" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink19").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink19').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                 <br />       
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Input Data</button>
+                                                                                    </div>     
+                                                                                        
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                            
+                                                            <br />
+                                                                <div class="div_class well">
+                                                                        <label for="hasOutputDataLink10"> Output Data <a href="javascript:void(0)" title="Another Output Data Link"
+                                                                        onclick="calli.addResource(event,'#hasOutputDataLink10')" class="glyphicon glyphicon-plus" /></label>
+                                                                        <div id="hasOutputDataLink10" rel="wot:hasOutputData">
+                                                                                <div typeof="wot:DataSchema">
+                                                                                    <input type="text" placeholder="Default Value" value="{wot:defaultValue}" class="form-control"
+                                                                                        onchange="calli.updateProperty(event, 'wot:defaultValue')" />
+                                                                                <br />
+                                                                                <div class="div_class" id="isMeasuredln25" >
+                                                                                    <label for="isMeasuredln25">Unit of measurement:</label>   
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/isMeasuredlnUnit.rq?select&amp;rel=wot:isMeasuredln&amp;id=isMeasuredln25;multiple" />
+                                                                                    <div class="hidden" rel="wot:isMeasuredln" resource="?isMeasuredln25" />
+                                                                                        <script type="text/javascript">
+                                                                                            document.getElementById("isMeasuredln25").id = 'id_new'
+                                                                                            $('[rel="wot:isMeasuredln"].hidden').filter(calli.selectEachResourceIn($('#isMeasuredln25').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                <br />
+                                                                                <div class="div_class" id="DataTypeImportLink20" >
+                                                                                    <label for="DataTypeImportLink20">DataType:</label> 
+                                                                                    <p align="Justify"> <small>To uncheck the selected option, please
+                                                                                     press CTRL + option selected.</small></p>
+                                                                                    <xi:include href="http://localhost:8080/ProjetoFinal/WoTDescription/Queries/DataTypeImport.rq?select&amp;rel=wot:hasValueType&amp;id=DataTypeImportLink20;multiple" />
+                                                                                    <div class="hidden" rel="wot:hasValueType" resource="?DataTypeImportLink20" />
+                                                                                        <script type="text/javascript">
+                                                                                             document.getElementById("DataTypeImportLink20").id = 'id_new'
+                                                                                             $('[rel="wot:hasValueType"].hidden').filter(calli.selectEachResourceIn($('#DataTypeImportLink20').attr('id','id_new'))).remove();
+                                                                                        </script>
+                                                                                </div>
+                                                                                    <br />    
+                                                                                        
+                                                                                    <div class="div-class">
+                                                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger btn-sm">Remove Output Data</button>
+                                                                                    </div>   
+                                                                                        
+                                                                                        
+                                                                                </div>
+                                                                       </div>
+                                                                </div>
+                                                                <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Link</button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-warning btn-sm">Remove Event</button>    
+                                                
+                                
+                                        </div>
+                                    </div>                            
+                            
+                        </div>    
+                    </fieldset> 
+
+                 <br />
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" >Save</button>
+                    <button type="button" onclick="window.location.replace('?view')" class="btn btn-default">Cancel</button>
+                    <button type="button" onclick="calli.deleteResource(event)" class="btn btn-danger">Delete</button>
+                </div>
+        </form>
+        
+        <script type="text/javascript">
+            comparison = calli.copyResourceData('#form');
+        </script>
+    </div>
+</body>
+</html>

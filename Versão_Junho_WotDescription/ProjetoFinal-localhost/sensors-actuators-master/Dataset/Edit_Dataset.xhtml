@@ -1,0 +1,138 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:gn="http://www.geonames.org/ontology#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:calli="http://callimachusproject.org/rdf/2009/framework#"
+    xmlns:schema="http://schema.org/"
+    xmlns:tute="http://callimachusproject.org/2014/03/tutorial#"
+    xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#"
+    xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/unit#"
+    xmlns:ssn-system="https://www.w3.org/ns/ssn/systems/"
+    xmlns:ssn="https://www.w3.org/ns/ssn/"
+    xmlns:sosa="https://www.w3.org/ns/sosa/"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:owl="https://www.w3.org/2002/07/owl#"
+    xmlns:dul="http://www.loa.istc.cnr.it/ontologies/DUL.owl#">
+<head>
+    <title resource="?this">{rdfs:label}</title>
+    
+    <script type="text/javascript" src="Datasetcreator.js"></script>
+    <script type="text/javascript" src="seeAlso.js"></script>
+    <script type="text/javascript" src="subject.js"></script>
+     <script type="text/javascript" src="language.js"></script>
+     
+        <script type="text/javascript">
+	
+    
+             function updateLabel(event){
+                calli.updateProperty(event, 'schema:name dcterms:title rdfs:label');
+                   
+        }
+
+    </script>
+    
+</head>
+<body resource="?this">
+    <div class="container">
+        <div class="page-header">
+            <h1 property="rdfs:label"></h1>
+        </div>
+        <form id="form" role="form" method="POST" action="" enctype="application/sparql-update" resource="?this" class="row"
+                onsubmit="calli.submitUpdate(comparison,event)">
+            <fieldset class="col-sm-5">
+                <legend>Dataset</legend>
+               <div class="form-group">
+                        <label>Name:</label>
+                            <input type="text" class="form-control" id="label" value="{rdfs:label}"  autofocus="autofocus"
+                              onchange="updateLabel(event)"/>
+                            <input type="hidden" class="form-control" id="nome2" value="{dcterms:title}"/>	
+                            <input type="hidden" class="form-control" id="nome3" value="{schema:name}"/>	
+                    </div>
+                <div class="form-group">
+                    <label>Subject:</label>
+                    <select id="subject" class="form-control" multiple="multiple"
+                        onchange="calli.updateResource(event, 'dcterms:subject')">
+                        <option selected="selected" rel="dcterms:subject" resource="?subject" value="{?subject}">{rdfs:label} </option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <label>Language:</label>
+                    <select id="language" class="form-control" multiple="multiple"
+                        onchange="calli.updateResource(event, 'dcterms:language')">
+                        <option selected="selected" rel="dcterms:language" resource="?language" value="{?language}">{dcterms:title} </option>
+                    </select> 
+                </div>
+                
+
+                <div class="form-group">
+                    <label>Publisher:</label>
+                    <select id="Datasetcreator" class="form-control" multiple="multiple"
+                        onchange="calli.updateResource(event, 'dcterms:creator foaf:maker' )">
+                        <option selected="selected" rel="dcterms:creator foaf:maker" resource="?Datasetcreator" value="{?Datasetcreator}"> {rdfs:label} </option>
+                    </select>  
+                </div>
+                
+                 <div class="form-group">
+                	<label for="homepage">Homepage:</label>
+                	<input type="text" class="form-control" id="homepage" value="{foaf:homepage}" required="required" autofocus="autofocus"
+                    	onchange="calli.updateProperty(event, 'foaf:homepage')"/>
+                    
+            	</div>
+                <div class="form-group">
+                    <label for="Description">Description:</label>
+                    <textarea id="Description" class="form-control"
+                        onchange="calli.updateProperty(event, 'dcterms:description')">{dcterms:description}</textarea>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset class="col-sm-5">
+                <div class="form-group">
+                	<legend>Distribution</legend>
+                    <div rel="dcat:distribution">
+                        <div id="Distribution" typeof="dcat:Distribution">
+                            <label for="label">Title:</label>
+                                <input type="text" class="form-control" id="label100" value="{dcterms:title}" 
+                                    onchange="calli.updateProperty(event, 'dcterms:title')" />
+                            <label for="by"> Download URL:</label>
+                            <input type="url" class="form-control" value="{dcat:downloadURL}" placeholder="Download URL"
+                                onchange="calli.updateProperty(event, 'dcat:downloadURL')"/>
+                            <label for="cy"> Media type:</label>
+                            <input type="text" class="form-control" value="{dcat:mediaType}" placeholder="Media type"
+                                onchange="calli.updateProperty(event, 'dcat:mediaType')"/>
+                            <label for="dy"> Size in bytes:</label>
+                            <input type="decimal" class="form-control" value="{dcat:byteSize}" placeholder="Size in bytes"
+                                onchange="calli.updateProperty(event, 'dcat:byteSize')"/>
+                             <label for="bday">Issued date:</label>
+                                <input type="date" class="form-control" id="issued" value="{dcterms:issued}"
+                                  onchange="calli.updateProperty(event, 'dcterms:issued')" />
+                            <label for="ey"> Description:</label>
+                            <textarea id="description100" class="form-control"
+                                onchange="calli.updateProperty(event, 'dcterms:description')" placeholder="Description">{dcterms:description}</textarea>
+                          
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" onclick="window.location.replace('?view')" class="btn btn-default">Cancel</button>
+                    <button type="button" onclick="calli.deleteResource(event)" class="btn btn-danger">Delete</button>
+                </div>
+            </fieldset>
+        </form>
+        <script type="text/javascript">
+            comparison = calli.copyResourceData('#form');
+        </script>
+    </div>
+</body>
+</html>

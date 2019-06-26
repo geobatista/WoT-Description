@@ -1,0 +1,252 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:gn="http://www.geonames.org/ontology#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:schema="http://schema.org/"
+    xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#"
+    xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/unit#"
+    xmlns:calli="http://callimachusproject.org/rdf/2009/framework#"
+    xmlns:sosa="http://www.w3.org/ns/sosa/"
+    xmlns:ssn="http://www.w3.org/ns/ssn/"
+    xmlns:ssn-system="http://www.w3.org/ns/ssn/systems/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:tute="http://callimachusproject.org/2014/03/tutorial#">
+<head>
+    <title>New Actuator Model</title>
+     <script type="text/javascript">
+
+        function updateID(event){
+            calli.updateProperty(event, 'schema:identifier dcterms:identifier');
+               
+    }
+     function updateLabel(event){
+            calli.updateProperty(event, 'schema:name dcterms:title rdfs:label');
+               
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>New Actuator Model</h1>
+        </div>
+        <form role="form" method="POST" action="" enctype="text/turtle" resource="" typeof="owl:Class" class="row"
+                onsubmit="calli.submitTurtle(event,calli.slugify($('#id').val()))">
+           
+            <div class="row"> 
+            
+            <fieldset class="col-md-5">
+                 <div class="form-group">
+                    <label for="id">ID (URI)</label>
+                    <input type="text" class="form-control" id="id" value="{schema:identifier}" required="required" autofocus="autofocus"
+                               onchange="updateID(event)"/>
+                    <input type="hidden" class="form-control" id="nome1" value="{dcterms:identifier}"/>	
+                    
+                </div>
+                
+                 <div class="form-group">
+                        <label>Label</label>
+                            <input type="text" class="form-control" id="label" value="{rdfs:label}"  autofocus="autofocus"
+                              onchange="updateLabel(event)"/>
+                            <input type="hidden" class="form-control" id="nome2" value="{dcterms:title}"/>	
+                            <input type="hidden" class="form-control" id="nome3" value="{schema:name}"/>	
+                    </div>
+                <div rel="rdfs:subClassOf" resource="http://www.w3.org/ns/ssn/System"></div>
+                <div rel="rdfs:subClassOf" resource="http://www.w3.org/ns/sosa/Actuator"></div>
+                
+                
+               
+                        <div class="hidden">
+                        <div id="ob1" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">      
+                                <div id="ob2" rel="owl:onProperty" resource="http://www.w3.org/ns/sosa/actsOnProperty" ></div>
+                                        <label for="ObservableProperty1">Acts on Property:</label>
+                                                    <xi:include href="ActuatableProperty.rq?select&amp;rel=owl:hasValue&amp;id=ObservableProperty1&amp;multiple=multiple" />
+                                                                              <div rel="owl:hasValue" resource="?ObservableProperty1" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="owl:hasValue"]').filter(calli.selectEachResourceIn('#ObservableProperty1')).remove();
+                                                                               
+                                                                              </script>
+                                                                
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+                    <div class="hidden">
+                        <div id="p1" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">      
+                               
+                                   <div id="p3" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/implements" ></div>
+                                        <label for="procedure">Procedure:</label>
+                                                    <xi:include href="Procedure.rq?select&amp;rel=owl:hasValue&amp;id=procedure1&amp;multiple=multiple" />
+                                                                              <div rel="owl:hasValue" resource="?procedure1" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="owl:hasValue"]').filter(calli.selectEachResourceIn('#procedure1')).remove();
+                                                                               
+                                                                              </script>
+                                                                
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+                   <div class="hidden">
+                        <div id="c1" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">      
+                               
+                                   <div id="c3" rel="owl:onProperty" resource="http://xmlns.com/foaf/0.1/maker" ></div>
+                                        <label for="creator1">Producer/creator:</label>
+                                                    <xi:include href="creator.rq?select&amp;rel=owl:hasValue&amp;id=creator2&amp;multiple=multiple" />
+                                                                              <div rel="owl:hasValue" resource="?creator2" />
+                                                                              <script type="text/javascript">
+                                                                                $('div[rel="owl:hasValue"]').filter(calli.selectEachResourceIn('#creator2')).remove();
+                                                                               
+                                                                              </script>
+                                                                
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" class="form-control"
+                        onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                </div>
+            
+                
+                <div class="hidden">   
+                            <div id="rest1" rel="rdfs:subClassOf">
+                                <div typeof="owl:Restriction">
+                                    <div id="rest2" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/systems/hasSystemCapability" ></div>
+                                <div id="rest3" rel="owl:hasValue">
+                                    <div typeof="ssn-system:SystemCapability">
+                                          
+                                                                
+                                        <label for="rest4">System Property <a href="javascript:void(0)" title="Another System Property"
+                                                onclick="calli.addResource(event,'#rest4')" class="glyphicon glyphicon-plus" /></label>
+                                            <div id="rest4" rel="ssn-system:hasSystemProperty">
+                                                <div typeof="ssn-system:SystemProperty schema:PropertyValue">
+                                                    
+                                                    <div class="div_class" id="type1">
+                                                            <xi:include href="SystemProperty.rq?select&amp;rel=rdf:type&amp;id=type1;multiple" />
+                                                            <div class="hidden" rel="rdf:type" resource="?type1" />    
+                                                                <script type="text/javascript">
+                                                                    document.getElementById("type1").id = 'id_new'
+                                                                    $('[rel="rdf:type"].hidden').filter(calli.selectEachResourceIn($('#type1').attr('id','id_new'))).remove();
+                                                                </script>
+                                                    
+                                                    </div>
+                                                        
+                                                        <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:value')" />
+                                                        <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                        <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                            
+                                                      
+                                                            <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button> 
+               
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+            
+        
+                 <fieldset class="col-md-3">
+            
+                    <div class="hidden">
+                        <div id="rest11" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">
+                                <div id="rest12" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/systems/hasOperatingRange" ></div>
+                            <div id="rest13" rel="owl:hasValue">
+                                <div typeof="ssn-system:OperatingRange">
+                                        <label for="rest14">Operating Property <a href="javascript:void(0)" title="Another Operating Property"
+                                                onclick="calli.addResource(event,'#rest14')" class="glyphicon glyphicon-plus" /></label>
+                                        <div id="rest14" rel="ssn-system:hasOperatingProperty">
+                                                <div typeof="ssn-system:OperatingProperty schema:PropertyValue">
+                                                    <xi:include href="OperatingProperty.rq?checkbox&amp;rel=rdf:type&amp;name=type2;id=type2"/>
+                                                    <div rel="rdf:type" resource="?type2"></div>
+                                                        <script type="text/javascript">
+                                                            $('[rel="rdf:type"].hidden').filter(calli.checkEachResourceIn('#type2')).remove();
+                                                        </script>
+                                                        <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:value')" />
+                                                        <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                        <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                            
+                                                      
+                                                                                
+                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>    
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </fieldset>
+    
+             <fieldset class="col-md-3">
+            
+                    <div class="hidden">
+                        <div id="rest111" rel="rdfs:subClassOf">
+                            <div typeof="owl:Restriction">
+                                <div id="rest122" rel="owl:onProperty" resource="http://www.w3.org/ns/ssn/systems/hasSurvivalRange" ></div>
+                            <div id="rest133" rel="owl:hasValue">
+                                <div typeof="ssn-system:SurvivalRange">
+                                        <label for="rest144">Survival Property <a href="javascript:void(0)" title="Another Survival Property"
+                                                onclick="calli.addResource(event,'#rest144')" class="glyphicon glyphicon-plus" /></label>
+                                        <div id="rest144" rel="ssn-system:hasSurvivalProperty">
+                                                <div typeof="ssn-system:SurvivalProperty schema:PropertyValue">
+                                                   <xi:include href="SurvivalProperty.rq?checkbox&amp;rel=rdf:type&amp;name=type3;id=type3" />
+                                                    <div rel="rdf:type" resource="?type3"></div>
+                                                        <script type="text/javascript">
+                                                            $('[rel="rdf:type"].hidden').filter(calli.checkEachResourceIn('#type3')).remove();
+                                                        </script>
+                                                        <input type="text" placeholder="Value" value="{schema:value}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:value')" />
+                                                        <input type="text" placeholder="min Value" value="{schema:minValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:minValue')" />
+                                                        <input type="text" placeholder="max Value" value="{schema:maxValue}" class="form-control"
+                                                            onchange="calli.updateProperty(event, 'schema:maxValue')" />
+                                                       
+                                                            
+                                                        <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>    
+                                                </div>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+             
+                </fieldset>
+            </div>
+               
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+         
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a <http://iot.linkeddata.es/def/wot#CommunicationProtocol> , <../Classes/CommunicationProtocol/CommunicationProtocol> ;
+    dcterms:created "2019-03-10T16:08:53.459Z"^^xsd:dateTime ;
+    dcterms:identifier "SOAP" ;
+    dcterms:modified "2019-03-10T16:12:03.830Z"^^xsd:dateTime ;
+    dcterms:title "Simple Object Access Protocol" ;
+    schema:identifier "SOAP" ;
+    schema:name "Simple Object Access Protocol" ;
+    rdfs:comment "SOAP (Simple Object Access Protocol, em português Protocolo Simples de Acesso a Objetos) é um protocolo para troca de informações estruturadas em uma plataforma descentralizada e distribuída. Ele se baseia na Linguagem de Marcação Extensível (XML) para seu formato de mensagem, e normalmente baseia-se em outros protocolos da camada de aplicação, mais notavelmente em chamada de procedimento remoto (RPC) e Protocolo de transferência de hipertexto (HTTP), para negociação e transmissão de mensagens. SOAP pode formar a camada base de uma pilha de protocolos de serviços Web, fornecendo um arcabouço básico de mensagens sob o qual se podem construir os serviços Web. " ;
+    rdfs:label "Simple Object Access Protocol" ;
+    calli:administrator </auth/groups/admin> ;
+    calli:editor </auth/groups/power> , </auth/groups/staff> ;
+    calli:reader </auth/groups/public> , </auth/groups/system> ;
+    calli:subscriber </auth/groups/everyone> ;
+    rdfs:seeAlso dbr:SOAP ;
+    owl:sameAs dbr:SOAP .

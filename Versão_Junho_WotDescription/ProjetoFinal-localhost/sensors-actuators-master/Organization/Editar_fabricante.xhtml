@@ -1,0 +1,140 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:gn="http://www.geonames.org/ontology#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dbp="http://dbpedia.org/ontology/"
+	xmlns:owl="https://www.w3.org/2002/07/owl#"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:gr="http://purl.org/goodrelations/v1#"
+	xmlns:schema= "http://schema.org/">
+    
+<head>
+	<title resource="?this">{rdfs:label}</title>
+	<script type="text/javascript" src="hasMember.js"></script>
+	<script type="text/javascript" src="SameAs.js"></script>
+	<script type="text/javascript">
+	
+        function updateHomepage(event){
+            calli.updateProperty(event, 'vcard:hasURL foaf:homepage');
+                 
+    }
+    </script>
+    
+      <script type="text/javascript">
+	
+    
+            function updateLabel(event){
+            calli.updateProperty(event, 'gr:legalName vcard:organization-name foaf:name schema:name dcterms:title rdfs:label');
+            }
+
+    </script>
+	
+</head>
+<body resource="?this">
+	<div class="container">
+    	<div class="page-header">
+        	<h1 property="rdfs:label"></h1>
+    	</div>
+    	<form id="form" role="form" method="POST" action="" enctype="application/sparql-update" resource="?this" class="row"
+            	onsubmit="calli.submitUpdate(comparison,event)">
+         <fieldset class="col-md-5">
+             
+            <div class="form-group">
+                	<label for="label">Name:</label>
+                	<input type="text" class="form-control" id="label" value="{gr:legalName}" required="required" autofocus="autofocus"
+                            	onchange="updateLabel(event)"/>
+                    <input type="hidden" class="form-control" id="nome1" value="{foaf:name}"/>	
+                    <input type="hidden" class="form-control" id="nome2" value="{rdfs:label}"/>	
+                    <input type="hidden" class="form-control" id="nome3" value="{vcard:organization-name}"/>	
+                    <input type="hidden" class="form-control" id="nome4" value="{schema:name}"/>
+                    <input type="hidden" class="form-control" id="nome5" value="{dcterms:title}"/>	
+                    
+            	</div>
+                    
+            	  <div class="form-group">
+        		     <label>Type of Organization:</label>
+                          <xi:include href="type-of-organization.rq?radio&amp;rel=org:classification&amp;name=org&amp;id=org" />
+                          <div rel="org:classification" resource="?org" />
+                          <script type="text/javascript">
+                            $('div[rel="org:classification"]').filter(calli.checkEachResourceIn('#org')).remove();
+                          </script>
+                </div>
+
+            	
+            	<div class="form-group">
+                	<label for="hasURL">Homepage:</label>
+                	<input type="url" class="form-control" id="hasURL" value="{vcard:hasURL}" required="required" autofocus="autofocus"
+                    	onchange="updateHomepage(event)"/>
+                    <input type="hidden" class="form-control" id="homepage" value="{foaf:homepage}"/>	
+            	</div>
+       
+            	 
+       
+            <div class="form-group">
+                    <label>Contact Person:</label>
+                    <select id="hasMember" class="form-control" multiple="multiple"
+                        onchange="calli.updateResource(event, 'org:hasMember' )">
+                        <option selected="selected" rel="org:hasMember" resource="?hasMember" value="{?hasMember}"> {rdfs:label} </option>
+                    </select>  
+                </div>
+            	<div class="form-group">
+                    <label>Same as at DBpedia.org:</label>
+                    <select id="SameAs" class="form-control" multiple="multiple"
+                        onchange="calli.updateResource(event, 'owl:sameAs')">
+                        <option selected="selected" rel="owl:sameAs" resource="?SameAs" value="{?SameAs}">{rdfs:label} </option>
+                    </select>  
+                </div>
+            </fieldset>
+            <fieldset class="col-md-5">
+                <div class="form-group">
+                        <label for="adr">Address <a href="javascript:void(0)" title="Another Address"
+                            onclick="calli.addResource(event,'#adr')" class="glyphicon glyphicon-plus" /></label>
+                        <div id="adr" rel="vcard:adr">
+                            <div typeof="vcard:Address">
+                                <input type="text" placeholder="street address" value="{vcard:street-address}" class="form-control"
+                                    onchange="calli.updateProperty(event, 'vcard:street-address')" />
+                                <input type="text" placeholder="extended address" value="{vcard:extended-address}" class="form-control"
+                                    onchange="calli.updateProperty(event, 'vcard:extended-address')" />
+                                <input type="text" placeholder="po box" value="{vcard:post-office-box}" class="form-control"
+                                    onchange="calli.updateProperty(event, 'vcard:post-office-box')" />
+
+                                       <div class="div_class" id="Country">
+                                         <xi:include href="Country.rq?select&amp;rel=schema:addressCountry&amp;id=Country;multiple" />
+                                              <div rel="schema:addressCountry" resource="?Country" />
+                                             <script type="text/javascript">
+                                                    document.getElementById("Country").id = 'id_new'
+                                                   $('div[rel="schema:addressCountry"]').filter(calli.selectEachResourceIn($('#Country').attr('id','id_new'))).remove();
+                                              </script>    
+                                        </div>
+   
+                                <div class="form-group">
+                                    <button type="button" onclick="calli.removeResource(event)" class="btn btn-danger">Remove</button>
+                                </div>              
+                            </div>
+                           
+                        </div>
+                </div>
+                
+                
+                
+            	<div class="form-group">
+                	<button type="submit" class="btn btn-primary">Save</button>
+                	<button type="button" onclick="window.location.replace('?view')" class="btn btn-default">Cancel</button>
+                	<button type="button" onclick="calli.deleteResource(event)" class="btn btn-danger">Delete</button>
+            	</div>
+        	</fieldset>
+    	</form>
+    	<script type="text/javascript">
+        	comparison = calli.copyResourceData('#form');
+    	</script>
+	</div>
+</body>
+</html>
+
+

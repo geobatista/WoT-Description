@@ -1,0 +1,75 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:gn="http://www.geonames.org/ontology#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:schema="http://schema.org/"
+    xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#"
+    xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/unit#"
+    xmlns:calli="http://callimachusproject.org/rdf/2009/framework#"
+    xmlns:sosa="http://www.w3.org/ns/sosa/"
+    xmlns:ssn="http://www.w3.org/ns/ssn/"
+    xmlns:ssn-system="http://www.w3.org/ns/ssn/systems/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:tute="http://callimachusproject.org/2014/03/tutorial#">
+<head>
+    <title>New Property Type</title>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>New Property Type</h1>
+              
+            <script type="text/javascript">
+        
+                function updateID(event){
+                    calli.updateProperty(event, 'schema:identifier dcterms:identifier');
+                       
+            }
+             function updateLabel(event){
+                    calli.updateProperty(event, 'schema:name dcterms:title rdfs:label');
+                       
+            }
+    </script>
+        </div>
+        <form role="form" method="POST" action="" enctype="text/turtle" resource="" typeof="owl:Class" class="row"
+                onsubmit="calli.submitTurtle(event,calli.slugify($('#id').val()))">
+            <fieldset class="col-sm-5">
+                
+               <div class="form-group">
+                    <label for="id">ID (URI)</label>
+                    <input type="text" class="form-control" id="id" value="{schema:identifier}" required="required" autofocus="autofocus"
+                               onchange="updateID(event)"/>
+                    <input type="hidden" class="form-control" id="nome1" value="{dcterms:identifier}"/>	
+                    
+                </div>
+                
+                 <div class="form-group">
+                        <label>Label</label>
+                            <input type="text" class="form-control" id="label" value="{rdfs:label}"  autofocus="autofocus"
+                              onchange="updateLabel(event)"/>
+                            <input type="hidden" class="form-control" id="nome2" value="{dcterms:title}"/>	
+                            <input type="hidden" class="form-control" id="nome3" value="{schema:name}"/>	
+                   
+                </div>
+                 <div rel="rdfs:subClassOf" resource="http://www.w3.org/ns/ssn/Property"></div>
+                
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" class="form-control"
+                        onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

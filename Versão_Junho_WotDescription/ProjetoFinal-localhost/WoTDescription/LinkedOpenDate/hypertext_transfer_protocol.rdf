@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:ns8="http://purl.org/linguistics/gold/" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_DELETE">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http_upload">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/DELETE_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/PUT_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Metalink">
+    <dbp:extendedfrom rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Amie_Street">
+    <dbp:protocol rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/&#39;http">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Hhtp">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http.">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http;">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Htttp">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Request_method">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Bleep.com">
+    <dbp:protocol rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Networked_Help_Desk">
+    <dbp:baseStandards rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HyperText_Transfer_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP/1.1">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Hypertext_Transfer_Protocol">
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Software" />
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+    <rdfs:label xml:lang="de">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="ar">بروتوكول نقل النص الفائق</rdfs:label>
+    <rdfs:label xml:lang="pl">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="fr">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="es">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="it">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="nl">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="ru">HTTP</rdfs:label>
+    <rdfs:label xml:lang="ja">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="en">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:label xml:lang="zh">超文本传输协议</rdfs:label>
+    <rdfs:label xml:lang="pt">Hypertext Transfer Protocol</rdfs:label>
+    <rdfs:comment xml:lang="it">L&#39;HyperText Transfer Protocol (HTTP) (protocollo di trasferimento di un ipertesto) è un protocollo a livello applicativo usato come principale sistema per la trasmissione d&#39;informazioni sul web ovvero in un&#39;architettura tipica client-server. Le specifiche del protocollo sono gestite dal World Wide Web Consortium (W3C). Un server HTTP generalmente resta in ascolto delle richieste dei client sulla porta 80 usando il protocollo TCP a livello di trasporto.</rdfs:comment>
+    <rdfs:comment xml:lang="pl">HTTP (ang. Hypertext Transfer Protocol) – protokół przesyłania dokumentów hipertekstowych to protokół sieci WWW (ang. World Wide Web). Obecną definicję HTTP stanowi . Za pomocą protokołu HTTP przesyła się żądania udostępnienia dokumentów WWW i informacje o kliknięciu odnośnika oraz informacje z formularzy. Zadaniem stron WWW jest publikowanie informacji – natomiast protokół HTTP właśnie to umożliwia. HTTP standardowo korzysta z portu nr 80 (TCP).</rdfs:comment>
+    <rdfs:comment xml:lang="zh">超文本傳輸協定（英文：HyperText Transfer Protocol，縮寫：HTTP）是網際網路上應用最為廣泛的一种網路協議。设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法。通过HTTP或者HTTPS协议请求的资源由统一资源标识符（Uniform Resource Identifiers，URI）来标识。 HTTP的发展是由提姆·柏納-李於1989年在歐洲核子研究組織（CERN）所發起。由万维网协会（World Wide Web Consortium，W3C）和互联网工程任务组（Internet Engineering Task Force，IETF）制定標準，最终发布了一系列的RFC，其中最著名的是1999年6月公佈的 ，定義了HTTP協議中現今廣泛使用的一個版本——HTTP 1.1。 2014年12月，互联网工程任务组（IETF）的Hypertext Transfer Protocol Bis（httpbis）工作小组将HTTP/2标准提议递交至IESG进行讨论，于2015年2月17日被批准。 HTTP/2标准于2015年5月以RFC 7540正式发表，取代HTTP 1.1成为HTTP的实现标准。</rdfs:comment>
+    <rdfs:comment xml:lang="es">Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hipertexto) es el protocolo de comunicación que permite las transferencias de información en la World Wide Web. HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force, colaboración que culminó en 1999 con la publicación de una serie de RFC, el más importante de ellos es el  que especifica la versión 1.1. HTTP define la sintaxis y la semántica que utilizan los elementos de software de la arquitectura web (clientes, servidores, proxies) para comunicarse. HTTP es un protocolo sin estado, es decir, no guarda ninguna información sobre conexiones anteriores. El desarrollo de aplicaciones web necesita frecuentemente mantener estado. Para esto se usan las cookies, que es información qu</rdfs:comment>
+    <rdfs:comment xml:lang="ja">Hypertext Transfer Protocol（ハイパーテキスト・トランスファー・プロトコル、略称 HTTP）とは、WebブラウザとWebサーバの間でHTMLなどのコンテンツの送受信に用いられる通信プロトコルである。ハイパーテキスト転送プロトコルとも呼ばれる。 HTTP/1.1 が  から  で規定されている。かつては  が HTTP/1.1 を規定していたため、こちらもよく参照されている。また2010年代に入り、HTTP/1.1 を Google が改良した SPDY が普及したことを受けて、SPDY を基とした HTTP/2 の制定作業が開始され進められている。</rdfs:comment>
+    <rdfs:comment xml:lang="en">The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. HTTP is the protocol to exchange or transfer hypertext. A later version, the successor HTTP/2, was standardized in 2015, and is now supported by major web servers.</rdfs:comment>
+    <rdfs:comment xml:lang="de">Das Hypertext Transfer Protocol (HTTP, englisch für Hypertext-Übertragungsprotokoll) ist ein zustandsloses Protokoll zur Übertragung von Daten auf der Anwendungsschicht über ein Rechnernetz. Es wird hauptsächlich eingesetzt, um Webseiten (Hypertext-Dokumente) aus dem World Wide Web (WWW) in einen Webbrowser zu laden. Es ist jedoch nicht prinzipiell darauf beschränkt und auch als allgemeines Dateiübertragungsprotokoll sehr verbreitet.</rdfs:comment>
+    <rdfs:comment xml:lang="ru">HTTP (англ. HyperText Transfer Protocol — «протокол передачи гипертекста») — протокол прикладного уровня передачи данных (изначально — в виде гипертекстовых документов в формате «HTML», в настоящий момент используется для передачи произвольных данных). Основой HTTP является технология «клиент-сервер», то есть предполагается существование: 
+*  Потребителей (клиентов), которые инициируют соединение и посылают запрос;  
+*  Поставщиков (серверов), которые ожидают соединения для получения запроса, производят необходимые действия и возвращают обратно сообщение с результатом.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">L&#39;HyperText Transfer Protocol, plus connu sous l&#39;abréviation HTTP — littéralement « protocole de transfert hypertexte » — est un protocole de communication client-serveur développé pour le World Wide Web. HTTPS (avec S pour secured, soit « sécurisé ») est la variante du HTTP sécurisée par l&#39;usage des protocoles SSL ou TLS. HTTP est un protocole de la couche application. Il peut fonctionner sur n&#39;importe quelle connexion fiable, dans les faits on utilise le protocole TCP comme couche de transport. Un serveur HTTP utilise alors par défaut le port 80 (443 pour HTTPS).</rdfs:comment>
+    <rdfs:comment xml:lang="ar">25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (أكتوبر 2008) برتكول او ميثاق نقل النص التشعبي (بالإنجليزية: Hypertext Transfer Protocol) اختصار HTTP إتش تي تي بي هو نظام نقل مواد الإنترنت عبر الشبكة العنكبوتية (الويب)، وهو الطريقة الرئيسة والأكثر انتشاراً لنقل البيانات في الويب (www).الهدف الأساسي من بنائه كان إيجاد طريقة لنشر واستقبال صفحات HTML. وحيث أن الاستضافة الخاصة بأي موقع لا بد أن تتعامل مع هذا النظام، فإن مواقع الويب جميعها تعمل على أساس بنية هذا النظام وطريقته بغض النظر عن جهة الاستضافة.</rdfs:comment>
+    <rdfs:comment xml:lang="pt">O Hypertext Transfer Protocol (HTTP), em português Protocolo de Transferência de Hipertexto, é um protocolo de comunicação (na camada de aplicação segundo o Modelo OSI) utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos. Ele é a base para a comunicação de dados da World Wide Web. Hipertexto é o texto estruturado que utiliza ligações lógicas (hiperlinks) entre nós contendo texto. O HTTP é o protocolo para a troca ou transferência de hipertexto.</rdfs:comment>
+    <rdfs:comment xml:lang="nl">Hypertext Transfer Protocol (HTTP) is het protocol voor de communicatie tussen een webclient (meestal een webbrowser) en een webserver. Dit protocol wordt niet alleen veel op het World Wide Web gebruikt, maar ook op lokale netwerken (we spreken dan van een intranet). In HTTP is vastgelegd welke vragen (de Engelse term hiervoor is requests) een cliënt aan een server kan stellen en welke antwoorden (de Engelse term is responses) een webserver daarop kan teruggeven. Elke vraag bevat een URL die naar een webcomponent of een statisch object zoals een webpagina of plaatje verwijst.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/List_of_HTTP_status_codes" />
+    <owl:sameAs rdf:resource="http://eu.dbpedia.org/resource/HTTP" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://sw.cyc.com/concept/Mx4rwJobjpwpEbGdrcN5Y29ycA" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://linked-web-apis.fit.cvut.cz/resource/http_protocol" />
+    <owl:sameAs rdf:resource="http://linked-web-apis.fit.cvut.cz/resource/post_and_get_requests_format" />
+    <owl:sameAs rdf:resource="http://linked-web-apis.fit.cvut.cz/resource/http_request_protocol" />
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://linked-web-apis.fit.cvut.cz/resource/http_response_format" />
+    <owl:sameAs rdf:resource="http://linked-web-apis.fit.cvut.cz/resource/http_format" />
+    <owl:sameAs rdf:resource="http://linked-web-apis.fit.cvut.cz/resource/http_get_protocol" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://cs.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q8777" />
+    <owl:sameAs rdf:resource="http://d-nb.info/gnd/4479982-2" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://nl.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Protokol_Transfer_Hiperteks" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q8777" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+    <owl:sameAs rdf:resource="http://ko.dbpedia.org/resource/HTTP" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.03hgt" />
+    <owl:sameAs rdf:resource="http://el.dbpedia.org/resource/Πρωτόκολλο_Μεταφοράς_Υπερκειμένου" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Hypertext_Transfer_Protocol" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:World_Wide_Web" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Application_layer_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Network_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Internet_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:World_Wide_Web_Consortium_standards" />
+    <dbo:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13443</dbo:wikiPageID>
+    <dbo:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">743553592</dbo:wikiPageRevisionID>
+    <dbo:wikiPageExternalLink rdf:resource="http://trac.tools.ietf.org/wg/httpbis/trac/wiki" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.w3.org/Protocols/HTTP/AsImplemented.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.w3.org/Protocols/History.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.w3.org/Protocols/Classic.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.w3.org/Protocols/DesignIssues.html" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.w3.org/pub/WWW/Protocols/HTTP/AsImplemented.html" />
+    <foaf:depiction rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Internet1.jpg" />
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" />
+    <dbo:thumbnail rdf:resource="http://commons.wikimedia.org/wiki/Special:FilePath/Internet1.jpg?width=300" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol?oldid=743553592" />
+    <dbo:abstract xml:lang="it">L&#39;HyperText Transfer Protocol (HTTP) (protocollo di trasferimento di un ipertesto) è un protocollo a livello applicativo usato come principale sistema per la trasmissione d&#39;informazioni sul web ovvero in un&#39;architettura tipica client-server. Le specifiche del protocollo sono gestite dal World Wide Web Consortium (W3C). Un server HTTP generalmente resta in ascolto delle richieste dei client sulla porta 80 usando il protocollo TCP a livello di trasporto.</dbo:abstract>
+    <dbo:abstract xml:lang="en">The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. HTTP is the protocol to exchange or transfer hypertext. Development of HTTP was initiated by Tim Berners-Lee at CERN in 1989. Standards development of HTTP was coordinated by the Internet Engineering Task Force (IETF) and the World Wide Web Consortium (W3C), culminating in the publication of a series of Requests for Comments (RFCs). The first definition of HTTP/1.1, the version of HTTP in common use, occurred in  in 1997, although this was obsoleted by  in 1999. A later version, the successor HTTP/2, was standardized in 2015, and is now supported by major web servers.</dbo:abstract>
+    <dbo:abstract xml:lang="de">Das Hypertext Transfer Protocol (HTTP, englisch für Hypertext-Übertragungsprotokoll) ist ein zustandsloses Protokoll zur Übertragung von Daten auf der Anwendungsschicht über ein Rechnernetz. Es wird hauptsächlich eingesetzt, um Webseiten (Hypertext-Dokumente) aus dem World Wide Web (WWW) in einen Webbrowser zu laden. Es ist jedoch nicht prinzipiell darauf beschränkt und auch als allgemeines Dateiübertragungsprotokoll sehr verbreitet. HTTP wurde von der Internet Engineering Task Force (IETF) und dem World Wide Web Consortium (W3C) standardisiert. Aktuelle Version ist HTTP/2, welche als  am 15. Mai 2015 veröffentlicht wurde. Die Weiterentwicklung wird von der HTTP-Arbeitsgruppe der IETF (HTTPbis) organisiert.Es gibt zu HTTP ergänzende – wie HTTPS für die Verschlüsselung übertragener Inhalte – und darauf aufbauende Standards wie das Übertragungsprotokoll WebDAV.</dbo:abstract>
+    <dbo:abstract xml:lang="ar">25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (أكتوبر 2008) برتكول او ميثاق نقل النص التشعبي (بالإنجليزية: Hypertext Transfer Protocol) اختصار HTTP إتش تي تي بي هو نظام نقل مواد الإنترنت عبر الشبكة العنكبوتية (الويب)، وهو الطريقة الرئيسة والأكثر انتشاراً لنقل البيانات في الويب (www).الهدف الأساسي من بنائه كان إيجاد طريقة لنشر واستقبال صفحات HTML. وهو من الطبقة االسابعة لنظام حزمة بروتوكولات الإنترنت وهي طبقة التطبيقات ويستخدم من قبل متصفحات الإنترنت والتي تسمى عميل المستخدم user-agent ويستخدم المدخل رقم 80 على المخدم غالبا بالتعاون مع الطبقة الرابعة وبالتحديد مع ميفاق (بروتوكول) ميفاق ضبط الإرسال للحصول على الصفحات المطلوبة وبعد ذلك تبدا مهمة ميفاق (بروتوكول) TCP لتولى المهمة من هنا والبدأ في عمله وتعتبر الصفحة كأي وثيقة عادية نصية ولكنها تحتوى على بعض الإضافات الأخرى الفائقة مثل روابط لأماكن أو مواقع أو صفحات أخرى بالإضافة إلى بعض الإضافات الحديثة مثل الصور والوسائط المتعددة والتي يتم الحصول عليها في طلب منفصل آخر ولكنها تتواجد داخل تلك الصفحة بعد تحميلها. نظام HTTP يعمل على نقل البيانات بطريقة يعبر عنها بأنها (غير متقيدة Stateless) مما يعني سرعة كبيرة في نقل صفحات المواقع من وإلى جهاز العميل، هذا يعني سرعة كبيرة في نقل مواقع الشبكة واستضافة عالية لكافة البيانات أو بمعنى آخر لا يهتم كثيراً بعملية فقد البيانات والحصول عليها أثناء الاتصال. ببساطة يتميز هذا النظام بمعياريته السهلة التي تجعل من استضافة أي موقع أمرا سهلا وبسيطاً، وحسب ما توضح صفحات وصف هذا النظام في ملفات rfcs فإن استضافة هذا النظام على المسيرات Routers تجعل من عملية نقل صفحات المواقع أمراً سريعا جداً بحسب سرعة استضافة موقعك. وحيث أن الاستضافة الخاصة بأي موقع لا بد أن تتعامل مع هذا النظام، فإن مواقع الويب جميعها تعمل على أساس بنية هذا النظام وطريقته بغض النظر عن جهة الاستضافة. ويعمل الميفاق بنظام Client Server Response أي نظام الرد بين العميل والمخدم، وبمعنى آخر تجرى العملية كالتالي: 
+*  يقوم المتصفح، والذي يفهم نظام الميفاق (البروتوكول) جيداً، بإرسال طلب إلى المخدم عبر ملف منتظراً نتيجة الطلب ويكون ذلك الطلب موجهاً غالباً لـ (المنفذ Port) رقم 80 على الخادم، وهو المنفذ الذي يقوم المخدم بتهيئته لاستقبال مثل هذه الطلبات. 
+*  يتلقى المخدم الطلب ويقوم بالرد عليه برسالة تتكون من عدة أجزاء (رأس نتيجة الطلب ثم نتيجة الطلب أو محتوياته المطلوبة) ويتم توجيه تلك الرسالة إلى جهاز العميل مرة أخرى على أي مخرج port فارغ في جهاز العميل وغالبا مايكون رقم المخرج أعلى من 1024 حيث أن الأرقام أسفل ذلك الرقم مخصصة لأغراض معروفة ومحدده</dbo:abstract>
+    <dbo:abstract xml:lang="es">Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hipertexto) es el protocolo de comunicación que permite las transferencias de información en la World Wide Web. HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force, colaboración que culminó en 1999 con la publicación de una serie de RFC, el más importante de ellos es el  que especifica la versión 1.1. HTTP define la sintaxis y la semántica que utilizan los elementos de software de la arquitectura web (clientes, servidores, proxies) para comunicarse. HTTP es un protocolo sin estado, es decir, no guarda ninguna información sobre conexiones anteriores. El desarrollo de aplicaciones web necesita frecuentemente mantener estado. Para esto se usan las cookies, que es información que un servidor puede almacenar en el sistema cliente. Esto le permite a las aplicaciones web instituir la noción de &quot;sesión&quot;, y también permite rastrear usuarios ya que las cookies pueden guardarse en el cliente por tiempo indeterminado.</dbo:abstract>
+    <dbo:abstract xml:lang="pl">HTTP (ang. Hypertext Transfer Protocol) – protokół przesyłania dokumentów hipertekstowych to protokół sieci WWW (ang. World Wide Web). Obecną definicję HTTP stanowi . Za pomocą protokołu HTTP przesyła się żądania udostępnienia dokumentów WWW i informacje o kliknięciu odnośnika oraz informacje z formularzy. Zadaniem stron WWW jest publikowanie informacji – natomiast protokół HTTP właśnie to umożliwia. Protokół HTTP jest użyteczny, ponieważ udostępnia znormalizowany sposób komunikowania się komputerów ze sobą. Określa on formę żądań klienta (tj. np. przeglądarki www) dotyczących danych oraz formę odpowiedzi serwera na te żądania. Jest zaliczany do protokołów bezstanowych (ang. stateless) z racji tego, że nie zachowuje żadnych informacji o poprzednich transakcjach z klientem (po zakończeniu transakcji wszystko &quot;przepada&quot;). Pozwala to znacznie zmniejszyć obciążenie serwera, jednak jest kłopotliwe w sytuacji, gdy np. trzeba zapamiętać konkretny stan dla użytkownika, który wcześniej łączył się już z serwerem. Najczęstszym rozwiązaniem tego problemu jest wprowadzenie mechanizmu ciasteczek. Inne podejścia to m.in. sesje po stronie serwera, ukryte parametry (gdy aktualna strona zawiera formularz) oraz parametry umieszczone w URL-u (jak np. /index.php?userid=3). HTTP standardowo korzysta z portu nr 80 (TCP).</dbo:abstract>
+    <dbo:abstract xml:lang="ru">HTTP (англ. HyperText Transfer Protocol — «протокол передачи гипертекста») — протокол прикладного уровня передачи данных (изначально — в виде гипертекстовых документов в формате «HTML», в настоящий момент используется для передачи произвольных данных). Основой HTTP является технология «клиент-сервер», то есть предполагается существование: 
+*  Потребителей (клиентов), которые инициируют соединение и посылают запрос;  
+*  Поставщиков (серверов), которые ожидают соединения для получения запроса, производят необходимые действия и возвращают обратно сообщение с результатом. HTTP в настоящее время повсеместно используется во Всемирной паутине для получения информации с веб-сайтов. В 2006 году — в Северной Америке доля HTTP-трафика превысила долю P2P-сетей и составила 46 %, из которых почти половина — это передача потокового видео и звука. HTTP используется также в качестве «транспорта» для других протоколов прикладного уровня, таких как SOAP, XML-RPC, WebDAV. Основным объектом манипуляции в HTTP является ресурс, на который указывает URI (Uniform Resource Identifier) в запросе клиента. Обычно такими ресурсами являются хранящиеся на сервере файлы, но ими могут быть логические объекты или что-то абстрактное. Особенностью протокола HTTP является возможность указать в запросе и ответе способ представления одного и того же ресурса по различным параметрам: формату, кодировке, языку и т. д. (в частности, для этого используется HTTP-заголовок). Именно благодаря возможности указания способа кодирования сообщения, клиент и сервер могут обмениваться двоичными данными, хотя данный протокол является текстовым. HTTP — протокол прикладного уровня; аналогичными ему являются FTP и SMTP. Обмен сообщениями идёт по обыкновенной схеме «запрос-ответ». Для идентификации ресурсов HTTP использует глобальные URI. В отличие от многих других протоколов, HTTP не сохраняет своего состояния. Это означает отсутствие сохранения промежуточного состояния между парами «запрос-ответ». Компоненты, использующие HTTP, могут самостоятельно осуществлять сохранение информации о состоянии, связанной с последними запросами и ответами (например, «куки» на стороне клиента, «сессии» на стороне сервера). Браузер, посылающий запросы, может отслеживать задержки ответов. Сервер может хранить IP-адреса и заголовки запросов последних клиентов. Однако сам протокол не осведомлён о предыдущих запросах и ответах, в нём не предусмотрена внутренняя поддержка состояния, к нему не предъявляются такие требования.</dbo:abstract>
+    <dbo:abstract xml:lang="ja">Hypertext Transfer Protocol（ハイパーテキスト・トランスファー・プロトコル、略称 HTTP）とは、WebブラウザとWebサーバの間でHTMLなどのコンテンツの送受信に用いられる通信プロトコルである。ハイパーテキスト転送プロトコルとも呼ばれる。 HTTP/1.1 が  から  で規定されている。かつては  が HTTP/1.1 を規定していたため、こちらもよく参照されている。また2010年代に入り、HTTP/1.1 を Google が改良した SPDY が普及したことを受けて、SPDY を基とした HTTP/2 の制定作業が開始され進められている。</dbo:abstract>
+    <dbo:abstract xml:lang="zh">超文本傳輸協定（英文：HyperText Transfer Protocol，縮寫：HTTP）是網際網路上應用最為廣泛的一种網路協議。设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法。通过HTTP或者HTTPS协议请求的资源由统一资源标识符（Uniform Resource Identifiers，URI）来标识。 HTTP的发展是由提姆·柏納-李於1989年在歐洲核子研究組織（CERN）所發起。由万维网协会（World Wide Web Consortium，W3C）和互联网工程任务组（Internet Engineering Task Force，IETF）制定標準，最终发布了一系列的RFC，其中最著名的是1999年6月公佈的 ，定義了HTTP協議中現今廣泛使用的一個版本——HTTP 1.1。 2014年12月，互联网工程任务组（IETF）的Hypertext Transfer Protocol Bis（httpbis）工作小组将HTTP/2标准提议递交至IESG进行讨论，于2015年2月17日被批准。 HTTP/2标准于2015年5月以RFC 7540正式发表，取代HTTP 1.1成为HTTP的实现标准。</dbo:abstract>
+    <dbo:abstract xml:lang="pt">O Hypertext Transfer Protocol (HTTP), em português Protocolo de Transferência de Hipertexto, é um protocolo de comunicação (na camada de aplicação segundo o Modelo OSI) utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos. Ele é a base para a comunicação de dados da World Wide Web. Hipertexto é o texto estruturado que utiliza ligações lógicas (hiperlinks) entre nós contendo texto. O HTTP é o protocolo para a troca ou transferência de hipertexto. Coordenado pela World Wide Web Consortium e a Internet Engineering Task Force, culminou na publicação de uma série de Requests for Comments; mais notavelmente o , de junho de 1999, que definiu o HTTP/1.1. Em Junho de 2014 foram publicados 6 RFC&#39;s para maior clareza do protocolo HTTP/1.1 Em Março de 2015, foi divulgado o lançamento do HTTP/2. A atualização deixará o navegador com um tempo de resposta melhor e mais seguro. Ele também melhorará a navegação em smartphones. Para acedermos a outro documento a partir de uma palavra presente no documento actual podemos utilizar hiperligações (ou âncoras). Estes documentos se encontram no sítio com um endereço de página da Internet – e para acessá-los deve-se digitar o respectivo endereço, denominado URI (Universal Resource Identifier ou Identificador Universal de Recurso), que não deve ser confundido com URL (Universal Resource Locator ou Localizador Universal de Recurso), um tipo de URI que pode ser directamente localizado.</dbo:abstract>
+    <dbo:abstract xml:lang="fr">L&#39;HyperText Transfer Protocol, plus connu sous l&#39;abréviation HTTP — littéralement « protocole de transfert hypertexte » — est un protocole de communication client-serveur développé pour le World Wide Web. HTTPS (avec S pour secured, soit « sécurisé ») est la variante du HTTP sécurisée par l&#39;usage des protocoles SSL ou TLS. HTTP est un protocole de la couche application. Il peut fonctionner sur n&#39;importe quelle connexion fiable, dans les faits on utilise le protocole TCP comme couche de transport. Un serveur HTTP utilise alors par défaut le port 80 (443 pour HTTPS). Les clients HTTP les plus connus sont les navigateurs Web permettant à un utilisateur d&#39;accéder à un serveur contenant les données. Il existe aussi des systèmes pour récupérer automatiquement le contenu d&#39;un site tel que les aspirateurs de site Web ou les robots d&#39;indexation. Ces clients se connectent à des serveurs HTTP tels qu&#39;Apache HTTP Server, Lighttpd, Nginx ou Internet Information Services.</dbo:abstract>
+    <dbo:abstract xml:lang="nl">Hypertext Transfer Protocol (HTTP) is het protocol voor de communicatie tussen een webclient (meestal een webbrowser) en een webserver. Dit protocol wordt niet alleen veel op het World Wide Web gebruikt, maar ook op lokale netwerken (we spreken dan van een intranet). In HTTP is vastgelegd welke vragen (de Engelse term hiervoor is requests) een cliënt aan een server kan stellen en welke antwoorden (de Engelse term is responses) een webserver daarop kan teruggeven. Elke vraag bevat een URL die naar een webcomponent of een statisch object zoals een webpagina of plaatje verwijst.</dbo:abstract>
+    <ns8:hypernym rdf:resource="http://dbpedia.org/resource/Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/GET_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_Tomcat">
+    <dbo:genre rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/CONNECT_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Hyper_Text_Transfer_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http:%5C%5C">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/CONNECT_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/DELETE_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/GET_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HEAD_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_CONNECT">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_CONNECT_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_DELETE_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_GET">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_GET_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_HEAD">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_HEAD_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_OPTIONS">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_OPTIONS_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_PUT">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_PUT_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_TRACE">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_TRACE_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/OPTIONS_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/PUT_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/TRACE_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Cloud_Data_Management_Interface">
+    <dbp:baseStandards rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_Verbs">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Jexus">
+    <dbo:genre rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP/0.9">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP/1.0">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_0.9">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_1.0">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_1.1">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP://">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Hypertext_transfer_protocall">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Hypertext_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_Requests">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Http_post/get_requests">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_method">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_verbs">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_response">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/PATCH_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP_protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HTTP-NG">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Hypertext_Transport_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/GET_requests">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/HEAD_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/OPTIONS_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/TRACE_(HTTP)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/RFC2616">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/RFC_2616">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/Hypertext_Transfer_Protocol" />
+  </rdf:Description>
+</rdf:RDF>

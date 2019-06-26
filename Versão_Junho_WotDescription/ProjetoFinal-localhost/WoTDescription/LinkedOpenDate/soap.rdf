@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:ns8="http://purl.org/linguistics/gold/" >
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Apache_ODE">
+    <dbp:standard rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Soap_service">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Fuse_Services_Framework">
+    <ns8:hypernym rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Content_Management_Interoperability_Services">
+    <dbp:extendedfrom rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/SOAP">
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Abstraction100002137" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Act100030358" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Service100577525" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Communication100033020" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatInternetProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Work100575741" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Message106598915" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/PsychologicalFeature100023100" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Rule106652242" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatNetworkProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Direction106786629" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Protocol106665108" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Event100029378" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Measure100033615" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Activity100407535" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatWorldWideWebConsortiumStandards" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatWebStandards" />
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Software" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatWebServices" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatXML-basedStandards" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/SystemOfMeasurement113577171" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatApplicationLayerProtocols" />
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Standard107260623" />
+    <rdfs:label xml:lang="de">SOAP</rdfs:label>
+    <rdfs:label xml:lang="ar">سواب</rdfs:label>
+    <rdfs:label xml:lang="pt">SOAP</rdfs:label>
+    <rdfs:label xml:lang="en">SOAP</rdfs:label>
+    <rdfs:label xml:lang="es">Simple Object Access Protocol</rdfs:label>
+    <rdfs:label xml:lang="pl">SOAP</rdfs:label>
+    <rdfs:label xml:lang="it">SOAP</rdfs:label>
+    <rdfs:label xml:lang="fr">SOAP</rdfs:label>
+    <rdfs:label xml:lang="ja">SOAP (プロトコル)</rdfs:label>
+    <rdfs:label xml:lang="zh">SOAP</rdfs:label>
+    <rdfs:label xml:lang="nl">SOAP</rdfs:label>
+    <rdfs:label xml:lang="ru">SOAP</rdfs:label>
+    <rdfs:comment xml:lang="de">SOAP (ursprünglich für Simple Object Access Protocol) ist ein Netzwerkprotokoll, mit dessen Hilfe Daten zwischen Systemen ausgetauscht und Remote Procedure Calls durchgeführt werden können. SOAP ist ein industrieller Standard des World Wide Web Consortiums (W3C).</rdfs:comment>
+    <rdfs:comment xml:lang="it">SOAP è la struttura operativa (framework) estensibile e decentralizzata che può operare sopra varie pile protocollari per reti di computer fornendo tramite messaggi richieste di procedure remote.I richiami di procedure remote possono essere infatti modellati come interazione di parecchi messaggi SOAP. SOAP dunque è uno dei protocolli che abilitano i servizi Web.</rdfs:comment>
+    <rdfs:comment xml:lang="en">SOAP (Simple Object Access Protocol) is a protocol specification for exchanging structured information in the implementation of web services in computer networks. Its purpose is to induce extensibility, neutrality and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission.</rdfs:comment>
+    <rdfs:comment xml:lang="pt">SOAP (Simple Object Access Protocol, em português Protocolo Simples de Acesso a Objetos) é um protocolo para troca de informações estruturadas em uma plataforma descentralizada e distribuída. Ele se baseia na Linguagem de Marcação Extensível (XML) para seu formato de mensagem, e normalmente baseia-se em outros protocolos da camada de aplicação, mais notavelmente em chamada de procedimento remoto (RPC) e Protocolo de transferência de hipertexto (HTTP), para negociação e transmissão de mensagens. SOAP pode formar a camada base de uma pilha de protocolos de serviços Web, fornecendo um  arcabouço básico de mensagens sob o qual se podem construir os serviços  Web. Este protocolo baseado em XML consiste de três partes: um envelope, que define o que está na mensagem e como processá-la, um conjunt</rdfs:comment>
+    <rdfs:comment xml:lang="ru">SOAP (от англ. Simple Object Access Protocol — простой протокол доступа к объектам; вплоть до спецификации 1.2) — протокол обмена структурированными сообщениями в распределённой вычислительной среде. Первоначально SOAP предназначался в основном для реализации удалённого вызова процедур (RPC). Сейчас протокол используется для обмена произвольными сообщениями в формате XML, а не только для вызова процедур. Официальная спецификация последней версии 1.2 протокола никак не расшифровывает название SOAP.SOAP является расширением протокола XML-RPC.</rdfs:comment>
+    <rdfs:comment xml:lang="ja">SOAP（ソープ）は、XML-RPCから発展した、XML Webサービスのための、XMLベースのRPCプロトコルである。元はSimple Object Access Protocolの頭字語とされていたが、現在は「何かの頭字語ではない」とされている。</rdfs:comment>
+    <rdfs:comment xml:lang="fr">SOAP (ancien acronyme de Simple Object Access Protocol) est un protocole de RPC orienté objet bâti sur XML. Il permet la transmission de messages entre objets distants, ce qui veut dire qu&#39;il autorise un objet à invoquer des méthodes d&#39;objets physiquement situés sur un autre serveur. Le transfert se fait le plus souvent à l&#39;aide du protocole HTTP, mais peut également se faire par un autre protocole, comme SMTP. Le protocole SOAP est composé de deux parties : Le protocole SOAP emploie des métadonnées.</rdfs:comment>
+    <rdfs:comment xml:lang="es">Básicamente SOAP es un paradigma de mensajería de una dirección sin estado, que puede ser utilizado para formar protocolos más complejos y completos según las necesidades de las aplicaciones que lo implementan. Puede formar y construir la capa base de una &quot;pila de protocolos de web service&quot;, ofreciendo un framework de mensajería básica en el cual los web services se pueden construir. Este protocolo está basado en XML y se conforma de tres partes: El protocolo SOAP tiene tres características principales:</rdfs:comment>
+    <rdfs:comment xml:lang="pl">SOAP (ang.) Simple Object Access Protocol – protokół komunikacyjny, wykorzystujący XML do kodowania wywołań i najczęściej protokołu HTTP do ich przenoszenia, możliwe jest jednak wykorzystanie innych protokołów do transportu danych. SOAP jest standardem W3C, którego głównym celem było zastąpienie bardziej specyficznych protokołów komunikacyjnych (RPC), których wykorzystanie może być ograniczone poprzez zapory sieciowe lub inne zabezpieczenia. Nazwa protokołu jest myląca, ponieważ przede wszystkim dotyczy usług sieciowych, a nie obiektów definiowanych w sposób znany z programowania obiektowego.</rdfs:comment>
+    <rdfs:comment xml:lang="zh">SOAP（原为Simple Object Access Protocol的首字母缩写，即简单对象访问协议）是交换数据的一种协议规范，使用在计算机网络Web服务（web service）中，交换带结构信息。SOAP为了简化网页服务器（Web Server）从XML資料庫中提取資料時，节省去格式化頁面時間，以及不同應用程序之間按照HTTP通信协议，遵从XML格式执行资料互换，使其抽象于语言实现、平台和硬件。此標準由IBM、Microsoft、UserLand和DevelopMentor在1998年共同提出，並得到IBM，蓮花（Lotus），康柏（Compaq）等公司的支持，於2000年提交給全球資訊網聯盟（World Wide Web Consortium；W3C），目前SOAP 1.1版是業界共同的標準，屬於第二代的XML協定（第一代具主要代表性的技術為XML-RPC以及WDDX）。 用一个简单的例子来说明SOAP使用过程，一个SOAP消息可以发送到一个具有Web Service功能的Web站点，例如，一个含有房价信息的数据库，消息的参数中标明这是一个查询消息，此站点将返回一个XML格式的信息，其中包含了查询结果（价格，位置，特点，或者其他信息）。由于数据是用一种标准化的可分析的结构来传递的，所以可以直接被第三方站点所利用。</rdfs:comment>
+    <rdfs:comment xml:lang="ar">25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (مارس 2016) سوابهو أحد البروتوكولات المستخدمة في عملية نقل البيانات بين شبكات الكمبيوتر وذلك باستخدم لغة لغة الترميز القابلة للامتداد وذلك عند استخدام ما يعرف باسم Web services في نقل البياناتويقوم بعملية نقلة البيانات المكتوبة باستخدم لغة لغة الترميز القابلة للامتداد باستخدام بروتوكولات الاتصال [Http ,Https]</rdfs:comment>
+    <rdfs:comment xml:lang="nl">Het SOAP-protocol bestaat uit drie onderdelen: 
+*  Een envelop die een raamwerk definieert voor het beschrijven van wat in een bericht staat en hoe het te verwerken. 
+*  Een set van codeerregels voor de expressie van &#39;instanties&#39; van applicatiegedefinieerde datatypen. 
+*  Een conventie voor de representatie van &#39;remote procedure calls&#39; en antwoorden. SOAP kan worden gebruikt in combinatie met een grote verscheidenheid aan andere protocollen.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://yago-knowledge.org/resource/SOAP_(protocol)" />
+    <owl:sameAs rdf:resource="http://pl.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://de.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://linked-web-apis.fit.cvut.cz/resource/soap_envelope_format" />
+    <owl:sameAs rdf:resource="http://nl.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://ko.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://wikidata.dbpedia.org/resource/Q189620" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://eu.dbpedia.org/resource/Simple_Object_Access_Protocol" />
+    <owl:sameAs rdf:resource="http://id.dbpedia.org/resource/Simple_Object_Access_Protocol" />
+    <owl:sameAs rdf:resource="http://rdf.freebase.com/ns/m.077dn" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://cs.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://es.dbpedia.org/resource/Simple_Object_Access_Protocol" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q189620" />
+    <owl:sameAs rdf:resource="http://it.dbpedia.org/resource/SOAP" />
+    <owl:sameAs rdf:resource="http://ja.dbpedia.org/resource/SOAP_(プロトコル)" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Application_layer_protocols" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Remote_procedure_call" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Data_serialization_formats" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:World_Wide_Web_Consortium_standards" />
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:XML-based_standards" />
+    <dbo:wikiPageID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29215</dbo:wikiPageID>
+    <dbo:wikiPageRevisionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">744530121</dbo:wikiPageRevisionID>
+    <dbo:wikiPageExternalLink rdf:resource="http://www.ibm.com/developerworks/xml/library/x-soapbx1.html" />
+    <dbo:wikiPageExternalLink rdf:resource="https://www.w3.org/TR/soap12-part1/#extensibility" />
+    <dbo:wikiPageExternalLink rdf:resource="https://www.w3.org/TR/soap12-part1/#msgexchngmdl" />
+    <dbo:wikiPageExternalLink rdf:resource="https://www.w3.org/TR/soap12-part1/#soapenv" />
+    <dbo:wikiPageExternalLink rdf:resource="https://www.w3.org/TR/soap12-part1/#transpbindframew" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.w3.org/TR/soap12/" />
+    <dbo:wikiPageExternalLink rdf:resource="http://shivasoft.in/blog/java/create-soap-message-using-java/" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.w3.org/TR/soap/" />
+    <dbo:wikiPageExternalLink rdf:resource="http://www.ibm.com/developerworks/edu/x-dw-cosoap-i.html" />
+    <foaf:isPrimaryTopicOf rdf:resource="http://en.wikipedia.org/wiki/SOAP" />
+    <prov:wasDerivedFrom rdf:resource="http://en.wikipedia.org/wiki/SOAP?oldid=744530121" />
+    <dbo:abstract xml:lang="pl">SOAP (ang.) Simple Object Access Protocol – protokół komunikacyjny, wykorzystujący XML do kodowania wywołań i najczęściej protokołu HTTP do ich przenoszenia, możliwe jest jednak wykorzystanie innych protokołów do transportu danych. SOAP jest standardem W3C, którego głównym celem było zastąpienie bardziej specyficznych protokołów komunikacyjnych (RPC), których wykorzystanie może być ograniczone poprzez zapory sieciowe lub inne zabezpieczenia. Nazwa protokołu jest myląca, ponieważ przede wszystkim dotyczy usług sieciowych, a nie obiektów definiowanych w sposób znany z programowania obiektowego.</dbo:abstract>
+    <dbo:abstract xml:lang="nl">Het SOAP-protocol bestaat uit drie onderdelen: 
+*  Een envelop die een raamwerk definieert voor het beschrijven van wat in een bericht staat en hoe het te verwerken. 
+*  Een set van codeerregels voor de expressie van &#39;instanties&#39; van applicatiegedefinieerde datatypen. 
+*  Een conventie voor de representatie van &#39;remote procedure calls&#39; en antwoorden. SOAP kan worden gebruikt in combinatie met een grote verscheidenheid aan andere protocollen.</dbo:abstract>
+    <dbo:abstract xml:lang="it">SOAP è la struttura operativa (framework) estensibile e decentralizzata che può operare sopra varie pile protocollari per reti di computer fornendo tramite messaggi richieste di procedure remote.I richiami di procedure remote possono essere infatti modellati come interazione di parecchi messaggi SOAP. SOAP dunque è uno dei protocolli che abilitano i servizi Web. SOAP può operare su differenti protocolli di rete, ma HTTP è il più comunemente utilizzato e l&#39;unico ad essere stato standardizzato dal W3C, su cui è incapsulato (embedded) il relativo messaggio.SOAP si basa sul metalinguaggio XML e la sua struttura segue la configurazione Head-Body, analogamente ad HTML.Il segmento opzionale Header contiene meta-informazioni come quelle che riguardano il routing, la sicurezza, le transazioni e parametri per l&#39;Orchestration. Il segmento obbligatorio Body trasporta il contenuto informativo e talora viene detto carico utile, o payload. Questo deve seguire uno schema definito dal linguaggio XML Schema.Soap può essere utilizzato in due modi diversi per una chiamata: 
+*  Richiesta via SOAP di parametri: il client controlla nel Service Registry l&#39;oggetto d&#39;interesse e sviluppa il messaggio secondo i parametri contenuti nel Service Registry. 
+*  General Purpose Messaging: un programmatore può sviluppare un suo protocollo privato, il client conosce a priori i parametri e non necessita di consultare il service registry. All&#39;interno del body del messaggio inserisco i dati scritti nel formato concordato con lo sviluppatore.</dbo:abstract>
+    <dbo:abstract xml:lang="ja">SOAP（ソープ）は、XML-RPCから発展した、XML Webサービスのための、XMLベースのRPCプロトコルである。元はSimple Object Access Protocolの頭字語とされていたが、現在は「何かの頭字語ではない」とされている。</dbo:abstract>
+    <dbo:abstract xml:lang="de">SOAP (ursprünglich für Simple Object Access Protocol) ist ein Netzwerkprotokoll, mit dessen Hilfe Daten zwischen Systemen ausgetauscht und Remote Procedure Calls durchgeführt werden können. SOAP ist ein industrieller Standard des World Wide Web Consortiums (W3C). SOAP stützt sich auf XML zur Repräsentation der Daten und auf Internet-Protokolle der Transport- und Anwendungsschicht (vgl. TCP/IP-Referenzmodell) zur Übertragung der Nachrichten. Die gängigste Kombination ist SOAP über HTTP und TCP. SOAP kann beispielsweise auch über SMTP oder JMS verwendet werden. Die Daten müssen nicht zwingend in XML gesendet werden, andere Formate wie CSV sind auch möglich. Die Abkürzung SOAP wird offiziell seit Version 1.2 nicht mehr als Akronym gebraucht, da es erstens (subjektiv) keineswegs einfach (Simple) ist und zweitens nicht nur dem Zugriff auf Objekte (Object Access) dient.</dbo:abstract>
+    <dbo:abstract xml:lang="en">SOAP (Simple Object Access Protocol) is a protocol specification for exchanging structured information in the implementation of web services in computer networks. Its purpose is to induce extensibility, neutrality and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission. SOAP allows processes running on disparate operating systems (such as Windows and Linux) to communicate using Extensible Markup Language (XML). Since Web protocols like HTTP are installed and running on all Operating systems, SOAP allows clients to invoke web services and receive responses independent of language and platforms.</dbo:abstract>
+    <dbo:abstract xml:lang="zh">SOAP（原为Simple Object Access Protocol的首字母缩写，即简单对象访问协议）是交换数据的一种协议规范，使用在计算机网络Web服务（web service）中，交换带结构信息。SOAP为了简化网页服务器（Web Server）从XML資料庫中提取資料時，节省去格式化頁面時間，以及不同應用程序之間按照HTTP通信协议，遵从XML格式执行资料互换，使其抽象于语言实现、平台和硬件。此標準由IBM、Microsoft、UserLand和DevelopMentor在1998年共同提出，並得到IBM，蓮花（Lotus），康柏（Compaq）等公司的支持，於2000年提交給全球資訊網聯盟（World Wide Web Consortium；W3C），目前SOAP 1.1版是業界共同的標準，屬於第二代的XML協定（第一代具主要代表性的技術為XML-RPC以及WDDX）。 用一个简单的例子来说明SOAP使用过程，一个SOAP消息可以发送到一个具有Web Service功能的Web站点，例如，一个含有房价信息的数据库，消息的参数中标明这是一个查询消息，此站点将返回一个XML格式的信息，其中包含了查询结果（价格，位置，特点，或者其他信息）。由于数据是用一种标准化的可分析的结构来传递的，所以可以直接被第三方站点所利用。</dbo:abstract>
+    <dbo:abstract xml:lang="ar">25بك المحتوى هنا ينقصه الاستشهاد بمصادر. يرجى إيراد مصادر موثوق بها. أي معلومات غير موثقة يمكن التشكيك بها وإزالتها. (مارس 2016) سوابهو أحد البروتوكولات المستخدمة في عملية نقل البيانات بين شبكات الكمبيوتر وذلك باستخدم لغة لغة الترميز القابلة للامتداد وذلك عند استخدام ما يعرف باسم Web services في نقل البياناتويقوم بعملية نقلة البيانات المكتوبة باستخدم لغة لغة الترميز القابلة للامتداد باستخدام بروتوكولات الاتصال [Http ,Https] وهناك العديد من طرق إرسال البيانات عبر هذا البروتوكول ولكن أكثر الطرق استخداما ً هو نداء الإجراء البعيد أو نداء الإجراء البعيد وهذه الطريقة تعتمد على قيام جهاز واحد (العميل (بالإنجليزية: Client) على إرسال إشارة طلب (بالإنجليزية: Request) ليقوم جهاز آخر - المـَستقبل للطلب - (الخادم (بالإنجليزية: Server) بإرسال إشارة للجهاز الآخر - العميل - بهذا الطلب (بالإنجليزية: Response).وحيث أن لغة لغة الترميز القابلة للامتداد هي من اللغات المتعارف عليه من قِبل جميع أنظمة التشغيل وكذلك هي الوسيلة المعتمدة لكتابة/نقل البيانات بين الأجهزة عبر الشبكة لذلك فبروتوكول سواب هو البروتوكول المساعد في عملية نقل هذه البيانات بين الأجهزة خاصة إذا كانت التطبيقات التي تتطلب نقل بيانات تقوم بذلك عبر تطبيقات Web services</dbo:abstract>
+    <dbo:abstract xml:lang="es">Básicamente SOAP es un paradigma de mensajería de una dirección sin estado, que puede ser utilizado para formar protocolos más complejos y completos según las necesidades de las aplicaciones que lo implementan. Puede formar y construir la capa base de una &quot;pila de protocolos de web service&quot;, ofreciendo un framework de mensajería básica en el cual los web services se pueden construir. Este protocolo está basado en XML y se conforma de tres partes: 
+*  Sobre (envelope): el cual define qué hay en el mensaje y cómo procesarlo 
+*  Conjunto de reglas de codificación para expresar instancias de tipos de datos 
+*  La Convención para representar llamadas a procedimientos y respuestas. El protocolo SOAP tiene tres características principales: 
+*  Extensibilidad (seguridad y WS-routing son extensiones aplicadas en el desarrollo).  
+*  Neutralidad (SOAP puede ser utilizado sobre cualquier protocolo de transporte como HTTP, SMTP, TCP o JMS).  
+*  Independencia (SOAP permite cualquier modelo de programación). Como ejemplo de cómo el modelo SOAP pueda ser utilizado, consideraremos un mensaje SOAP que podría ser enviado a un web service para realizar la búsqueda de algún precio en una base de datos, indicando para ello los parámetros necesitados en la consulta. El servicio podría retornar un documento en formato XML con el resultado, un ejemplo, precios, localización o características. Teniendo los datos de respuesta en un formato estandarizado procesable (en inglés &quot;parsable&quot;), éste puede ser integrado directamente en un sitio Web o aplicación externa. La arquitectura SOAP está formada por varias capas de especificación: MEP (Message Exchange Patterns) para el formato del mensaje, enlaces subyacentes del protocolo de transporte, el modelo de procesamiento de mensajes, y la capa de extensibilidad del protocolo. SOAP es el sucesor de XML-RPC, a pesar de que toma el transporte y la neutralidad de la interacción, así como el envelope / header / body, de otros modelos (probablemente de WDDX).</dbo:abstract>
+    <dbo:abstract xml:lang="fr">SOAP (ancien acronyme de Simple Object Access Protocol) est un protocole de RPC orienté objet bâti sur XML. Il permet la transmission de messages entre objets distants, ce qui veut dire qu&#39;il autorise un objet à invoquer des méthodes d&#39;objets physiquement situés sur un autre serveur. Le transfert se fait le plus souvent à l&#39;aide du protocole HTTP, mais peut également se faire par un autre protocole, comme SMTP. Le protocole SOAP est composé de deux parties : 
+*  une enveloppe, contenant des informations sur le message lui-même afin de permettre son acheminement et son traitement ; 
+*  un modèle de données, définissant le format du message, c&#39;est-à-dire les informations à transmettre. SOAP a été initialement défini par Microsoft et IBM, mais est devenu une référence depuis une recommandation du W3C, utilisée notamment dans le cadre d&#39;architectures de type SOA (Service Oriented Architecture) pour les Services Web WS-*. Le protocole SOAP emploie des métadonnées. SOAP n&#39;est plus un acronyme depuis la version 1.2. En effet, SOAP v1.2 a été réécrit en fonction d&#39;infosets XML, et non plus sous forme de sérialisations &lt;?xml … ?&gt; comme il l&#39;était en v1.1. La notion d&#39;objet (spécifiée dans Simple Object Access Protocol) devient donc obsolète.</dbo:abstract>
+    <dbo:abstract xml:lang="ru">SOAP (от англ. Simple Object Access Protocol — простой протокол доступа к объектам; вплоть до спецификации 1.2) — протокол обмена структурированными сообщениями в распределённой вычислительной среде. Первоначально SOAP предназначался в основном для реализации удалённого вызова процедур (RPC). Сейчас протокол используется для обмена произвольными сообщениями в формате XML, а не только для вызова процедур. Официальная спецификация последней версии 1.2 протокола никак не расшифровывает название SOAP.SOAP является расширением протокола XML-RPC. SOAP может использоваться с любым протоколом прикладного уровня: SMTP, FTP, HTTP, HTTPS и др. Однако его взаимодействие с каждым из этих протоколов имеет свои особенности, которые должны быть определены отдельно. Чаще всего SOAP используется поверх HTTP. SOAP является одним из стандартов, на которых базируются технологии веб-служб.</dbo:abstract>
+    <dbo:abstract xml:lang="pt">SOAP (Simple Object Access Protocol, em português Protocolo Simples de Acesso a Objetos) é um protocolo para troca de informações estruturadas em uma plataforma descentralizada e distribuída. Ele se baseia na Linguagem de Marcação Extensível (XML) para seu formato de mensagem, e normalmente baseia-se em outros protocolos da camada de aplicação, mais notavelmente em chamada de procedimento remoto (RPC) e Protocolo de transferência de hipertexto (HTTP), para negociação e transmissão de mensagens. SOAP pode formar a camada base de uma pilha de protocolos de serviços Web, fornecendo um  arcabouço básico de mensagens sob o qual se podem construir os serviços  Web. Este protocolo baseado em XML consiste de três partes: um envelope, que define o que está na mensagem e como processá-la, um conjunto de regras codificadas para expressar instâncias do tipos de dados definidos na aplicação e uma convenção para representar chamadas de procedimentos e respostas. Sua especificação define um arcabouço que provê maneiras para se construir mensagens que podem trafegar através de diversos protocolos e que foi especificado de forma a ser independente de qualquer modelo de programação ou outra implementação específica. Por não se tratar de um protocolo de acesso a objetos, o acrônimo não é mais utilizado. Geralmente servidores SOAP são implementados utilizando-se servidores HTTP, embora isto não seja uma restrição para funcionamento do protocolo. As mensagens SOAP são documentos XML que aderem a uma especificação W3C. O primeiro esforço do desenvolvimento do SOAP foi implementar RPCs sobre XML.</dbo:abstract>
+    <ns8:hypernym rdf:resource="http://dbpedia.org/resource/Specification" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Soap_(disambiguation)">
+    <dbo:wikiPageDisambiguates rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Castle_Mock">
+    <dbo:genre rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Simple_Object_Access_Protocol">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/SOAP_(protocol)">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://en.wikipedia.org/wiki/SOAP">
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/SOAP_request">
+    <dbo:wikiPageRedirects rdf:resource="http://dbpedia.org/resource/SOAP" />
+  </rdf:Description>
+</rdf:RDF>

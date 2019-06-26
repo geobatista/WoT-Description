@@ -1,0 +1,32 @@
+#
+# @Cache-Control: 
+# @infer true
+# @view 
+#
+#
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX schema:<http://schema.org/>
+PREFIX qudt1:<http://qudt.org/1.1/schema/qudt#>
+PREFIX qudt-unit-1-1:<http://qudt.org/1.1/vocab/unit#>
+PREFIX ssn-system:<http://www.w3.org/ns/ssn/systems/>
+PREFIX ssn:<http://www.w3.org/ns/ssn/>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+
+PREFIX calli:<http://localhost:8080/app-sensor-catalog/Property/Property/>
+
+SELECT DISTINCT ?resource ?label  
+{
+    ?resource rdfs:label ?label .
+   
+    ?resource a calli:Property .
+    ?resource a ssn:Property .
+    
+
+} 
+ORDER BY ?label
+    
+ 

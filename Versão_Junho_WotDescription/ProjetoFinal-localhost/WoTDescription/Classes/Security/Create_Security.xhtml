@@ -1,0 +1,82 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:schema="http://schema.org/"
+    xmlns:wot="http://iot.linkeddata.es/def/wot#"
+    xmlns:calli="http://callimachusproject.org/rdf/2009/framework#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:tute="http://callimachusproject.org/2014/03/tutorial#">
+<head>
+     <title>Security"</title>
+        
+        
+        <script type="text/javascript">
+
+        function updateID(event){
+            calli.updateProperty(event, 'schema:identifier dcterms:identifier');
+                   
+        }
+         function updateLabel(event){
+            calli.updateProperty(event, 'schema:name dcterms:title rdfs:label');
+               
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="page-header">
+            <h1>Security</h1>
+        </div>
+        
+        <form role="form" method="POST" action="" enctype="text/turtle" resource="" typeof="wot:Security" class="row"
+                    onsubmit="calli.submitTurtle(event,calli.slugify($('#id').val()))">
+           <fieldset class="col-md-4">
+                
+                <div class="form-group">
+                    <legend><strong>Security Informations</strong></legend>
+                    <p align="Justify"><small>The (optional) security field can be used to provide access
+                    metadata (self-contained) information of the Thing for securely transmitting
+                    information via all its resources</small></p>
+                                                   
+                                                   
+                    <label for="id">ID (URI)</label>
+                    <input type="text.value" class="form-control" id="id" value="{schema:identifier}" required="required" autofocus="autofocus"
+                               onchange="updateID(event)"/>
+                    <input type="hidden" class="form-control" id="nome5" value="{dcterms:identifier}"/>	
+                    
+                </div>
+                
+                 <div class="form-group">
+                     <label>Label</label>
+                            <input type="text" class="form-control" id="label" value="{rdfs:label}"  autofocus="autofocus"
+                              onchange="updateLabel(event)"/>
+                            <input type="hidden" class="form-control" id="nome6" value="{dcterms:title}"/>	
+                            <input type="hidden" class="form-control" id="nome7" value="{schema:name}"/>
+                            
+                 </div>
+                
+                <div class="form-group">
+                     <label>Comment</label>
+                    <textarea id="comment" class="form-control"
+                        onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                </div>
+                
+                        
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Create</button>
+                    </div>
+                        
+
+                
+                
+            </fieldset>
+        </form>
+    </div>
+                 
+</body>
+</html>
