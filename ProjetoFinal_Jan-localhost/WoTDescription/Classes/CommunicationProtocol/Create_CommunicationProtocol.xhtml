@@ -1,0 +1,84 @@
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:schema="http://schema.org/"
+    xmlns:wot="http://iot.linkeddata.es/def/wot#"
+    xmlns:calli="http://callimachusproject.org/rdf/2009/framework#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:tute="http://callimachusproject.org/2014/03/tutorial#">
+<head>
+     <title>Communication Protocol"</title>
+        
+        
+        <script type="text/javascript">
+
+        function updateID(event){
+            calli.updateProperty(event, 'schema:identifier dcterms:identifier');
+                   
+        }
+         function updateLabel(event){
+            calli.updateProperty(event, 'schema:name dcterms:title rdfs:label');
+               
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="page-header">
+            <h1>Communication Protocol</h1>
+        </div>
+        
+        <form role="form" method="POST" action="" enctype="text/turtle" resource="" typeof="wot:CommunicationProtocol" class="row"
+                    onsubmit="calli.submitTurtle(event,calli.slugify($('#id').val()))">
+            
+            
+           <fieldset class="col-md-4">
+                
+                <div class="form-group">
+                    <legend> Communication Protocol Information</legend>
+                    <p><small>A protocol is an agreement between the communicating
+                    parties on how communication is to proceed. </small></p>
+                                                   
+                                                   
+                    <label for="id">ID (código)</label>
+                    <input type="text.value" class="form-control" id="id" value="{schema:identifier}" required="required" autofocus="autofocus"
+                               onchange="updateID(event)"/>
+                    <input type="hidden" class="form-control" id="nome11" value="{dcterms:identifier}"/>	
+                    
+                </div>
+                
+                 <div class="form-group">
+                     <label>Communication Protocol</label>
+                            <input type="text" class="form-control" id="label" value="{rdfs:label}"  autofocus="autofocus"
+                              onchange="updateLabel(event)"/>
+                            <input type="hidden" class="form-control" id="nome12" value="{dcterms:title}"/>	
+                            <input type="hidden" class="form-control" id="nome13" value="{schema:name}"/>
+                            
+                 </div>
+                
+                <div class="form-group">
+                     <label>Description</label>
+                    <textarea id="comment" class="form-control"
+                        onchange="calli.updateProperty(event, 'rdfs:comment')">{rdfs:comment}</textarea>
+                </div>
+                
+                
+                     <div class="form-group">
+                        <button type="submit" class="btn btn-success">Create</button>
+                    </div>
+
+                
+                
+            </fieldset>
+        </form>
+    </div>
+    
+    
+                
+</body>
+</html>
