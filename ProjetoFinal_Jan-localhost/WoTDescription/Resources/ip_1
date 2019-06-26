@@ -1,4 +1,5 @@
 @prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,7 +9,7 @@
 <> a <http://iot.linkeddata.es/def/wot#CommunicationProtocol> , <../Classes/CommunicationProtocol/CommunicationProtocol> ;
     dcterms:created "2019-01-02T12:08:57.421Z"^^xsd:dateTime ;
     dcterms:identifier "IP_1" ;
-    dcterms:modified "2019-01-02T23:51:18.785Z"^^xsd:dateTime ;
+    dcterms:modified "2019-01-02T23:51:18.785Z"^^xsd:dateTime , "2019-04-01T00:34:34.269Z"^^xsd:dateTime , "2019-04-01T00:35:16.016Z"^^xsd:dateTime ;
     dcterms:title "Internet Protocol" ;
     schema:identifier "IP_1" ;
     schema:name "Internet Protocol" ;
@@ -18,4 +19,4 @@
     calli:editor </auth/groups/power> , </auth/groups/staff> ;
     calli:reader </auth/groups/public> , </auth/groups/system> ;
     calli:subscriber </auth/groups/everyone> ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Communications_protocol> .
+    rdfs:seeAlso dbr:Communications_protocol .

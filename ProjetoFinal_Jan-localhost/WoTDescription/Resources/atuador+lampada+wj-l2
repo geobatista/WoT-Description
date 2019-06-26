@@ -1,0 +1,82 @@
+@prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a <http://iot.linkeddata.es/def/wot#Thing> , <../Classes/Actuator/Actuator> , sosa:Actuator , ssn:System ;
+    <http://iot.linkeddata.es/def/wot#thingName> "Atuador Lâmpada WJ-L2" ;
+    dcterms:created "2019-05-07T17:13:18.382Z"^^xsd:dateTime ;
+    dcterms:identifier "Atuador Lâmpada WJ-L2" ;
+    dcterms:modified "2019-05-07T18:09:52.856Z"^^xsd:dateTime ;
+    dcterms:title "Atuador Lâmpada WJ-L2" ;
+    schema:identifier "Atuador Lâmpada WJ-L2" ;
+    schema:name "Atuador Lâmpada WJ-L2" ;
+    rdfs:comment "Lâmpada Led, podendo ser controlada via smartphone ou tablet/Bluetooth, com função de temporização e com volume ajustável de luz e música." ;
+    rdfs:label "Atuador Lâmpada WJ-L2" ;
+    calli:administrator </auth/groups/admin> ;
+    calli:editor </auth/groups/power> , </auth/groups/staff> ;
+    calli:reader </auth/groups/public> , </auth/groups/system> ;
+    calli:subscriber </auth/groups/everyone> ;
+    <http://iot.linkeddata.es/def/wot#implementsSecurity> <json+web+token> ;
+    foaf:depiction <lamp.png> ;
+    <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+        <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+        <http://iot.linkeddata.es/def/wot#href> "coap://lamp.example.com:5683/" ;
+        <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#InteractionPattern> , <http://iot.linkeddata.es/def/wot#Property> ;
+        <http://iot.linkeddata.es/def/wot#interactionDescription> "Status do Atuador Lâmpada WJ-L2" ;
+        <http://iot.linkeddata.es/def/wot#interactionName> "Status" ;
+        <http://iot.linkeddata.es/def/wot#isWritable> true ;
+        <http://iot.linkeddata.es/def/wot#isMeasuredln> unit:Lumen ;
+        <http://iot.linkeddata.es/def/wot#hasOutputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema> ;
+            <http://iot.linkeddata.es/def/wot#defaultValue> "true" ;
+            <http://iot.linkeddata.es/def/wot#hasValueType> xsd:boolean
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isWritableThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "http://lampStatus.example.com:5683/status" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <http>
+        ]
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#Action> , <http://iot.linkeddata.es/def/wot#InteractionPattern> ;
+        <http://iot.linkeddata.es/def/wot#interactionDescription> "O som do  Atuador Lâmpada WJ-L2está no seu volume original e começa a ser baixado lentamente até chegar ao silêncio completo, ou quase." ;
+        <http://iot.linkeddata.es/def/wot#interactionName> "FadeMusicOut" ;
+        <http://iot.linkeddata.es/def/wot#isQueueable> false ;
+        <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema> ;
+            <http://iot.linkeddata.es/def/wot#defaultValue> "2000" ;
+            <http://iot.linkeddata.es/def/wot#hasValueType> xsd:integer ;
+            <http://iot.linkeddata.es/def/wot#isMeasuredln> unit:MilliSecond
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap://lampFademusic.example.com:5683/out" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ] ;
+        <http://iot.linkeddata.es/def/wot#isAccessibleThrough> [ a <http://iot.linkeddata.es/def/wot#Link> ;
+            <http://iot.linkeddata.es/def/wot#hasMediaType> "application/json" ;
+            <http://iot.linkeddata.es/def/wot#href> "coap://lampFademusic.example.com:5683/in" ;
+            <http://iot.linkeddata.es/def/wot#isProvidedOverProtocol> <CoAP_1>
+        ]
+    ] .
+
+<> <http://iot.linkeddata.es/def/wot#providesInteractionPattern> [ a <http://iot.linkeddata.es/def/wot#Action> , <http://iot.linkeddata.es/def/wot#InteractionPattern> ;
+        <http://iot.linkeddata.es/def/wot#interactionDescription> "Início onde o som do Atuador Lâmpada WJ-L2 começa relativamente baixo até atingir o seu volume original." ;
+        <http://iot.linkeddata.es/def/wot#interactionName> "FadeMusicIn" ;
+        <http://iot.linkeddata.es/def/wot#hasInputData> [ a <http://iot.linkeddata.es/def/wot#DataSchema> ;
+            <http://iot.linkeddata.es/def/wot#defaultValue> "2000" ;
+            <http://iot.linkeddata.es/def/wot#hasValueType> xsd:integer ;
+            <http://iot.linkeddata.es/def/wot#isMeasuredln> unit:MilliSecond
+        ]
+    ] .
+
+<> schema:location [ a schema:GeoCoordinates
+    ] .

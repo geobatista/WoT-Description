@@ -1,0 +1,24 @@
+@prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a <http://iot.linkeddata.es/def/wot#CommunicationProtocol> , <../Classes/CommunicationProtocol/CommunicationProtocol> ;
+    dcterms:created "2019-03-10T14:19:49.125Z"^^xsd:dateTime ;
+    dcterms:identifier "HTTP" ;
+    dcterms:modified "2019-03-10T14:54:53.862Z"^^xsd:dateTime , "2019-03-10T14:56:28.005Z"^^xsd:dateTime , "2019-03-10T15:13:53.851Z"^^xsd:dateTime , "2019-03-10T15:14:07.843Z"^^xsd:dateTime , "2019-03-10T15:35:48.076Z"^^xsd:dateTime , "2019-03-10T15:39:05.389Z"^^xsd:dateTime , "2019-04-01T00:28:25.857Z"^^xsd:dateTime , "2019-04-01T00:38:34.340Z"^^xsd:dateTime , "2019-04-01T00:40:28.554Z"^^xsd:dateTime , "2019-04-01T00:43:05.551Z"^^xsd:dateTime , "2019-04-01T00:43:28.699Z"^^xsd:dateTime , "2019-04-01T00:44:38.143Z"^^xsd:dateTime , "2019-04-01T00:49:30.184Z"^^xsd:dateTime , "2019-04-01T05:53:11.972Z"^^xsd:dateTime , "2019-04-01T06:15:21.315Z"^^xsd:dateTime , "2019-04-01T06:18:20.192Z"^^xsd:dateTime , "2019-04-01T06:19:37.819Z"^^xsd:dateTime ;
+    dcterms:title "Hypertext Transfer Protocol" ;
+    schema:identifier "HTTP" ;
+    schema:name "Hypertext Transfer Protocol" ;
+    rdfs:comment "O Hypertext Transfer Protocol, sigla HTTP (em português Protocolo de Transferência de Hipertexto) é um protocolo de comunicação (na camada de aplicação segundo o Modelo OSI) utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos. Ele é a base para a comunicação de dados da World Wide Web." ;
+    rdfs:label "Hypertext Transfer Protocol" ;
+    calli:administrator </auth/groups/admin> ;
+    calli:editor </auth/groups/power> , </auth/groups/staff> ;
+    calli:reader </auth/groups/public> , </auth/groups/system> ;
+    calli:subscriber </auth/groups/everyone> ;
+    rdfs:seeAlso dbr:Communications_protocol ;
+    owl:sameAs dbr:Hypertext_Transfer_Protocol .

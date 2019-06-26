@@ -1,4 +1,5 @@
 @prefix calli: <http://callimachusproject.org/rdf/2009/framework#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -19,4 +20,4 @@ O protocolo é projetado para aplicativos máquina-a-máquina (M2M), como energi
     calli:editor </auth/groups/power> , </auth/groups/staff> ;
     calli:reader </auth/groups/public> , </auth/groups/system> ;
     calli:subscriber </auth/groups/everyone> ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Communications_protocol> .
+    rdfs:seeAlso dbr:Communications_protocol .
