@@ -77,6 +77,30 @@ The actuator model follows the same semantic approach, combining the description
 
 *Figure — Ontological model for the description of an actuator and its access interface. Adapted from Rangel (2018).*
 
+## Application implementation
+
+The proposed semantic model was implemented as a Linked Data application using the Callimachus framework. The application provides Web interfaces for creating, editing, and publishing semantic descriptions of sensors, actuators, and their access interfaces.
+
+The implementation extends the device description with a second editing stage dedicated specifically to the access interface. This part represents the central contribution of this Master's research, allowing access-related information to be explicitly described and associated with sensor and actuator resources.
+
+### Sensor access-interface editing
+
+The second part of the sensor editing interface brings together the semantic elements required to describe how a sensor can be accessed and used, including interaction patterns, links, communication protocols, security mechanisms, and data schemas.
+
+![Sensor access-interface editing](docs/images/sensor-access-interface.png)
+
+*Sensor access-interface editing interface developed as part of this research.*
+
+### Property interaction example
+
+The example below shows the semantic description of a Property interaction for a DHT22 sensor. The interface associates the interaction with its access link, communication protocol, media type, output data type, and measurement unit.
+
+![Property interaction interface](docs/images/property-interaction-interface.png)
+
+*Example of a Property interaction and its access-related semantic metadata.*
+
+The information entered through these interfaces is represented semantically in RDF/RDFa and stored by the application, enabling the resulting resources and relationships to be queried using SPARQL.
+
 ## Technologies and standards
 
 The project combines Semantic Web, Linked Data, and Web technologies for the semantic representation and publication of sensor and actuator metadata and access interfaces.
@@ -140,3 +164,30 @@ The repository also preserves earlier development versions:
 These directories are maintained for historical and research reproducibility purposes. The June version should be considered the primary implementation when exploring this repository.
 
 > **Note:** The ontology and vocabulary files included in the project contain external semantic resources reused by the application. Their presence in this repository does not imply authorship of those ontologies.
+
+## Project status
+
+This repository preserves the original implementation developed during the Master's research in 2019.
+
+The application was developed using the Callimachus Linked Data framework and technologies available in the original research environment. The source code and semantic resources are maintained here primarily for research documentation, historical preservation, and reproducibility.
+
+Because the original execution environment and its dependencies are no longer actively maintained in this repository, the application may require configuration or adaptation to run in a current environment.
+
+## Master's dissertation
+
+**Representação Semântica Formal de Interface e Uso de Sensores e Atuadores**
+
+Geovana da Silva Batista. Master's Dissertation, 2019.  
+Professional Master's Program in Systems Applied to Engineering and Management — Instituto Federal Fluminense (IFFluminense).
+
+The complete dissertation is available through the official IFFluminense repository:
+
+[Access the dissertation at IFFluminense](https://portal1.iff.edu.br/o-iffluminense/pesquisa/pos-graduacao-stricto-sensu/mestrado-profissional-em-sistemas-aplicados-a-engenharia-e-a-gestao/dissertacoes-defendidas/ingressantes-2017.1/representacao-semantica-formal-de-interface-e-uso-de-sensores-e-atuadores/view/++widget++form.widgets.dissertacao/@@download/Disserta%C3%A7%C3%A3oGeovanaBatista_2019.pdf)
+
+## Author
+
+**Geovana da Silva Batista, M.Sc.**
+
+Computer Scientist with a Master's degree in Systems Applied to Engineering and Management.
+
+Research interests include Semantic Web, Linked Data, ontologies, semantic data modeling, data integration, and knowledge representation.
