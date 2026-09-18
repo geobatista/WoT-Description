@@ -57,6 +57,26 @@ The main contributions of this Master's research include:
 - Use of RDF/RDFa and SPARQL to represent, store, query, and retrieve semantically structured information.
 - Application and evaluation of the proposed approach through an IoT scenario.
 
+## Semantic access-interface model
+
+The proposed approach formally represents not only the technical and contextual characteristics of sensors and actuators, but also the information required to describe **how these devices can be accessed and used**.
+
+### Sensor access-interface model
+
+The sensor model combines the semantic description of the sensor with its access interface. It incorporates concepts from the previous research stage and integrates concepts from established ontologies and semantic vocabularies to represent the Thing Description (TD), interaction patterns, links, security mechanisms, communication protocols, and data schemas.
+
+![Ontological model for the semantic description of a sensor and its access interface](docs/images/sensor-access-model.png)
+
+*Figure — Ontological model for the description of a sensor and its access interface. Adapted from Rangel (2018).*
+
+### Actuator access-interface model
+
+The actuator model follows the same semantic approach, combining the description of the actuator with the formal representation of its access interface. This enables actuators to be described not only by their technical characteristics and relationships, but also by the semantic information required for interaction and access.
+
+![Ontological model for the semantic description of an actuator and its access interface](docs/images/actuator-access-model.png)
+
+*Figure — Ontological model for the description of an actuator and its access interface. Adapted from Rangel (2018).*
+
 ## Technologies and standards
 
 The project combines Semantic Web, Linked Data, and Web technologies for the semantic representation and publication of sensor and actuator metadata and access interfaces.
