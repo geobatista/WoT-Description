@@ -34,6 +34,16 @@ Building upon the conceptual and ontological foundation established in the previ
 
 The application presented in this repository was implemented independently as part of this Master's research using the Callimachus framework.
 
+### Research evolution
+
+The diagram below illustrates the relationship between the previous research stage and the contribution of this work. The original semantic catalog already described sensors and actuators through aspects such as databases, organizations, people, locations, and technical characteristics.
+
+This research complemented that description by introducing the **formal semantic representation of the access interface**, including security, interaction patterns, links, and communication protocols.
+
+![Evolution of the semantic description of sensors and actuators](docs/images/research-evolution.png)
+
+*Figure — Aspects involved in the semantic description of sensors and actuators. The gray elements represent the additional aspects addressed in this research. Adapted from Rangel (2018).*
+
 ## Research contribution
 
 The main contributions of this Master's research include:
